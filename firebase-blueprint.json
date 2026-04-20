@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "Section": {
+      "title": "Section",
+      "description": "A section inside the contract",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "order": { "type": "number" },
+        "createdAt": { "type": "number" },
+        "updatedAt": { "type": "number" }
+      },
+      "required": ["title", "order", "createdAt", "updatedAt"]
+    },
+    "Article": {
+      "title": "Article",
+      "description": "A contract article",
+      "type": "object",
+      "properties": {
+        "sectionId": { "type": "string" },
+        "articleCode": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "order": { "type": "number" },
+        "ruleType": { "type": "string", "enum": ["ALWAYS_INCLUDE", "CONDITIONAL"] },
+        "conditionField": { "type": "string" },
+        "conditionValue": { "type": "string" },
+        "conditionOperator": { "type": "string" },
+        "createdAt": { "type": "number" },
+        "updatedAt": { "type": "number" }
+      },
+      "required": ["title", "content", "ruleType", "order", "createdAt", "updatedAt"]
+    },
+    "Admin": {
+      "title": "Admin",
+      "description": "System Administrators",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["email", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/sections/{sectionId}": {
+      "schema": { "$ref": "#/entities/Section" },
+      "description": "Contract sections"
+    },
+    "/articles/{articleId}": {
+      "schema": { "$ref": "#/entities/Article" },
+      "description": "Contract articles"
+    },
+    "/admins/{adminId}": {
+      "schema": { "$ref": "#/entities/Admin" },
+      "description": "Administrators mapping"
+    }
+  }
+}

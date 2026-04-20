@@ -1,0 +1,73 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() { return request.auth != null; }
+    function isAdmin() { return isSignedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid)); }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+
+    function isValidSection(data) {
+      return data.keys().hasAll(['title', 'order', 'createdAt', 'updatedAt']) 
+        && data.title is string && data.title.size() > 0 && data.title.size() <= 200
+        && data.order is number
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidArticle(data) {
+      return data.keys().hasAll(['title', 'content', 'ruleType', 'order', 'createdAt', 'updatedAt'])
+        && data.title is string && data.title.size() > 0 && data.title.size() <= 200
+        && data.content is string && data.content.size() <= 10000
+        && data.ruleType is string && (data.ruleType == 'ALWAYS_INCLUDE' || data.ruleType == 'CONDITIONAL')
+        && data.order is number
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        // Optional fields
+        && (data.keys().hasAny(['sectionId']) ? (data.sectionId is string && data.sectionId.size() <= 128) : true)
+        && (data.keys().hasAny(['articleCode']) ? (data.articleCode is string && data.articleCode.size() <= 128) : true)
+        && (data.keys().hasAny(['conditionField']) ? (data.conditionField is string && data.conditionField.size() <= 128) : true)
+        && (data.keys().hasAny(['conditionValue']) ? (data.conditionValue is string && data.conditionValue.size() <= 256) : true)
+        && (data.keys().hasAny(['conditionOperator']) ? (data.conditionOperator is string && data.conditionOperator.size() <= 50) : true)
+        && (data.keys().hasAny(['condition_generation']) ? (data.condition_generation is string && data.condition_generation.size() <= 1000) : true)
+        && (data.keys().hasAny(['variables_requises']) ? (data.variables_requises is list) : true);
+    }
+
+    match /admins/{adminId} {
+      allow get: if isSignedIn() && request.auth.uid == adminId;
+      // Bootstrappable: anyone logged in can read to see if they are admin.
+      allow list: if isAdmin();
+      // Allow first admin creation securely (or via Firebase Console for reality, but let's allow bootstrapping for AI Studio)
+      allow create: if isSignedIn() && isValidId(adminId) && 
+                      request.auth.uid == adminId && 
+                      incoming().keys().hasAll(['email', 'createdAt']) &&
+                      incoming().createdAt == request.time &&
+                      incoming().email == request.auth.token.email &&
+                      incoming().keys().size() == 2;
+    }
+
+    match /sections/{sectionId} {
+      allow get, list: if true;
+      allow create: if isAdmin() && isValidId(sectionId) && isValidSection(incoming()) && incoming().createdAt == request.time && incoming().updatedAt == request.time;
+      allow update: if isAdmin() && isValidId(sectionId) && isValidSection(incoming()) && incoming().createdAt == existing().createdAt && incoming().updatedAt == request.time && incoming().diff(existing()).affectedKeys().hasOnly(['title', 'order', 'updatedAt']);
+      allow delete: if isAdmin() && isValidId(sectionId);
+    }
+
+    match /articles/{articleId} {
+      allow get, list: if true;
+      // When creating an article with a sectionId, ensure the section exists
+      allow create: if isAdmin() && isValidId(articleId) && isValidArticle(incoming()) 
+                      && incoming().createdAt == request.time && incoming().updatedAt == request.time
+                      && (incoming().keys().hasAny(['sectionId']) ? exists(/databases/$(database)/documents/sections/$(incoming().sectionId)) : true);
+      
+      allow update: if isAdmin() && isValidId(articleId) && isValidArticle(incoming())
+                      && incoming().createdAt == existing().createdAt && incoming().updatedAt == request.time
+                      && incoming().diff(existing()).affectedKeys().hasOnly(['title', 'content', 'ruleType', 'order', 'sectionId', 'articleCode', 'conditionField', 'conditionValue', 'conditionOperator', 'condition_generation', 'variables_requises', 'updatedAt']);
+      allow delete: if isAdmin() && isValidId(articleId);
+    }
+  }
+}

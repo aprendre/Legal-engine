@@ -1,0 +1,6 @@
+{
+  "name": "ContractGen IT",
+  "description": "Générateur déterministe de contrats IT bancaires (V2)",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

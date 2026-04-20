@@ -1,0 +1,177 @@
+{
+  "catalogue_contrat_it": {
+    "version": "3.0",
+    "institution": "Attijariwafa bank",
+    "description": "Base de données exhaustive pour génération de V0 - Texte intégral sans résumé",
+    "articles": [
+      {
+        "id": "ART_OBLIG_01_PARTIES",
+        "categorie": "OBLIGATOIRE",
+        "titre": "IDENTIFICATION DES PARTIES",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{RAISON_SOCIALE_PRESTATAIRE}}", "{{FORME_JURIDIQUE_PRESTATAIRE}}", "{{CAPITAL_PRESTATAIRE}}", "{{VILLE_RC_PRESTATAIRE}}", "{{NUM_RC_PRESTATAIRE}}", "{{SIEGE_SOCIAL_PRESTATAIRE}}", "{{REPRESENTANT_PRESTATAIRE}}", "{{QUALITE_REPRESENTANT_PRESTATAIRE}}", "{{REPRESENTANT_AWB_1}}", "{{QUALITE_AWB_1}}", "{{REPRESENTANT_AWB_2}}", "{{QUALITE_AWB_2}}"],
+        "contenu": "ENTRE\n\n{{RAISON_SOCIALE_PRESTATAIRE}}, Société {{FORME_JURIDIQUE_PRESTATAIRE}} au capital de {{CAPITAL_PRESTATAIRE}}, immatriculée au Registre du Commerce et des Sociétés de {{VILLE_RC_PRESTATAIRE}} sous le numéro {{NUM_RC_PRESTATAIRE}}, dont le siège social est sis {{SIEGE_SOCIAL_PRESTATAIRE}}, dûment représentée à l'effet des présentes par Monsieur/Madame {{REPRESENTANT_PRESTATAIRE}}, agissant en qualité de {{QUALITE_REPRESENTANT_PRESTATAIRE}}.\nCi-après dénommée « l'Éditeur/Intégrateur »,\nD'une part\n\nET\n\nAttijariwafa bank, Société anonyme au capital de Dirhams 2.151.408.390,00, ayant son siège social à Casablanca au 2, Boulevard Moulay Youssef, immatriculée au registre de commerce de Casablanca sous le numéro 333, agréée en qualité d'établissement de crédit par arrêté du Ministre des Finances et de la Privatisation n° 2269-03 du 22 décembre 2003 tel que modifié et complété, dûment représentée à l'effet des présentes par :\nMadame/Monsieur {{REPRESENTANT_AWB_1}} en sa qualité de {{QUALITE_AWB_1}}\nMadame/Monsieur {{REPRESENTANT_AWB_2}} en sa qualité de {{QUALITE_AWB_2}}\nAgissant tant pour son propre compte que pour le compte de ses Filiales.\nCi-après dénommée « le CLIENT »\nD'autre part\n\nCi-après dénommées individuellement la « Partie » et collectivement les « Parties ».\nChacun des signataires du présent Contrat garantit que le pouvoir en vertu duquel il agit n'a pas été révoqué ou limité et qu'il est suffisant pour obliger les représentées dans ce Contrat."
+      },
+      {
+        "id": "ART_OBLIG_02_OBJET_GLOBAL",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 1 - OBJET DU CONTRAT",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{LISTE_PRESTATIONS_OBJET}}"],
+        "contenu": "Le présent Contrat a pour objet de définir les conditions juridiques, techniques et financières dans lesquelles l'Éditeur/Intégrateur s'engage à fournir à la Banque et à ses Filiales les prestations informatiques suivantes :\n\n{{LISTE_PRESTATIONS_OBJET}}\n\nCes prestations, ainsi que leurs périmètres spécifiques, sont détaillées dans les Annexes et les éventuels Bons de Commande attachés au présent Contrat, qui en font partie intégrante. L'Éditeur/Intégrateur a expressément exposé, soutenu et démontré qu'il dispose de l'expertise, du savoir-faire, de la méthodologie, des moyens et des compétences adéquates pour assurer la maîtrise d'œuvre du Projet et garantir non seulement la réalisation conforme et performante du projet suivant les besoins formulés par Attijariwafa bank mais aussi et surtout la maintenance de la solution dans une perspective évolutive conformément à l'intention des Parties."
+      },
+      {
+        "id": "ART_OBLIG_03_DUREE_GLOBALE",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 2 - DURÉE ET PRISE D'EFFET",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{DUREE_CADRE_ANNEES}}"],
+        "contenu": "Le présent Contrat prend effet à compter de sa date de signature par les deux Parties pour une durée de {{DUREE_CADRE_ANNEES}}. Les durées spécifiques d'exécution applicables à chaque nature de prestation sont définies comme suit :\n- Concernant la Licence : Le droit d'Utilisation est concédé et accepté pour la durée légale de protection du Progiciel par les Droits de Propriété intellectuelle.\n- Concernant la Mise en Œuvre : Le Contrat est conclu pour la durée nécessaire à la parfaite réalisation des Prestations sans excéder le Calendrier Définitif.\n- Concernant la Maintenance/SaaS : Les prestations sont conclues pour une durée initiale d'un an à compter de la date de prise d'effet. À l'issue de cette période, elles se renouvelleront par tacite reconduction par périodes successives d'un (1) an, sauf dénonciation par l'une ou l'autre des Parties par lettre recommandée avec accusé de réception moyennant un préavis de trois (3) mois."
+      },
+      {
+        "id": "ART_OBLIG_04_DEFINITIONS",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 3 - DÉFINITIONS",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{NOM_NOYAU_PROGICIEL}}"],
+        "contenu": "1- Matériel : Désigne le serveur qui héberge le Progiciel ainsi que l'équipement informatique destiné à son Utilisation.\n2- Progiciel : Désigne l'ensemble complet et documenté de programmes, conçu exclusivement par l'Éditeur/Intégrateur, déployé autour du « {{NOM_NOYAU_PROGICIEL}} » garantissant une intégration transversale des Modules métiers.\n3- Documentation : Désigne toute information et tout support numériques ou écrits afférents au Progiciel destinés aux utilisateurs.\n4- Module : Ensemble de programmes constituant une série d'instructions lisibles en machine pouvant fonctionner séparément ou concomitamment.\n5- Lot : Livrable comprenant un ou plusieurs Modules Progiciels.\n6- Site d'Utilisation : Lieu géographique précisé en Annexe 2 où est situé le serveur.\n7- Filiales : Toute entité que le Client contrôle au sens des articles 143 et 144 de la Loi marocaine 20-05.\n8- Utilisateur Final ou CLIENT : Désigne le Client et ses Filiales.\n9- Utilisation : Installation dans la mémoire du Matériel, activation et usage des fonctionnalités.\n10- Prestations : Missions et livrables devant être fournis par l'Éditeur/Intégrateur.\n11- Anomalies : Tout bogue, défaut ou erreur. Elles se classent en : Bloquante (rendant impossible l'utilisation), Sévère (dégradant l'utilisation d'une fonctionnalité importante sans contournement), et Ni Bloquante Ni Sévère.\n12- Versions : Version Standard (non personnalisée), de Référence (personnalisée), Définitive (validée après PV de mise en production), Mineure (corrective) et Majeure (évolutive).\n13- Recette : Séquence d'opérations contrôlant la conformité des travaux et des programmes.\n14- Développements Spécifiques : Algorithmes et processus originaux réalisés spécifiquement pour les besoins du CLIENT."
+      },
+      {
+        "id": "ART_OBLIG_05_OBLIGATIONS_GLOBALES",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 4 - OBLIGATIONS DES PARTIES",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": [],
+        "contenu": "4.1 Obligations de l'Éditeur/Intégrateur : L'Éditeur/Intégrateur s'engage à exécuter le Contrat avec tout le soin et la diligence requis par sa profession. Il est tenu à un devoir général de conseil, de mise en garde et d'information vis-à-vis de la Banque. Il s'oblige notamment à assurer le pilotage du Projet conformément aux conditions contractuelles, fournir les livrables conformes et assurer la disponibilité des équipes affectées.\n4.2 Obligations du CLIENT : La Banque s'engage à collaborer activement et régulièrement avec l'Éditeur/Intégrateur en lui fournissant l'ensemble des éléments et accès nécessaires à la bonne exécution des prestations. La Banque s'assurera que son environnement technique est conforme aux prérequis recommandés par l'Éditeur/Intégrateur, celui-ci demeurant garant du succès de l'installation."
+      },
+      {
+        "id": "ART_OBLIG_06_RESPONSABILITE_GLOBALE",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 5 - RESPONSABILITÉ ET PLAFONNEMENT",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{POURCENTAGE_PLAFOND_RESPONSABILITE}}"],
+        "contenu": "Chacune des Parties est responsable des dommages directs qu'elle pourrait causer à l'autre Partie. En aucun cas, l'Éditeur/Intégrateur ne pourra être tenu responsable des dommages indirects. La responsabilité pécuniaire globale de l'Éditeur/Intégrateur, tous sinistres confondus et pour toute la durée du Contrat, est expressément plafonnée à {{POURCENTAGE_PLAFOND_RESPONSABILITE}}% du montant total Hors Taxes du Contrat (ou de la commande annuelle concernée pour les services récurrents). Ce plafond ne s'applique pas en cas de faute lourde ou dolosive, de violation des obligations de confidentialité, de contrefaçon, ou de non-respect de la législation sur la protection des données à caractère personnel."
+      },
+      {
+        "id": "ART_OBLIG_07_RESILIATION_GLOBALE",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 6 - RÉSILIATION",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{PREAVIS_RESILIATION_FAUTE_JOURS}}"],
+        "contenu": "6.1 Résiliation pour manquement : En cas de manquement grave par l'une des Parties à une obligation substantielle, le Contrat pourra être résilié de plein droit {{PREAVIS_RESILIATION_FAUTE_JOURS}} jours après mise en demeure infructueuse.\n6.2 Résiliation immédiate : La Banque peut résilier sans préavis ni indemnité en cas de violation des clauses Anti-Corruption, de fraude intentionnelle sur la licence (atteinte au système de protection, copies illicites) ou violation du secret bancaire.\n6.3 Conséquences : L'Éditeur/Intégrateur facturera uniquement les Prestations effectivement réalisées et validées. Les Parties restitueront mutuellement l'ensemble des documents et données confidentielles."
+      },
+      {
+        "id": "ART_OBLIG_08_CONFIDENTIALITE",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 7 - CONFIDENTIALITÉ ET SECRET BANCAIRE",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{DUREE_SURVIE_CONFIDENTIALITE}}"],
+        "contenu": "Chacune des Parties s'engage à garder le secret le plus absolu sur les informations confidentielles de l'autre Partie. L'Éditeur/Intégrateur s'engage à faire respecter cette obligation par ses collaborateurs et sous-traitants. L'obligation de confidentialité continuera tant que l'information n'est pas tombée dans le domaine public et survivra {{DUREE_SURVIE_CONFIDENTIALITE}} ans après l'expiration du Contrat."
+      },
+      {
+        "id": "ART_OBLIG_09_PROTECTION_DONNEES",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 8 - PROTECTION DES DONNÉES (Loi 09-08) (Généré)",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": [],
+        "contenu": "Les Parties respectent la Loi 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel. L'Éditeur/Intégrateur, en tant que sous-traitant, met en œuvre les mesures techniques pour protéger les données. Tout transfert hors du Maroc est interdit sans accord préalable de la Banque et autorisation de la CNDP."
+      },
+      {
+        "id": "ART_OBLIG_10_ANTICORRUPTION",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 9 - ANTI-CORRUPTION (ISO 37001)",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": [],
+        "contenu": "L'Éditeur/Intégrateur garantit qu'aucun avantage indu n'a été accordé pour l'attribution du Contrat. Il s'engage à respecter la politique Anti-Corruption d'Attijariwafa bank. Tout manquement autorise la résiliation immédiate sans préavis ni indemnité."
+      },
+      {
+        "id": "ART_OBLIG_11_AUDIT",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 10 - DROIT D'AUDIT",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": ["{{PREAVIS_AUDIT_JOURS}}"],
+        "contenu": "La Banque peut faire procéder à un audit des conditions d'exploitation et du respect des obligations contractuelles, moyennant un préavis de {{PREAVIS_AUDIT_JOURS}} jours. Bank Al-Maghrib peut également diligenter un audit dans les mêmes conditions de sécurité et de confidentialité."
+      },
+      {
+        "id": "ART_OBLIG_12_ASSURANCES",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 11 - ASSURANCES",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": [],
+        "contenu": "L'Éditeur/Intégrateur atteste avoir souscrit une assurance responsabilité civile professionnelle couvrant les risques corporels, matériels ou immatériels. Une attestation en cours de validité doit être produite à la demande de la Banque."
+      },
+      {
+        "id": "ART_OBLIG_13_JURIDICTION",
+        "categorie": "OBLIGATOIRE",
+        "titre": "ARTICLE 12 - DROIT APPLICABLE ET ATTRIBUTION DE COMPÉTENCE",
+        "condition_generation": "TOUJOURS_INCLURE",
+        "variables": [],
+        "contenu": "Le présent Contrat est soumis au droit Marocain. Pour tout litige relatif à l'interprétation ou l'exécution du Contrat, compétence expresse est attribuée au Tribunal de Commerce de Casablanca."
+      },
+      {
+        "id": "ART_COND_01_LICENCE",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - CONCESSION DU DROIT D'UTILISATION",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('Licence', 'SaaS')",
+        "variables": ["{{ANNEXE_LICENCE}}", "{{ANNEXE_SITE}}"],
+        "contenu": "L'Éditeur/Intégrateur concède au CLIENT un droit d'Utilisation du Progiciel tel que décrit en Annexe {{ANNEXE_LICENCE}}, à titre non exclusif, non cessible et non transférable, pour une Utilisation personnelle sur le Matériel et le Site définis en Annexe {{ANNEXE_SITE}}."
+      },
+      {
+        "id": "ART_COND_02_GARANTIE_LOGICIEL",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - GARANTIES CONTRACTUELLES (LOGICIEL & DÉVELOPPEMENT)",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('Licence', 'SaaS', 'Mise_en_Oeuvre', 'Forfait')",
+        "variables": ["{{DUREE_GARANTIE_LOGICIEL_MOIS}}"],
+        "contenu": "L'Éditeur/Intégrateur garantit la conformité du Progiciel aux spécifications fonctionnelles. Il s'engage à corriger gratuitement, pendant {{DUREE_GARANTIE_LOGICIEL_MOIS}} mois à compter de la mise en production, toute anomalie reproductible signalée par la Banque."
+      },
+      {
+        "id": "ART_COND_03_GARANTIE_MATERIEL",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - GARANTIES CONTRACTUELLES (MATÉRIEL)",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('Materiel', 'Infrastructure')",
+        "variables": ["{{DUREE_GARANTIE_MATERIEL_MOIS}}"],
+        "contenu": "L'Éditeur/Intégrateur garantit le matériel contre tout vice de fabrication pendant {{DUREE_GARANTIE_MATERIEL_MOIS}} mois. Il s'engage à réparer ou remplacer à neuf tout équipement défectueux à ses frais exclusifs (pièces, main-d'œuvre et déplacement)."
+      },
+      {
+        "id": "ART_COND_04_GARANTIE_PRESTATION",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - GARANTIES CONTRACTUELLES (PRESTATIONS INTELLECTUELLES)",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('Regie', 'Assistance_Technique')",
+        "variables": [],
+        "contenu": "L'Éditeur/Intégrateur garantit que le personnel mis à disposition possède l'expertise et les qualifications requises. En cas de non-adéquation constatée par la Banque, il procédera au remplacement sous quarante-huit (48) heures ouvrées sans frais additionnels."
+      },
+      {
+        "id": "ART_COND_05_RECETTE_PROJET",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - DÉROULEMENT DES RECETTES",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('Mise_en_Oeuvre', 'Forfait')",
+        "variables": ["{{DELAI_RECETTE_DEFINITIVE}}"],
+        "contenu": "La Recette a pour objectif de contrôler la conformité des travaux aux Spécifications. Elle comprend les phases de Version de Référence, Interfaces et Reprise de données. Si des Anomalies Bloquantes sont constatées, le CLIENT peut refuser de signer le PV de recette. La Recette Définitive intervient après une vérification de {{DELAI_RECETTE_DEFINITIVE}} semaines."
+      },
+      {
+        "id": "ART_COND_06_PENALITES_PROJET",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - PÉNALITÉS DE RETARD D'IMPLÉMENTATION",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('Mise_en_Oeuvre', 'Forfait')",
+        "variables": ["{{TAUX_PENALITE_PROJET}}"],
+        "contenu": "En cas de retard imputable exclusivement à l'Éditeur/Intégrateur sur le calendrier validé, une pénalité de {{TAUX_PENALITE_PROJET}}% du montant des prestations concernées s'appliquera par tranche de 24 heures, plafonnée à 10% par Lot."
+      },
+      {
+        "id": "ART_COND_07_SLA_MAINTENANCE",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - MAINTENANCE CORRECTIVE ET SLA",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('Maintenance_TMA', 'SaaS')",
+        "variables": ["{{GTR_BLOQUANTE_HEURES}}"],
+        "contenu": "L'Éditeur/Intégrateur assure la correction définitive des Anomalies. Pour les Anomalies Bloquantes, le délai de rétablissement (GTR) est de {{GTR_BLOQUANTE_HEURES}} heures. Le non-respect des SLA entraîne l'application de pénalités de maintenance selon la grille définie en Annexe."
+      },
+      {
+        "id": "ART_COND_08_REVERSIBILITE",
+        "categorie": "CONDITIONNEL",
+        "titre": "ARTICLE - RÉVERSIBILITÉ ET TRANSITION (Généré)",
+        "condition_generation": "SI [Type_Projet] INCLUDES ('SaaS', 'Hebergement_Externe')",
+        "variables": ["{{FORMAT_EXPORT}}"],
+        "contenu": "En fin de contrat, l'Éditeur/Intégrateur assure la restitution intégrale des données dans un format {{FORMAT_EXPORT}} documenté et exploitable. Il maintient le niveau de service contractuel jusqu'à la fin de la période de transition définie."
+      }
+    ]
+  }
+}
