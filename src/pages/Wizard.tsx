@@ -6,7 +6,7 @@ import { generateDocx } from '../utils/exportWord';
 import {
   Download, Upload, CheckCircle2, AlertCircle, ChevronRight,
   ChevronDown, ChevronLeft, FileText, LayoutList, Lock, Unlock,
-  Plus, Trash2, Pencil, Eye, RotateCcw, X,
+  Plus, Trash2, Pencil, Eye, RotateCcw, X, Undo2,
 } from 'lucide-react';
 
 // ---------------------------------------------------------------------------
@@ -266,6 +266,17 @@ export default function Wizard() {
   const [editedHtml, setEditedHtml] = useState<string | null>(null);
   const [manuallyExcluded, setManuallyExcluded] = useState<Set<string>>(new Set());
   const previewBodyRef = useRef<HTMLDivElement>(null);
+
+  // ── Historique des modifications (undo, max 20 entrées) ──────────────────
+  type HistoryEntry = {
+    variables: typeof variables;
+    manuallyExcluded: Set<string>;
+    editedHtml: string | null;
+  };
+  const [undoStack, setUndoStack] = useState<HistoryEntry[]>([]);
+  const pendingTimerRef  = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingSnapRef   = useRef<HistoryEntry | null>(null);
+  const undoFnRef        = useRef<() => void>(() => {});
 
   // Noms des variables considérées comme "données CLIENT" (pré-renseignées)
   const CLIENT_VAR_KEYS = new Set([
@@ -694,13 +705,90 @@ export default function Wizard() {
   };
 
   // ---------------------------------------------------------------------------
+  // Undo helpers
+  // ---------------------------------------------------------------------------
+
+  const captureSnap = (): HistoryEntry => ({
+    variables: { ...variables },
+    manuallyExcluded: new Set(manuallyExcluded),
+    editedHtml,
+  });
+
+  // Pour les saisies texte : on snapshote AVANT la première frappe du groupe,
+  // puis on commit 700 ms après la dernière touche.
+  const scheduleHistoryPush = () => {
+    if (!pendingTimerRef.current && !pendingSnapRef.current) {
+      pendingSnapRef.current = captureSnap();
+    }
+    if (pendingTimerRef.current) clearTimeout(pendingTimerRef.current);
+    pendingTimerRef.current = setTimeout(() => {
+      if (pendingSnapRef.current) {
+        setUndoStack((prev) => [...prev.slice(-(20 - 1)), pendingSnapRef.current!]);
+        pendingSnapRef.current = null;
+      }
+      pendingTimerRef.current = null;
+    }, 700);
+  };
+
+  // Pour les changements discrets (select, checkbox, suppression, validation édition).
+  const pushHistoryNow = () => {
+    if (pendingTimerRef.current) {
+      clearTimeout(pendingTimerRef.current);
+      pendingTimerRef.current = null;
+    }
+    const snap = pendingSnapRef.current ?? captureSnap();
+    pendingSnapRef.current = null;
+    setUndoStack((prev) => [...prev.slice(-(20 - 1)), snap]);
+  };
+
+  const undo = () => {
+    if (pendingTimerRef.current) { clearTimeout(pendingTimerRef.current); pendingTimerRef.current = null; }
+    pendingSnapRef.current = null;
+    setUndoStack((prev) => {
+      if (prev.length === 0) return prev;
+      const entry = prev[prev.length - 1];
+      // Batch les setState pour éviter des renders intermédiaires
+      setTimeout(() => {
+        setVariables(entry.variables);
+        setManuallyExcluded(entry.manuallyExcluded);
+        setEditedHtml(entry.editedHtml);
+        setIsEditMode(false);
+      }, 0);
+      return prev.slice(0, -1);
+    });
+  };
+
+  // Toujours pointer vers la dernière version de undo (évite le problème de closure périmée).
+  undoFnRef.current = undo;
+
+  // Raccourci Ctrl+Z / Cmd+Z — câblé une seule fois au montage.
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'z' && !e.shiftKey) {
+        const active = document.activeElement;
+        // Laisser le comportement natif dans un input/textarea en dehors du preview
+        if (active && (active as HTMLElement).closest('[contenteditable="true"]')) return;
+        if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) return;
+        e.preventDefault();
+        undoFnRef.current();
+      }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
+
+  // ---------------------------------------------------------------------------
   // Render helpers
   // ---------------------------------------------------------------------------
 
   const rootIncluded = includedArticles.filter((a) => !a.parentId);
   const currentStepId = stepIds[currentStepIdx] ?? 'qualification';
 
-  const setVar = (key: string, val: any) => setVariables((prev) => ({ ...prev, [key]: val }));
+  const SELECT_KEYS = new Set(['externalHosting', 'hasSensitiveData', 'customDevelopment', 'TACITE_RECONDUCTION']);
+  const setVar = (key: string, val: any) => {
+    if (SELECT_KEYS.has(key)) pushHistoryNow(); else scheduleHistoryPush();
+    setVariables((prev) => ({ ...prev, [key]: val }));
+  };
 
   function renderVarField(v: string) {
     const type = getInputType(v);
@@ -777,6 +865,7 @@ export default function Wizard() {
     ];
 
     const toggleType = (id: string) => {
+      pushHistoryNow();
       setVariables((prev) => {
         const types = Array.isArray(prev.ProjectType) ? prev.ProjectType : [prev.ProjectType];
         return { ...prev, ProjectType: types.includes(id) ? types.filter((t) => t !== id) : [...types, id] };
@@ -1284,6 +1373,16 @@ export default function Wizard() {
             </span>
           </div>
           <div className="flex-1" />
+          {undoStack.length > 0 && !isEditMode && (
+            <button
+              onClick={undo}
+              title={`Annuler (${undoStack.length} / 20 modification${undoStack.length > 1 ? 's' : ''} — Ctrl+Z)`}
+              className="flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded-lg border border-border-dark text-text-dim hover:border-accent/40 hover:text-text-bright transition-all"
+            >
+              <Undo2 className="w-3.5 h-3.5" />
+              <span className="tabular-nums">{undoStack.length}</span>
+            </button>
+          )}
           {(editedHtml || manuallyExcluded.size > 0) && !isEditMode && (
             <button
               onClick={() => { setEditedHtml(null); setManuallyExcluded(new Set()); setIsEditMode(false); }}
@@ -1297,7 +1396,10 @@ export default function Wizard() {
           {isEditMode ? (
             <button
               onClick={() => {
-                if (previewBodyRef.current) setEditedHtml(previewBodyRef.current.innerHTML);
+                if (previewBodyRef.current) {
+                  pushHistoryNow();
+                  setEditedHtml(previewBodyRef.current.innerHTML);
+                }
                 setIsEditMode(false);
               }}
               className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-[#238636]/60 bg-[#238636]/10 text-[#4ade80] transition-all"
@@ -1366,6 +1468,7 @@ export default function Wizard() {
                                 title="Supprimer cette clause"
                                 onClick={(e: React.MouseEvent) => {
                                   e.stopPropagation();
+                                  pushHistoryNow();
                                   setManuallyExcluded((prev: Set<string>) => new Set([...prev, art.id]));
                                   setEditedHtml(null);
                                 }}
