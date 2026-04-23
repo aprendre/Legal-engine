@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import defaultCatalog from '../../contrat-global-complet.json';
-import defDictionary from '../../definitions-dictionary.json';
 import { Article, Section } from '../types';
 import { generateDocx } from '../utils/exportWord';
 import {
@@ -257,6 +255,7 @@ export default function Wizard() {
     customDevelopment: 'NON',
   });
 
+  const [definitions, setDefinitions] = useState<any[]>([]);
   const [uploadedTemplate, setUploadedTemplate] = useState<string | null>(null);
   const [currentStepIdx, setCurrentStepIdx] = useState(0);
   const [showChecklist, setShowChecklist] = useState(false);
@@ -270,45 +269,56 @@ export default function Wizard() {
     'REPRESENTANT_CLIENT_2', 'QUALITE_REPRESENTANT_CLIENT_2',
   ]);
 
-  // Load catalog
+  // Load catalog + definitions from API
   useEffect(() => {
-    const rawArticles = defaultCatalog.catalogue_contrat_it.articles as any[];
-    const sectionNames = [...new Set(rawArticles.map((a) => a.categorie))] as string[];
-    setSections(
-      sectionNames.map((name, i) => ({
-        id: name, title: name, order: i,
-        createdAt: Date.now(), updatedAt: Date.now(),
-      }))
-    );
-    const flat: Article[] = [];
-    rawArticles.forEach((a, i) => {
-      flat.push({
-        id: a.id, title: a.titre, content: a.contenu,
-        sectionId: a.categorie, order: i,
-        ruleType: a.condition_generation === 'TOUJOURS_INCLURE' ? 'ALWAYS_INCLUDE' : 'CONDITIONAL',
-        condition_generation: a.condition_generation,
-        variables_requises: a.variables,
-        parentId: null, depth: 0,
-        createdAt: Date.now(), updatedAt: Date.now(),
-      });
-      if (Array.isArray(a.sous_articles)) {
-        a.sous_articles.forEach((sa: any, si: number) => {
-          flat.push({
-            id: sa.id || `${a.id}_${si}`,
-            title: sa.titre || sa.title || '',
-            content: sa.contenu || sa.content || '',
-            sectionId: a.categorie, order: si,
-            ruleType: !sa.condition_generation || sa.condition_generation === 'TOUJOURS_INCLURE'
-              ? 'ALWAYS_INCLUDE' : 'CONDITIONAL',
-            condition_generation: sa.condition_generation || 'TOUJOURS_INCLURE',
-            variables_requises: sa.variables || [],
-            parentId: a.id, depth: 1,
-            createdAt: Date.now(), updatedAt: Date.now(),
-          });
+    function parseArticles(rawArticles: any[]) {
+      const sectionNames = [...new Set(rawArticles.map((a) => a.categorie))] as string[];
+      setSections(
+        sectionNames.map((name, i) => ({
+          id: name, title: name, order: i,
+          createdAt: Date.now(), updatedAt: Date.now(),
+        }))
+      );
+      const flat: Article[] = [];
+      rawArticles.forEach((a, i) => {
+        flat.push({
+          id: a.id, title: a.titre, content: a.contenu ?? '',
+          sectionId: a.categorie, order: i,
+          ruleType: a.condition_generation === 'TOUJOURS_INCLURE' ? 'ALWAYS_INCLUDE' : 'CONDITIONAL',
+          condition_generation: a.condition_generation,
+          variables_requises: a.variables,
+          parentId: null, depth: 0,
+          createdAt: Date.now(), updatedAt: Date.now(),
         });
-      }
-    });
-    setArticles(flat);
+        if (Array.isArray(a.sous_articles)) {
+          a.sous_articles.forEach((sa: any, si: number) => {
+            flat.push({
+              id: sa.id || `${a.id}_${si}`,
+              title: sa.titre || sa.title || '',
+              content: sa.contenu || sa.content || '',
+              sectionId: a.categorie, order: si,
+              ruleType: !sa.condition_generation || sa.condition_generation === 'TOUJOURS_INCLURE'
+                ? 'ALWAYS_INCLUDE' : 'CONDITIONAL',
+              condition_generation: sa.condition_generation || 'TOUJOURS_INCLURE',
+              variables_requises: sa.variables || [],
+              parentId: a.id, depth: 1,
+              createdAt: Date.now(), updatedAt: Date.now(),
+            });
+          });
+        }
+      });
+      setArticles(flat);
+    }
+
+    fetch('/api/articles')
+      .then((r) => r.json())
+      .then((data) => parseArticles(data.catalogue_contrat_it.articles))
+      .catch((err) => console.error('Failed to load articles:', err));
+
+    fetch('/api/definitions')
+      .then((r) => r.json())
+      .then((data) => setDefinitions(data.dictionnaire_definitions.definitions))
+      .catch((err) => console.error('Failed to load definitions:', err));
   }, []);
 
   const handleTemplateUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -463,7 +473,7 @@ export default function Wizard() {
 
   // Détecte les termes du dictionnaire présents dans le corpus des articles inclus
   const buildDynamicDefinitions = (articleTexts: string[]): string => {
-    const allDefs = (defDictionary as any).dictionnaire_definitions.definitions as any[];
+    const allDefs = definitions;
     const corpus = articleTexts.join(' ');
     const matched: any[] = [];
 
