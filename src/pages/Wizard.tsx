@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import defaultCatalog from '../../contrat-global-complet.json';
 import defDictionary from '../../definitions-dictionary.json';
 import { Article, Section } from '../types';
@@ -6,7 +6,7 @@ import { generateDocx } from '../utils/exportWord';
 import {
   Download, Upload, CheckCircle2, AlertCircle, ChevronRight,
   ChevronDown, ChevronLeft, FileText, LayoutList, Lock, Unlock,
-  Plus, Trash2, Pencil, Eye, RotateCcw,
+  Plus, Trash2, Pencil, Eye, RotateCcw, X,
 } from 'lucide-react';
 
 // ---------------------------------------------------------------------------
@@ -264,6 +264,7 @@ export default function Wizard() {
   const [additionalAnnexes, setAdditionalAnnexes] = useState<string[]>([]);
   const [isEditMode, setIsEditMode] = useState(false);
   const [editedHtml, setEditedHtml] = useState<string | null>(null);
+  const [manuallyExcluded, setManuallyExcluded] = useState<Set<string>>(new Set());
   const previewBodyRef = useRef<HTMLDivElement>(null);
 
   // Noms des variables considérées comme "données CLIENT" (pré-renseignées)
@@ -397,8 +398,8 @@ export default function Wizard() {
         }
       }
     }
-    return result;
-  }, [articles, variables]);
+    return result.filter((a) => !manuallyExcluded.has(a.id));
+  }, [articles, variables, manuallyExcluded]);
 
   const requiredVariables = useMemo(() => {
     const vars = new Set<string>();
@@ -627,7 +628,7 @@ export default function Wizard() {
           rawContent = rawContent + '\n\n' + extra;
         }
         const cleanContent = injectVars(rawContent);
-        structSection.articles.push({ title: numberedTitle, content: cleanContent, depth });
+        structSection.articles.push({ id: art.id, title: numberedTitle, content: cleanContent, depth });
       }
       structuredData.push(structSection);
     }
@@ -654,16 +655,39 @@ export default function Wizard() {
   const compiledResult = useMemo(() => compileContractText(), [includedArticles, variables, sections, additionalAnnexes]);
 
   const handleExport = () => {
-    const stripSpans = (html: string) => html.replace(/<span[^>]*>([\s\S]*?)<\/span>/g, '$1');
-    const bodySections = compiledResult.filter((s: any) => s.type !== 'header' && s.type !== 'signature');
+    const stripMarkup = (html: string) =>
+      html.replace(/<span[^>]*>([\s\S]*?)<\/span>/g, '$1').replace(/<[^>]+>/g, '');
+
+    // Si des éditions manuelles existent, extraire le texte depuis le DOM
+    let exportStructure = compiledResult;
+    if (editedHtml) {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = editedHtml;
+      exportStructure = compiledResult.map((section: any) => {
+        if (section.type === 'header' || section.type === 'signature') return section;
+        return {
+          ...section,
+          articles: section.articles.map((art: any) => {
+            const artEl = tmp.querySelector(`[data-art-id="${art.id}"]`);
+            if (!artEl) return art;
+            const bodyEl = artEl.querySelector('.art-body');
+            const newContent = bodyEl ? (bodyEl.innerHTML) : art.content;
+            return { ...art, content: newContent };
+          }),
+        };
+      });
+    }
+
     generateDocx(
       {
         ...variables,
-        CONTRAT_BODY: bodySections.flatMap((s: any) => [
-          `\n\n--- ${s.title} ---\n`,
-          ...s.articles.map((a: any) => `${a.title ? a.title + '\n' : ''}${stripSpans(a.content)}`),
-        ]).join('\n'),
-        STRUCTURE: compiledResult,
+        CONTRAT_BODY: exportStructure
+          .filter((s: any) => s.type !== 'header' && s.type !== 'signature')
+          .flatMap((s: any) => [
+            `\n\n--- ${s.title} ---\n`,
+            ...s.articles.map((a: any) => `${a.title ? a.title + '\n' : ''}${stripMarkup(a.content)}`),
+          ]).join('\n'),
+        STRUCTURE: exportStructure,
       },
       uploadedTemplate || undefined
     );
@@ -1260,10 +1284,10 @@ export default function Wizard() {
             </span>
           </div>
           <div className="flex-1" />
-          {editedHtml && !isEditMode && (
+          {(editedHtml || manuallyExcluded.size > 0) && !isEditMode && (
             <button
-              onClick={() => { setEditedHtml(null); }}
-              title="Annuler les modifications manuelles"
+              onClick={() => { setEditedHtml(null); setManuallyExcluded(new Set()); setIsEditMode(false); }}
+              title="Remettre l'aperçu à l'état initial"
               className="flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded-lg border border-[#e74c3c]/40 text-[#e74c3c] hover:bg-[#e74c3c]/10 transition-all"
             >
               <RotateCcw className="w-3 h-3" />
@@ -1324,18 +1348,41 @@ export default function Wizard() {
                       const children = includedArticles.filter((a) => a.parentId === art.id);
                       return (
                         <li key={art.id}>
-                          <div className="flex gap-2 items-center py-1 px-2 rounded bg-bg-input border border-border-dark/60">
+                          <div
+                            className="flex gap-2 items-center py-1 px-2 rounded bg-bg-input border border-border-dark/60 cursor-pointer hover:border-accent/40 group"
+                            onClick={() => {
+                              const el = document.getElementById(`article-${art.id}`);
+                              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }}
+                          >
                             <span className={`w-5 h-5 rounded text-[9px] font-bold flex items-center justify-center flex-shrink-0 ${
                               art.ruleType === 'ALWAYS_INCLUDE' ? 'bg-[#238636] text-white' : 'bg-accent/20 text-accent border border-accent/40'
                             }`}>
                               {art.ruleType === 'ALWAYS_INCLUDE' ? 'TC' : 'C'}
                             </span>
-                            <span className="text-[11px] text-text-bright font-medium truncate">{stripNumber(art.title)}</span>
+                            <span className="text-[11px] text-text-bright font-medium truncate flex-1">{stripNumber(art.title)}</span>
+                            {art.ruleType !== 'ALWAYS_INCLUDE' && (
+                              <button
+                                title="Supprimer cette clause"
+                                onClick={(e: React.MouseEvent) => {
+                                  e.stopPropagation();
+                                  setManuallyExcluded((prev: Set<string>) => new Set([...prev, art.id]));
+                                  setEditedHtml(null);
+                                }}
+                                className="opacity-0 group-hover:opacity-100 w-4 h-4 flex items-center justify-center rounded hover:bg-[#e74c3c]/20 text-[#e74c3c] transition-all flex-shrink-0"
+                              >
+                                <X className="w-2.5 h-2.5" />
+                              </button>
+                            )}
                           </div>
                           {children.length > 0 && (
                             <ul className="ml-5 mt-0.5 space-y-0.5">
                               {children.map((ch) => (
-                                <li key={ch.id} className="flex items-center gap-1.5 py-0.5 px-2">
+                                <li key={ch.id} className="flex items-center gap-1.5 py-0.5 px-2 cursor-pointer hover:bg-bg-input rounded"
+                                  onClick={() => {
+                                    const el = document.getElementById(`article-${ch.id}`);
+                                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                  }}>
                                   <ChevronRight className="w-3 h-3 text-text-dim flex-shrink-0" />
                                   <span className="text-[10px] text-text-dim truncate">{stripNumber(ch.title)}</span>
                                 </li>
@@ -1383,7 +1430,7 @@ export default function Wizard() {
                 </div>
               )}
 
-              {/* Contract body — edit mode: single contentEditable div; normal: structured JSX */}
+              {/* Contract body — edit mode: contentEditable; saved edits: static HTML; normal: structured JSX */}
               {isEditMode ? (
                 <div
                   ref={previewBodyRef}
@@ -1391,6 +1438,12 @@ export default function Wizard() {
                   suppressContentEditableWarning
                   className="space-y-2 outline-none"
                   dangerouslySetInnerHTML={{ __html: editedHtml ?? '' }}
+                />
+              ) : editedHtml ? (
+                <div
+                  ref={previewBodyRef}
+                  className="space-y-2"
+                  dangerouslySetInnerHTML={{ __html: editedHtml }}
                 />
               ) : (
               <div ref={previewBodyRef} className="space-y-2">
@@ -1492,7 +1545,7 @@ export default function Wizard() {
                     {section.articles.map((art: any, i: number) => {
                       const depth = art.depth ?? 0;
                       return (
-                        <div key={i} className={depth === 1 ? 'ml-5' : depth === 2 ? 'ml-10' : ''}>
+                        <div key={i} id={art.id ? `article-${art.id}` : undefined} data-art-id={art.id} className={depth === 1 ? 'ml-5' : depth === 2 ? 'ml-10' : ''}>
                           {art.title && (
                             <p className={`font-sans font-bold mb-0.5 ${
                               depth === 0 ? 'text-[10.5px] text-[#2c3e50] mt-4' :
@@ -1503,7 +1556,7 @@ export default function Wizard() {
                             </p>
                           )}
                           <span
-                            className="whitespace-pre-wrap block text-[9.5px] leading-[1.55] text-[#333] text-justify"
+                            className="art-body whitespace-pre-wrap block text-[9.5px] leading-[1.55] text-[#333] text-justify"
                             dangerouslySetInnerHTML={{ __html: art.content }}
                           />
                         </div>
