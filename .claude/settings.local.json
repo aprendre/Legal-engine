@@ -5,7 +5,9 @@
       "Bash(python3 -c ' *)",
       "Bash(npm run *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\)\\); console.log\\('projectId:', d.projectId\\); console.log\\('authDomain:', d.authDomain\\); console.log\\('firestoreDatabaseId:', d.firestoreDatabaseId || '\\(default\\)'\\);\")",
+      "Bash(node add-conseil.mjs)"
     ]
   }
 }

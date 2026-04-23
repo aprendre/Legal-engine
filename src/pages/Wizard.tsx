@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import defaultCatalog from '../../contrat-global-complet.json';
 import defDictionary from '../../definitions-dictionary.json';
 import { Article, Section } from '../types';
@@ -6,7 +6,7 @@ import { generateDocx } from '../utils/exportWord';
 import {
   Download, Upload, CheckCircle2, AlertCircle, ChevronRight,
   ChevronDown, ChevronLeft, FileText, LayoutList, Lock, Unlock,
-  Plus, Trash2,
+  Plus, Trash2, Pencil, Eye, RotateCcw,
 } from 'lucide-react';
 
 // ---------------------------------------------------------------------------
@@ -251,7 +251,7 @@ export default function Wizard() {
     DUREE_CONTRAT: '12 mois',
     TACITE_RECONDUCTION: 'NON',
     DELAI_PREAVIS_NON_RENOUVELLEMENT: '3',
-    ProjectType: ['Licence_OnPrem'] as string[],
+    ProjectType: ['Log_OnPrem'] as string[],
     hasSensitiveData: 'NON',
     externalHosting: 'NON',
     customDevelopment: 'NON',
@@ -262,6 +262,9 @@ export default function Wizard() {
   const [showChecklist, setShowChecklist] = useState(false);
   const [showClientVars, setShowClientVars] = useState(false);
   const [additionalAnnexes, setAdditionalAnnexes] = useState<string[]>([]);
+  const [isEditMode, setIsEditMode] = useState(false);
+  const [editedHtml, setEditedHtml] = useState<string | null>(null);
+  const previewBodyRef = useRef<HTMLDivElement>(null);
 
   // Noms des variables considérées comme "données CLIENT" (pré-renseignées)
   const CLIENT_VAR_KEYS = new Set([
@@ -330,14 +333,16 @@ export default function Wizard() {
       // Support virgule → OR logique : TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')
       const requiredList = typeMatch[1].split(',').map(s => s.trim().toLowerCase());
       const actual = Array.isArray(variables.ProjectType) ? variables.ProjectType : [variables.ProjectType];
-      const hasLogiciel    = actual.includes('Licence_OnPrem');
-      const hasSaaS        = actual.includes('SaaS') || variables.externalHosting === 'OUI';
-      const hasMateriel    = actual.includes('Materiel');
-      const hasMiseEnOeuvre = actual.includes('Mise_en_Oeuvre') || actual.includes('Developpement') || actual.includes('Migration');
-      const hasMaintenance = actual.includes('Maintenance_TMA');
-      const hasRegie       = actual.includes('Régie');
-      const hasForfait     = actual.includes('Forfait');
-      const hasServices    = hasRegie || hasForfait;
+      const inc = (id: string) => actual.includes(id);
+      const hasLogiciel     = inc('Log_OnPrem') || inc('Licence_OnPrem');
+      const hasSaaS         = inc('Log_SaaS') || inc('SaaS') || variables.externalHosting === 'OUI';
+      const hasMateriel     = inc('Mat_Achat') || inc('Mat_Location') || inc('Mat_Install') || inc('Mat_Maintenance') || inc('Materiel');
+      const hasMiseEnOeuvre = inc('Prest_MOE') || inc('Mat_Install') || inc('Log_Dev') || inc('Mise_en_Oeuvre') || inc('Developpement') || inc('Migration');
+      const hasMaintenance  = inc('Mat_Maintenance') || inc('Maintenance_TMA');
+      const hasRegie        = inc('Prest_Regie') || inc('Régie');
+      const hasForfait      = inc('Prest_Forfait') || inc('Forfait');
+      const hasConseil      = inc('Prest_Conseil');
+      const hasServices     = hasRegie || hasForfait || hasConseil;
       const resolveType = (r: string): boolean => {
         if (r === 'logiciel') return hasLogiciel;
         if (r === 'matériel' || r === 'materiel') return hasMateriel;
@@ -347,6 +352,7 @@ export default function Wizard() {
         if (r === 'services') return hasServices;
         if (r === 'régie' || r === 'regie') return hasRegie;
         if (r === 'forfait') return hasForfait;
+        if (r === 'conseil') return hasConseil;
         return false;
       };
       return requiredList.some(resolveType);
@@ -440,17 +446,26 @@ export default function Wizard() {
   }, [currentStepIdx, stepIds]);
 
   // ── Contract compilation ──
-  // Mapping des typologies vers des libellés contractuels courts
   const TYPE_LABELS: Record<string, string> = {
-    Licence_OnPrem: 'Licence Logiciel',
-    SaaS: 'Solution SaaS',
-    Materiel: 'Acquisition Matériel',
-    Mise_en_Oeuvre: 'Mise en Œuvre',
-    Developpement: 'Développement Spécifique',
-    Migration: 'Migration',
-    Maintenance_TMA: 'Maintenance & TMA',
-    Régie: 'Régie',
-    Forfait: 'Forfait',
+    // Matériel
+    Mat_Achat:       'Acquisition Matériel',
+    Mat_Location:    'Location Matériel',
+    Mat_Install:     'Mise en Œuvre Matériel',
+    Mat_Maintenance: 'Maintenance Matériel',
+    // Logiciel
+    Log_OnPrem: 'Licence On-Premise',
+    Log_SaaS:   'Abonnement SaaS',
+    Log_Dev:    'Développement Spécifique',
+    // Prestation
+    Prest_MOE:     'Intégration / Mise en Œuvre',
+    Prest_Regie:   'Régie',
+    Prest_Forfait: 'Forfait',
+    Prest_Conseil: 'Mission de Conseil',
+    // Rétro-compat
+    Licence_OnPrem: 'Licence Logiciel', SaaS: 'Solution SaaS',
+    Materiel: 'Acquisition Matériel', Mise_en_Oeuvre: 'Mise en Œuvre',
+    Developpement: 'Développement Spécifique', Migration: 'Migration',
+    Maintenance_TMA: 'Maintenance & TMA', Régie: 'Régie', Forfait: 'Forfait',
   };
 
   const buildContractTitle = (): string => {
@@ -555,13 +570,15 @@ export default function Wizard() {
         // ART_OBJET : génération dynamique des volets selon la typologie projet
         if (art.id === 'ART_OBJET') {
           const actual = Array.isArray(variables.ProjectType) ? variables.ProjectType : [variables.ProjectType];
-          const hasMateriel    = actual.includes('Materiel');
-          const hasLogiciel    = actual.includes('Licence_OnPrem');
-          const hasSaaS        = actual.includes('SaaS') || variables.externalHosting === 'OUI';
-          const hasMoeuvre     = actual.includes('Mise_en_Oeuvre') || actual.includes('Developpement') || actual.includes('Migration');
-          const hasMaintenance = actual.includes('Maintenance_TMA');
-          const hasRegie       = actual.includes('Régie');
-          const hasForfait     = actual.includes('Forfait');
+          const inc2 = (id: string) => actual.includes(id);
+          const hasMateriel    = inc2('Mat_Achat') || inc2('Mat_Location') || inc2('Mat_Install') || inc2('Mat_Maintenance') || inc2('Materiel');
+          const hasLogiciel    = inc2('Log_OnPrem') || inc2('Licence_OnPrem');
+          const hasSaaS        = inc2('Log_SaaS') || inc2('SaaS') || variables.externalHosting === 'OUI';
+          const hasMoeuvre     = inc2('Prest_MOE') || inc2('Mat_Install') || inc2('Log_Dev') || inc2('Mise_en_Oeuvre') || inc2('Developpement') || inc2('Migration');
+          const hasMaintenance = inc2('Mat_Maintenance') || inc2('Maintenance_TMA');
+          const hasRegie       = inc2('Prest_Regie') || inc2('Régie');
+          const hasForfait     = inc2('Prest_Forfait') || inc2('Forfait');
+          const hasConseil2    = inc2('Prest_Conseil');
           const qualC  = variables.QUALITE_CLIENT?.trim() || 'LE CLIENT';
           const roleP  = variables.ROLE_PRESTATAIRE?.trim() || 'LE PRESTATAIRE';
           const objet  = variables.NOM_OBJET_CONTRAT?.trim() || '{{NOM_OBJET_CONTRAT}}';
@@ -574,7 +591,8 @@ export default function Wizard() {
           if (hasMoeuvre) volets.push(`${roman[idx++]} les prestations de mise en œuvre, d'intégration et de déploiement de la solution, conformément aux spécifications de l'Annexe 1`);
           if (hasMaintenance) volets.push(`${roman[idx++]} les prestations de maintenance corrective et évolutive (TMA) de la solution, selon les engagements de service de l'Annexe 1`);
           if (hasRegie)   volets.push(`${roman[idx++]} des prestations de services intellectuels en régie selon les modalités de l'Annexe 1`);
-          if (hasForfait) volets.push(`${roman[idx++]} des prestations de services au forfait selon les livrables définis à l'Annexe 1`);
+          if (hasForfait)   volets.push(`${roman[idx++]} des prestations de services au forfait selon les livrables définis à l'Annexe 1`);
+          if (hasConseil2)  volets.push(`${roman[idx++]} une mission de conseil portant sur ${objet}, selon les modalités de l'Annexe 1`);
           const violetsList = volets.length > 1
             ? `\n\nLe présent Contrat couvre les volets suivants :\n${volets.join(' ;\n')}.\n\nLes détails techniques, fonctionnels et financiers de chaque volet sont précisés dans l'Annexe 1 — Description du Service et l'Annexe 2 — Modalités Financières, parties intégrantes du présent Contrat.`
             : volets.length === 1
@@ -699,16 +717,39 @@ export default function Wizard() {
   // ---------------------------------------------------------------------------
 
   function renderQualificationStep() {
-    const PROJECT_TYPES = [
-      { id: 'Licence_OnPrem', label: 'Licence On-Premise', category: 'Logiciel' },
-      { id: 'SaaS', label: 'Solution SaaS', category: 'Logiciel' },
-      { id: 'Materiel', label: 'Achat de Matériel', category: 'Infrastructure' },
-      { id: 'Mise_en_Oeuvre', label: 'Intégration / Mise en Œuvre', category: 'Prestation' },
-      { id: 'Developpement', label: 'Développement Spécifique', category: 'Prestation' },
-      { id: 'Migration', label: 'Projet de Migration', category: 'Prestation' },
-      { id: 'Maintenance_TMA', label: 'Maintenance & TMA', category: 'Services' },
-      { id: 'Régie', label: 'Prestation en Régie', category: 'Services' },
-      { id: 'Forfait', label: 'Prestation au Forfait', category: 'Services' },
+    const PROJECT_CATEGORIES = [
+      {
+        id: 'materiel',
+        label: 'Matériel',
+        color: '#3b82f6',
+        types: [
+          { id: 'Mat_Achat',        label: 'Acquisition' },
+          { id: 'Mat_Location',     label: 'Location' },
+          { id: 'Mat_Install',      label: 'Mise en œuvre' },
+          { id: 'Mat_Maintenance',  label: 'Maintenance' },
+        ],
+      },
+      {
+        id: 'logiciel',
+        label: 'Logiciel',
+        color: '#8b5cf6',
+        types: [
+          { id: 'Log_OnPrem',  label: 'Acquisition On-Premise' },
+          { id: 'Log_SaaS',    label: 'Abonnement SaaS' },
+          { id: 'Log_Dev',     label: 'Développement Spécifique' },
+        ],
+      },
+      {
+        id: 'prestation',
+        label: 'Prestation',
+        color: '#10b981',
+        types: [
+          { id: 'Prest_MOE',      label: 'Intégration / Mise en œuvre' },
+          { id: 'Prest_Regie',    label: 'Régie' },
+          { id: 'Prest_Forfait',  label: 'Forfait' },
+          { id: 'Prest_Conseil',  label: 'Mission de Conseil' },
+        ],
+      },
     ];
 
     const toggleType = (id: string) => {
@@ -718,6 +759,8 @@ export default function Wizard() {
       });
     };
 
+    const currentTypes = Array.isArray(variables.ProjectType) ? variables.ProjectType : [variables.ProjectType];
+
     const SELECT_CLASS = 'w-full px-3 py-2 border border-border-dark rounded-lg bg-bg-input text-text-bright text-sm focus:outline-none focus:border-accent transition-colors';
 
     return (
@@ -726,33 +769,45 @@ export default function Wizard() {
           <p className="text-[10px] font-bold text-accent/80 uppercase tracking-widest mb-3">
             Typologies de prestations <span className="text-text-dim font-normal normal-case">(sélection multiple)</span>
           </p>
-          <div className="grid grid-cols-2 gap-2">
-            {PROJECT_TYPES.map((pt) => {
-              const checked = Array.isArray(variables.ProjectType)
-                ? variables.ProjectType.includes(pt.id)
-                : variables.ProjectType === pt.id;
+          <div className="space-y-3">
+            {PROJECT_CATEGORIES.map((cat) => {
+              const anyChecked = cat.types.some((t) => currentTypes.includes(t.id));
               return (
-                <label
-                  key={pt.id}
-                  className={`flex items-start gap-2.5 p-3 rounded-lg border cursor-pointer transition-all ${
-                    checked ? 'bg-accent/10 border-accent shadow-sm' : 'bg-bg-input border-border-dark hover:border-accent/40'
-                  }`}
-                >
-                  <div className={`w-4 h-4 mt-0.5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-all ${
-                    checked ? 'bg-accent border-accent' : 'border-border-dark'
-                  }`}>
-                    {checked && (
-                      <svg className="w-2.5 h-2.5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    )}
+                <div key={cat.id} className={`rounded-lg border transition-all ${anyChecked ? 'border-[var(--cat-color)]/40 bg-[var(--cat-color)]/5' : 'border-border-dark bg-bg-input'}`}
+                  style={{ '--cat-color': cat.color } as React.CSSProperties}>
+                  <div className="px-3 py-2 border-b border-inherit">
+                    <span className="text-[10px] font-bold uppercase tracking-widest" style={{ color: cat.color }}>
+                      {cat.label}
+                    </span>
                   </div>
-                  <input type="checkbox" className="sr-only" checked={checked} onChange={() => toggleType(pt.id)} />
-                  <div>
-                    <p className={`text-xs font-semibold leading-tight ${checked ? 'text-text-bright' : 'text-text-bright/80'}`}>{pt.label}</p>
-                    <p className="text-[9px] text-text-dim mt-0.5">{pt.category}</p>
+                  <div className="grid grid-cols-2 gap-1 p-2">
+                    {cat.types.map((pt) => {
+                      const checked = currentTypes.includes(pt.id);
+                      return (
+                        <label
+                          key={pt.id}
+                          className={`flex items-center gap-2 px-2.5 py-2 rounded-md border cursor-pointer transition-all ${
+                            checked ? 'bg-accent/10 border-accent' : 'bg-bg-main border-border-dark/50 hover:border-accent/40'
+                          }`}
+                        >
+                          <div className={`w-3.5 h-3.5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-all ${
+                            checked ? 'bg-accent border-accent' : 'border-border-dark'
+                          }`}>
+                            {checked && (
+                              <svg className="w-2 h-2 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                              </svg>
+                            )}
+                          </div>
+                          <input type="checkbox" className="sr-only" checked={checked} onChange={() => toggleType(pt.id)} />
+                          <span className={`text-[11px] font-medium leading-tight ${checked ? 'text-text-bright' : 'text-text-bright/70'}`}>
+                            {pt.label}
+                          </span>
+                        </label>
+                      );
+                    })}
                   </div>
-                </label>
+                </div>
               );
             })}
           </div>
@@ -1205,6 +1260,42 @@ export default function Wizard() {
             </span>
           </div>
           <div className="flex-1" />
+          {editedHtml && !isEditMode && (
+            <button
+              onClick={() => { setEditedHtml(null); }}
+              title="Annuler les modifications manuelles"
+              className="flex items-center gap-1.5 text-xs px-2.5 py-1.5 rounded-lg border border-[#e74c3c]/40 text-[#e74c3c] hover:bg-[#e74c3c]/10 transition-all"
+            >
+              <RotateCcw className="w-3 h-3" />
+              Réinitialiser
+            </button>
+          )}
+          {isEditMode ? (
+            <button
+              onClick={() => {
+                if (previewBodyRef.current) setEditedHtml(previewBodyRef.current.innerHTML);
+                setIsEditMode(false);
+              }}
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-[#238636]/60 bg-[#238636]/10 text-[#4ade80] transition-all"
+            >
+              <Eye className="w-3.5 h-3.5" />
+              Valider
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                if (previewBodyRef.current) setEditedHtml(previewBodyRef.current.innerHTML);
+                setIsEditMode(true);
+              }}
+              disabled={rootIncluded.length === 0}
+              className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-all ${
+                isEditMode ? 'border-accent/50 bg-accent/10 text-accent' : 'border-border-dark text-text-dim hover:border-accent/40 disabled:opacity-30'
+              }`}
+            >
+              <Pencil className="w-3 h-3" />
+              Éditer
+            </button>
+          )}
           <button
             onClick={() => setShowChecklist((v) => !v)}
             className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-all ${
@@ -1270,13 +1361,13 @@ export default function Wizard() {
         <div
           className="flex-1 bg-[#f5f5f0] overflow-y-auto"
           onClick={(e) => {
+            if (isEditMode) return;
             const varName = (e.target as HTMLElement).dataset?.var;
             if (!varName) return;
             const group = categorizeVar(varName);
             const idx = stepIds.indexOf(group);
             if (idx !== -1) {
               goTo(idx);
-              // Focus le champ après le rendu
               setTimeout(() => {
                 const el = document.querySelector<HTMLElement>(`[data-field="${varName}"]`);
                 if (el) { el.focus(); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
@@ -1285,10 +1376,24 @@ export default function Wizard() {
           }}
         >
           {rootIncluded.length > 0 ? (
-            <div className="max-w-[720px] mx-auto my-8 bg-white shadow-xl rounded-sm px-14 py-12 text-[#1A1A1A] font-serif text-[10px] leading-relaxed relative">
+            <div className={`max-w-[720px] mx-auto my-8 bg-white shadow-xl rounded-sm px-14 py-12 text-[#1A1A1A] font-serif text-[10px] leading-relaxed relative ${isEditMode ? 'ring-2 ring-accent/50' : ''}`}>
+              {isEditMode && (
+                <div className="absolute top-3 right-3 text-[9px] font-sans bg-accent text-black px-2 py-0.5 rounded-full font-bold uppercase tracking-wide">
+                  Mode édition
+                </div>
+              )}
 
-              {/* Contract body */}
-              <div className="space-y-2">
+              {/* Contract body — edit mode: single contentEditable div; normal: structured JSX */}
+              {isEditMode ? (
+                <div
+                  ref={previewBodyRef}
+                  contentEditable
+                  suppressContentEditableWarning
+                  className="space-y-2 outline-none"
+                  dangerouslySetInnerHTML={{ __html: editedHtml ?? '' }}
+                />
+              ) : (
+              <div ref={previewBodyRef} className="space-y-2">
                 {compiledResult.map((section: any, sIdx: number) => {
                   // ── Bloc de couverture (titre + parties) ───────────────
                   // ── Bloc signature ─────────────────────────────────────
@@ -1408,6 +1513,7 @@ export default function Wizard() {
                   );
                 })}
               </div>
+              )}
 
               {/* Footer watermark */}
               <div className="absolute bottom-6 right-8 font-sans text-[8px] uppercase tracking-widest text-[#ccc] border border-[#e8e8e8] px-2 py-0.5">

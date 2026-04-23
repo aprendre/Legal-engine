@@ -2085,6 +2085,149 @@
                 ]
             },
             {
+                "id": "ART_C01",
+                "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
+                "titre": "OBJET DE LA MISSION DE CONSEIL",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Conseil')",
+                "ordre_affichage": 600,
+                "variables": [
+                    "{{ROLE_PRESTATAIRE}}",
+                    "{{QUALITE_CLIENT}}",
+                    "{{NOM_OBJET_CONTRAT}}"
+                ],
+                "contenu": "{{ROLE_PRESTATAIRE}} réalise au bénéfice de {{QUALITE_CLIENT}} une mission de conseil portant sur {{NOM_OBJET_CONTRAT}}, telle que définie dans l'Annexe 1 — Description du Service.\n\nLa mission s'inscrit dans le cadre d'une obligation de moyens renforcée : {{ROLE_PRESTATAIRE}} mobilise les compétences, méthodologies et expériences nécessaires pour délivrer des recommandations pertinentes et actionnables, sans pour autant garantir un résultat déterminé sauf stipulation expresse contraire.",
+                "sous_articles": [
+                    {
+                        "id": "ART_C01_SA1",
+                        "titre": "PÉRIMÈTRE ET LIVRABLES",
+                        "contenu": "Le périmètre de la mission, le calendrier d'intervention et la liste des livrables attendus sont précisés dans l'Annexe 1 — Description du Service. Toute extension de périmètre fait l'objet d'un avenant préalable signé des deux Parties.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": []
+                    },
+                    {
+                        "id": "ART_C01_SA2",
+                        "titre": "MODALITÉS D'INTERVENTION",
+                        "contenu": "{{ROLE_PRESTATAIRE}} dispose d'une autonomie organisationnelle dans la conduite de la mission. {{QUALITE_CLIENT}} s'engage à mettre à disposition les informations, accès et interlocuteurs nécessaires au bon déroulement de la mission dans les délais convenus.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": [
+                            "{{ROLE_PRESTATAIRE}}",
+                            "{{QUALITE_CLIENT}}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ART_C02",
+                "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
+                "titre": "DEVOIR DE CONSEIL ET OBLIGATIONS DU CONSULTANT",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Conseil')",
+                "ordre_affichage": 601,
+                "variables": [
+                    "{{ROLE_PRESTATAIRE}}",
+                    "{{QUALITE_CLIENT}}"
+                ],
+                "contenu": "{{ROLE_PRESTATAIRE}} est soumis à un devoir de conseil vis-à-vis de {{QUALITE_CLIENT}} et s'engage à formuler des recommandations objectives, fondées sur les informations disponibles et son expertise sectorielle.",
+                "sous_articles": [
+                    {
+                        "id": "ART_C02_SA1",
+                        "titre": "INDÉPENDANCE ET OBJECTIVITÉ",
+                        "contenu": "{{ROLE_PRESTATAIRE}} déclare ne pas se trouver en situation de conflit d'intérêts lors de l'exécution de la présente mission. Il s'engage à informer sans délai {{QUALITE_CLIENT}} de tout conflit potentiel survenant en cours de mission.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": [
+                            "{{ROLE_PRESTATAIRE}}",
+                            "{{QUALITE_CLIENT}}"
+                        ]
+                    },
+                    {
+                        "id": "ART_C02_SA2",
+                        "titre": "LIMITES DES RECOMMANDATIONS",
+                        "contenu": "Les recommandations de {{ROLE_PRESTATAIRE}} sont fondées sur les informations communiquées par {{QUALITE_CLIENT}} et sur les conditions de marché à la date de leur émission. {{QUALITE_CLIENT}} reste seul responsable des décisions prises sur la base de ces recommandations.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": [
+                            "{{ROLE_PRESTATAIRE}}",
+                            "{{QUALITE_CLIENT}}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ART_C03",
+                "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
+                "titre": "PROPRIÉTÉ DES LIVRABLES DE CONSEIL",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Conseil')",
+                "ordre_affichage": 602,
+                "variables": [
+                    "{{ROLE_PRESTATAIRE}}",
+                    "{{QUALITE_CLIENT}}"
+                ],
+                "contenu": "Les livrables produits spécifiquement pour {{QUALITE_CLIENT}} dans le cadre de la présente mission (rapports, études, présentations, analyses) sont cédés à {{QUALITE_CLIENT}} à compter de leur paiement intégral.",
+                "sous_articles": [
+                    {
+                        "id": "ART_C03_SA1",
+                        "titre": "DROITS RÉSERVÉS DE {{ROLE_PRESTATAIRE}}",
+                        "contenu": "{{ROLE_PRESTATAIRE}} conserve la propriété de ses méthodologies, outils, savoir-faire génériques et des connaissances préexistantes mobilisées dans le cadre de la mission. La cession visée au présent article ne porte pas sur ces éléments.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": [
+                            "{{ROLE_PRESTATAIRE}}"
+                        ]
+                    },
+                    {
+                        "id": "ART_C03_SA2",
+                        "titre": "CONFIDENTIALITÉ DES LIVRABLES",
+                        "contenu": "Les livrables remis à {{QUALITE_CLIENT}} sont strictement confidentiels. {{QUALITE_CLIENT}} s'engage à ne pas les divulguer à des tiers sans l'accord préalable écrit de {{ROLE_PRESTATAIRE}}, sauf à ses filiales, dirigeants et conseils soumis à une obligation de confidentialité équivalente.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": [
+                            "{{QUALITE_CLIENT}}",
+                            "{{ROLE_PRESTATAIRE}}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ART_C04",
+                "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
+                "titre": "HONORAIRES DE CONSEIL",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Conseil')",
+                "ordre_affichage": 603,
+                "variables": [
+                    "{{QUALITE_CLIENT}}",
+                    "{{ROLE_PRESTATAIRE}}",
+                    "{{MONTANT_GLOBAL_HT}}"
+                ],
+                "contenu": "En contrepartie de la réalisation de la mission, {{QUALITE_CLIENT}} verse à {{ROLE_PRESTATAIRE}} les honoraires définis à l'Annexe 2 — Modalités Financières.",
+                "sous_articles": [
+                    {
+                        "id": "ART_C04_SA1",
+                        "titre": "MODALITÉS DE FACTURATION",
+                        "contenu": "La facturation est émise selon l'échéancier lié aux jalons de la mission définis à l'Annexe 2. En cas de prestation en régie, la facturation est mensuelle sur la base des jours réalisés et validés par feuille de présence cosignée.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": []
+                    },
+                    {
+                        "id": "ART_C04_SA2",
+                        "titre": "FRAIS ET DÉBOURS",
+                        "contenu": "Les frais de déplacement, d'hébergement et de restauration engagés par {{ROLE_PRESTATAIRE}} pour les besoins de la mission sont remboursés par {{QUALITE_CLIENT}} sur présentation des justificatifs, dans les limites et conditions définies à l'Annexe 2.",
+                        "condition_generation": "TOUJOURS_INCLURE",
+                        "variables": [
+                            "{{ROLE_PRESTATAIRE}}",
+                            "{{QUALITE_CLIENT}}"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ART_C05",
+                "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
+                "titre": "NON-SOLLICITATION — MISSION DE CONSEIL",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Conseil')",
+                "ordre_affichage": 604,
+                "variables": [
+                    "{{QUALITE_CLIENT}}",
+                    "{{ROLE_PRESTATAIRE}}"
+                ],
+                "contenu": "Pendant la durée de la mission et durant une période de douze (12) mois suivant son terme, {{QUALITE_CLIENT}} s'engage à ne pas recruter ni solliciter directement ou indirectement les consultants de {{ROLE_PRESTATAIRE}} ayant participé à la mission, sans l'accord préalable écrit de {{ROLE_PRESTATAIRE}}.\n\nCette obligation est réciproque : {{ROLE_PRESTATAIRE}} s'engage dans les mêmes termes à l'égard des collaborateurs de {{QUALITE_CLIENT}} avec lesquels ses équipes auront travaillé."
+            },
+            {
                 "id": "ART_43",
                 "categorie": "V. STIPULATIONS COMMUNES",
                 "titre": "ARTICLE 43 - GENERALITES",
