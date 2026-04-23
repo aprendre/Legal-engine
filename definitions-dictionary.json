@@ -1,0 +1,595 @@
+{
+  "dictionnaire_definitions": {
+    "version": "1.0",
+    "date_mise_a_jour": "2026-04-22",
+    "source": "Pratique contractuelle IT — grands cabinets (Gide, CMS, Linklaters, Kettani Law Firm, BMLG Avocats) et standards CIGREF / SYNTEC Numérique",
+    "definitions": [
+
+      {
+        "id": "DEF_001",
+        "terme": "Anomalie",
+        "aliases": ["Anomalies", "Anomalie Bloquante", "Anomalie Sévère", "Anomalie Critique"],
+        "categorie": "qualite_service",
+        "definition": "Tout dysfonctionnement, bogue, erreur, non-conformité ou dégradation de performance affectant le Logiciel ou les Prestations, constaté par le CLIENT ou signalé par le Prestataire, rendant le Logiciel ou une de ses fonctionnalités inutilisable ou dégradé par rapport aux spécifications contractuelles. Les Anomalies sont classifiées selon leur criticité : Bloquante (arrêt total d'une fonctionnalité essentielle), Sévère (dégradation significative sans contournement possible) et Mineure (impact limité avec contournement disponible).",
+        "source": "SYNTEC Numérique — Contrats-types TMA"
+      },
+
+      {
+        "id": "DEF_002",
+        "terme": "Astreinte",
+        "aliases": ["Astreintes"],
+        "categorie": "finance",
+        "definition": "Somme due par le Prestataire au CLIENT pour chaque jour ou heure de dépassement d'un délai contractuellement fixé (délai de livraison, GTR, GTI), calculée selon le barème défini aux Conditions Particulières et plafonnée à un pourcentage du montant contractuel. Les astreintes constituent un mécanisme incitatif et non une clause pénale au sens du droit marocain des obligations.",
+        "source": "Pratique contractuelle Maroc — Loi des Obligations et Contrats"
+      },
+
+      {
+        "id": "DEF_003",
+        "terme": "Avenant",
+        "aliases": ["Avenants"],
+        "categorie": "contractuel",
+        "definition": "Document contractuel écrit, signé par les représentants habilités des deux Parties, modifiant ou complétant le Contrat principal. Aucune modification orale ou comportementale ne peut constituer un avenant. Tout avenant doit préciser les clauses modifiées, la date d'entrée en vigueur et les éventuelles incidences financières.",
+        "source": "Usage courant — cabinets Gide Loyrette Nouel & Kettani Law Firm"
+      },
+
+      {
+        "id": "DEF_004",
+        "terme": "Cahier des Charges",
+        "aliases": ["CDC", "Cahier des charges fonctionnel", "CCTP"],
+        "categorie": "documentation",
+        "definition": "Document élaboré par le CLIENT définissant ses besoins fonctionnels, techniques et organisationnels, les contraintes d'intégration, les niveaux de performance attendus et les critères de recette. Le Cahier des Charges constitue le document de référence pour l'évaluation de la conformité des Livrables et des Prestations.",
+        "source": "Norme AFNOR Z67-100-3 / Pratique CIGREF"
+      },
+
+      {
+        "id": "DEF_005",
+        "terme": "Calendrier Prévisionnel",
+        "aliases": ["Planning prévisionnel", "Calendrier Définitif", "Planning projet"],
+        "categorie": "gestion_projet",
+        "definition": "Document contractuel annexé au Contrat, arrêté conjointement par les Parties en phase d'initialisation du Projet, décrivant l'enchaînement et la durée des phases, jalons, livrables et instances de validation. Le Calendrier Définitif remplace le Calendrier Prévisionnel dès sa validation en Comité de Projet et constitue le référentiel de suivi.",
+        "source": "Méthodologie PMI / PRINCE2 — Contrats SYNTEC"
+      },
+
+      {
+        "id": "DEF_006",
+        "terme": "Comité de Pilotage",
+        "aliases": ["COPIL", "Comité Projet", "Comité de Suivi"],
+        "categorie": "gestion_projet",
+        "definition": "Instance de gouvernance réunissant les représentants de direction des deux Parties, chargée de valider les orientations stratégiques du Projet, d'arbitrer les décisions hors périmètre du Comité Opérationnel, d'approuver les avenants et de statuer sur les risques majeurs. Le Comité de Pilotage se réunit selon la périodicité définie aux Conditions Particulières.",
+        "source": "Référentiel CIGREF / SYNTEC Numérique"
+      },
+
+      {
+        "id": "DEF_007",
+        "terme": "Confidentialité",
+        "aliases": ["Information Confidentielle", "Secret", "NDA"],
+        "categorie": "protection_donnees",
+        "definition": "Obligation réciproque des Parties de ne pas divulguer à des tiers les informations de nature technique, commerciale, financière ou stratégique auxquelles elles ont accès dans le cadre du Contrat. Cette obligation s'étend aux sous-traitants, collaborateurs et filiales des Parties et survit à l'expiration ou à la résiliation du Contrat pour une durée précisée aux Conditions Particulières.",
+        "source": "Usage courant — CMS Francis Lefebvre, Linklaters Maroc"
+      },
+
+      {
+        "id": "DEF_008",
+        "terme": "Contrat",
+        "aliases": ["Accord", "Convention", "Contrat Cadre"],
+        "categorie": "contractuel",
+        "definition": "Ensemble contractuel comprenant les Conditions Générales, les Conditions Particulières et toutes les annexes qui y sont référencées, constituant l'intégralité des engagements des Parties. En cas de contradiction entre les documents constitutifs, l'ordre de prévalence est : Avenant, Conditions Particulières, Annexes, Conditions Générales.",
+        "source": "Principe de hiérarchie documentaire — Droit marocain des obligations"
+      },
+
+      {
+        "id": "DEF_009",
+        "terme": "Correction",
+        "aliases": ["Correctif", "Patch", "Hotfix", "Mise à jour corrective"],
+        "categorie": "maintenance",
+        "definition": "Intervention technique visant à remédier à une Anomalie avérée du Logiciel, sans modification du périmètre fonctionnel. Une Correction peut prendre la forme d'un contournement temporaire (workaround) validé conjointement, suivi d'un correctif définitif intégré dans une Version ultérieure du Logiciel.",
+        "source": "SYNTEC Numérique — Contrats-types TMA v2023"
+      },
+
+      {
+        "id": "DEF_010",
+        "terme": "Données Personnelles",
+        "aliases": ["DCP", "Données à Caractère Personnel", "Données Sensibles", "Traitement de données"],
+        "categorie": "protection_donnees",
+        "definition": "Toute information se rapportant à une personne physique identifiée ou identifiable, au sens de la Loi marocaine n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et de son décret d'application, ainsi que du Règlement Général sur la Protection des Données (RGPD) de l'Union Européenne dans la mesure où celui-ci s'applique aux activités des Parties.",
+        "source": "Loi 09-08 / RGPD — CNDP Maroc"
+      },
+
+      {
+        "id": "DEF_011",
+        "terme": "Développements Spécifiques",
+        "aliases": ["Développement Spécifique", "Spécifiques", "Développements sur mesure", "Adaptation spécifique"],
+        "categorie": "propriete_intellectuelle",
+        "definition": "Programmes, interfaces, modules ou traitements informatiques développés exclusivement pour les besoins propres du CLIENT, distincts du Progiciel standard, et résultant d'une demande expressément formalisée. Les droits de propriété intellectuelle afférents aux Développements Spécifiques sont régis par les stipulations particulières du Contrat, qui précisent les conditions de cession ou de licence.",
+        "source": "CPI français / Pratique Maroc — Loi 2-00 sur la propriété intellectuelle"
+      },
+
+      {
+        "id": "DEF_012",
+        "terme": "Documentation",
+        "aliases": ["Documentation Technique", "Manuel Utilisateur", "Guide Administrateur"],
+        "categorie": "technique",
+        "definition": "Ensemble des supports écrits ou numériques — manuels d'installation, guides d'administration, manuels utilisateurs, notes de version, diagrammes fonctionnels et techniques — fournis par le Prestataire en accompagnement du Logiciel ou des Prestations. La Documentation doit être maintenue à jour à chaque nouvelle Version et être fournie dans la langue contractuellement définie.",
+        "source": "SYNTEC Numérique — Normes qualité logicielle"
+      },
+
+      {
+        "id": "DEF_013",
+        "terme": "Droit d'utilisation",
+        "aliases": ["Licence d'utilisation", "Droit de licence", "Licence logicielle"],
+        "categorie": "propriete_intellectuelle",
+        "definition": "Autorisation non exclusive, non transférable et limitée au périmètre défini au Contrat, accordée par le Prestataire au CLIENT d'utiliser le Logiciel sur les sites et pour le nombre d'utilisateurs ou de serveurs contractuellement prévus. Ce droit ne confère au CLIENT aucun droit de propriété sur le Logiciel ni sur son code source.",
+        "source": "Loi 2-00 sur les droits d'auteur — Maroc / Directive 2009/24/CE"
+      },
+
+      {
+        "id": "DEF_014",
+        "terme": "Environnement",
+        "aliases": ["Environnement de Production", "Environnement de Recette", "Environnement de Développement", "Infrastructure"],
+        "categorie": "technique",
+        "definition": "Ensemble des composants matériels, systèmes d'exploitation, bases de données, réseaux et configurations logicielles sur lesquels le Logiciel est installé et exploité. Les Parties distinguent l'Environnement de Production (données réelles, exploitation courante), l'Environnement de Recette (validation des évolutions avant mise en production) et l'Environnement de Développement (tests et intégration).",
+        "source": "ITIL v4 / Pratique contractuelle SYNTEC"
+      },
+
+      {
+        "id": "DEF_015",
+        "terme": "Escrow",
+        "aliases": ["Séquestre de code source", "Dépôt de code", "Tiers dépositaire"],
+        "categorie": "propriete_intellectuelle",
+        "definition": "Mécanisme contractuel par lequel le Prestataire dépose le code source du Logiciel et les éléments nécessaires à sa maintenance auprès d'un tiers indépendant agréé (agent d'escrow). Le CLIENT est bénéficiaire de ce dépôt et peut accéder au code source dans les conditions restrictives définies au Contrat (cessation d'activité du Prestataire, défaillance avérée, etc.).",
+        "source": "Pratique internationale — Gide Loyrette Nouel / Linklaters"
+      },
+
+      {
+        "id": "DEF_016",
+        "terme": "Filiale",
+        "aliases": ["Filiales", "Entité du Groupe", "Société contrôlée"],
+        "categorie": "parties",
+        "definition": "Toute entité juridique contrôlée directement ou indirectement par le CLIENT au sens des articles 143 et 144 de la Loi marocaine n° 20-05 relative aux sociétés anonymes, c'est-à-dire toute société dans laquelle le CLIENT détient, directement ou indirectement, la majorité des droits de vote ou exerce un contrôle de fait sur les décisions en assemblée générale.",
+        "source": "Loi 20-05 SA Maroc — Usage bancaire Attijariwafa bank"
+      },
+
+      {
+        "id": "DEF_017",
+        "terme": "Force Majeure",
+        "aliases": ["Cas de force majeure", "Événement imprévisible"],
+        "categorie": "contractuel",
+        "definition": "Événement extérieur aux Parties, imprévisible, irrésistible et indépendant de leur volonté, rendant impossible l'exécution des obligations contractuelles, au sens de l'article 268 du Dahir des Obligations et Contrats (DOC). La Partie invoquant la force majeure doit en notifier l'autre sans délai et justifier de tout moyen de résoudre ou de contourner l'obstacle.",
+        "source": "DOC Maroc — Art. 268 / Usage OHADA"
+      },
+
+      {
+        "id": "DEF_018",
+        "terme": "Formation",
+        "aliases": ["Formation Utilisateurs", "Formation Administrateurs", "Transfert de compétences"],
+        "categorie": "prestations",
+        "definition": "Prestation d'accompagnement dispensée par le Prestataire aux équipes du CLIENT visant à assurer la maîtrise opérationnelle et administrative du Logiciel ou de la Solution. La Formation inclut les supports pédagogiques, le programme, les pré-requis, le nombre de sessions et le profil des stagiaires, tels que définis en Annexe. Elle donne lieu à un procès-verbal d'assiduité.",
+        "source": "SYNTEC Numérique — Conditions générales de prestation de services"
+      },
+
+      {
+        "id": "DEF_019",
+        "terme": "GTI",
+        "aliases": ["Garantie de Temps d'Intervention", "Délai d'intervention", "Délai de prise en charge"],
+        "categorie": "qualite_service",
+        "definition": "Délai maximal, exprimé en heures ouvrées ou calendaires selon le niveau de service souscrit, s'écoulant entre la réception par le Prestataire d'une demande d'intervention valablement formalisée et le début effectif du traitement par une ressource qualifiée. Le non-respect du GTI déclenche l'application des pénalités contractuelles prévues.",
+        "source": "ITIL v4 SLA / Référentiel CIGREF"
+      },
+
+      {
+        "id": "DEF_020",
+        "terme": "GTR",
+        "aliases": ["Garantie de Temps de Rétablissement", "Délai de résolution", "Délai de rétablissement"],
+        "categorie": "qualite_service",
+        "definition": "Délai maximal, exprimé en heures ouvrées ou calendaires, s'écoulant entre la prise en charge formelle d'une Anomalie et son rétablissement complet ou la mise en place d'un contournement validé permettant la reprise normale des activités du CLIENT. Le GTR est différencié selon la criticité de l'Anomalie et les niveaux de service souscrits.",
+        "source": "ITIL v4 SLA / SYNTEC Numérique TMA"
+      },
+
+      {
+        "id": "DEF_021",
+        "terme": "Hébergement",
+        "aliases": ["Infogérance d'infrastructure", "Hosting", "Datacenter"],
+        "categorie": "cloud",
+        "definition": "Prestation consistant à loger, exploiter et maintenir l'infrastructure matérielle et logicielle supportant le Logiciel dans les locaux techniques du Prestataire ou d'un tiers prestataire d'hébergement certifié. L'Hébergement inclut la gestion de la disponibilité, des sauvegardes, de la sécurité physique et logique, selon les engagements de niveau de service définis en Annexe.",
+        "source": "Référentiel SecNumCloud ANSSI / Pratique Cloud Maroc"
+      },
+
+      {
+        "id": "DEF_022",
+        "terme": "Incident",
+        "aliases": ["Incident de sécurité", "Incident de production", "Ticket"],
+        "categorie": "qualite_service",
+        "definition": "Événement non planifié causant ou susceptible de causer une interruption, une dégradation ou une altération de la qualité d'un service informatique. Distinct de l'Anomalie logicielle, un Incident peut résulter d'une défaillance d'infrastructure, d'une erreur d'exploitation ou d'une attaque. La gestion des Incidents suit le processus ITIL et les niveaux de priorité définis au SLA.",
+        "source": "ITIL v4 — ISO/IEC 20000"
+      },
+
+      {
+        "id": "DEF_023",
+        "terme": "Interface",
+        "aliases": ["Interfaces", "API", "Connecteur", "Middleware"],
+        "categorie": "technique",
+        "definition": "Programme ou ensemble de programmes permettant l'échange, la transformation et le routage de données entre le Logiciel et d'autres applications du Système d'Information du CLIENT ou de tiers. Les Interfaces font l'objet d'une spécification fonctionnelle et technique distincte et peuvent être réalisées par le Prestataire, par le CLIENT ou conjointement selon les stipulations contractuelles.",
+        "source": "Architecture SOA / Microservices — Pratique SYNTEC"
+      },
+
+      {
+        "id": "DEF_024",
+        "terme": "Jours Ouvrés",
+        "aliases": ["Jours ouvrables", "Heures ouvrées", "Plage de service"],
+        "categorie": "contractuel",
+        "definition": "Jours de la semaine du lundi au vendredi, à l'exclusion des jours fériés légaux marocains et des jours fériés bancaires fixés par Bank Al-Maghrib, durant lesquels les équipes du Prestataire assurent le service contractuellement défini selon les plages horaires précisées en Annexe. Les obligations de délai exprimées en jours ouvrés s'appliquent selon ce référentiel.",
+        "source": "Code du Travail marocain / Règlement BAM"
+      },
+
+      {
+        "id": "DEF_025",
+        "terme": "Licence",
+        "aliases": ["Licence logicielle", "Licence d'utilisation", "Licence serveur", "Licence nominative"],
+        "categorie": "propriete_intellectuelle",
+        "definition": "Autorisation accordée par le titulaire des droits de propriété intellectuelle permettant à l'utilisateur d'exploiter le Logiciel dans les conditions, limites et périmètres définis au Contrat (nombre d'utilisateurs nommés ou simultanés, nombre de serveurs, sites d'exploitation autorisés). La Licence est personnelle, non cessible et ne confère aucun droit sur le code source.",
+        "source": "Loi 2-00 Maroc / Directive logiciels 2009/24/CE"
+      },
+
+      {
+        "id": "DEF_026",
+        "terme": "Livrable",
+        "aliases": ["Livrables", "Deliverable"],
+        "categorie": "gestion_projet",
+        "definition": "Tout résultat tangible ou intangible — document, code source, module logiciel, rapport, formation, procédure — dont la fourniture est contractuellement prévue dans le cadre du Projet, identifié dans le Plan de Charge ou en Annexe avec sa date d'échéance et ses critères d'acceptation. La réception d'un Livrable est formalisée par un procès-verbal de recette.",
+        "source": "PMI PMBOK 7ème édition / SYNTEC Numérique"
+      },
+
+      {
+        "id": "DEF_027",
+        "terme": "Logiciel",
+        "aliases": ["Progiciel", "Application", "Solution logicielle", "Software"],
+        "categorie": "technique",
+        "definition": "Ensemble complet et documenté de programmes, procédures, données et documentation associée conçus pour réaliser des fonctions spécifiques sur un système informatique, objet du Contrat. Le Logiciel inclut ses évolutions, mises à jour, corrections et nouvelles Versions mises à disposition dans le cadre des Prestations de maintenance souscrites.",
+        "source": "Loi 2-00 relative aux droits d'auteur — Maroc"
+      },
+
+      {
+        "id": "DEF_028",
+        "terme": "Lot",
+        "aliases": ["Lots", "Tranche"],
+        "categorie": "gestion_projet",
+        "definition": "Ensemble cohérent de modules, fonctionnalités ou Livrables regroupés pour faire l'objet d'une livraison, d'une recette et d'une facturation communes. La décomposition en Lots permet une gestion progressive du déploiement et une validation itérative. Chaque Lot est décrit en Annexe avec son périmètre, ses jalons et ses critères de réception.",
+        "source": "SYNTEC Numérique — Contrats de mise en œuvre"
+      },
+
+      {
+        "id": "DEF_029",
+        "terme": "Maintenance",
+        "aliases": ["TMA", "Tierce Maintenance Applicative", "Support", "Maintenance corrective", "Maintenance évolutive"],
+        "categorie": "maintenance",
+        "definition": "Ensemble des prestations visant à assurer le bon fonctionnement continu du Logiciel, comprenant : (i) la Maintenance Corrective (correction des Anomalies), (ii) la Maintenance Évolutive (adaptation aux évolutions légales, réglementaires ou fonctionnelles validées), et (iii) la Maintenance Préventive (actions anticipatoires pour prévenir les dysfonctionnements). La TMA (Tierce Maintenance Applicative) désigne spécifiquement la maintenance externalisée auprès d'un tiers.",
+        "source": "SYNTEC Numérique — Contrats-types TMA / Norme NF Z67-170"
+      },
+
+      {
+        "id": "DEF_030",
+        "terme": "Matériel",
+        "aliases": ["Équipement informatique", "Hardware", "Infrastructure matérielle", "Serveur"],
+        "categorie": "technique",
+        "definition": "Ensemble des équipements physiques — serveurs, postes de travail, équipements réseau, périphériques et accessoires — nécessaires à l'exploitation du Logiciel ou faisant l'objet d'une prestation d'acquisition, de fourniture ou d'installation au titre du Contrat. La liste et les spécifications techniques du Matériel sont détaillées en Annexe.",
+        "source": "Usage courant contrats IT — Pratique marocaine"
+      },
+
+      {
+        "id": "DEF_031",
+        "terme": "Mise en Service",
+        "aliases": ["Go Live", "Démarrage en production", "Mise en production"],
+        "categorie": "gestion_projet",
+        "definition": "Phase contractuelle au cours de laquelle le Logiciel, après validation de la recette finale, est basculé en environnement de Production et commence à traiter les données réelles du CLIENT dans des conditions opérationnelles. La Mise en Service est formalisée par un procès-verbal signé des Parties et déclenche, selon les cas, le début de la période de garantie ou le démarrage de la facturation des redevances.",
+        "source": "SYNTEC Numérique / Pratique bancaire Maroc"
+      },
+
+      {
+        "id": "DEF_032",
+        "terme": "Module",
+        "aliases": ["Modules", "Composant logiciel"],
+        "categorie": "technique",
+        "definition": "Sous-ensemble fonctionnel autonome du Logiciel, développé et livrable indépendamment, couvrant un domaine métier ou transverse délimité. Les Modules peuvent être acquis séparément selon les conditions tarifaires définies en Annexe et s'intègrent dans l'architecture globale de la Solution selon les règles de compatibilité publiées par le Prestataire.",
+        "source": "Architecture logicielle modulaire — SYNTEC Numérique"
+      },
+
+      {
+        "id": "DEF_033",
+        "terme": "PAQ",
+        "aliases": ["Plan d'Assurance Qualité", "PQ", "Plan Qualité Projet"],
+        "categorie": "documentation",
+        "definition": "Document contractuel élaboré par le Prestataire en début de Projet, définissant les méthodes, processus, outils, responsabilités et indicateurs mis en œuvre pour garantir la qualité des Prestations et des Livrables. Le PAQ est soumis à validation du CLIENT et constitue un document de référence pour les audits qualité et les revues de Projet. Il est mis à jour à chaque phase significative.",
+        "source": "ISO 9001 / SYNTEC Numérique / Norme NF EN ISO 10005"
+      },
+
+      {
+        "id": "DEF_034",
+        "terme": "PaaS",
+        "aliases": ["Platform as a Service", "Plateforme en tant que service"],
+        "categorie": "cloud",
+        "definition": "Modèle de fourniture de services Cloud dans lequel le Prestataire met à disposition une plateforme d'exécution (système d'exploitation, middleware, runtime) permettant au CLIENT de déployer et exploiter ses propres applications, sans gestion de l'infrastructure sous-jacente. Les responsabilités respectives des Parties en matière de sécurité et de conformité sont définies selon le modèle de responsabilité partagée.",
+        "source": "NIST SP 800-145 / CSA Cloud Controls Matrix"
+      },
+
+      {
+        "id": "DEF_035",
+        "terme": "Pénalité",
+        "aliases": ["Pénalités de retard", "Clause pénale", "Pénalités contractuelles"],
+        "categorie": "finance",
+        "definition": "Somme forfaitaire due de plein droit par le Prestataire en cas de manquement à ses obligations contractuelles de délai ou de niveau de service, sans préjudice des dommages et intérêts complémentaires que le CLIENT pourrait réclamer en cas de préjudice supérieur. Les pénalités sont plafonnées selon les modalités définies aux Conditions Particulières.",
+        "source": "DOC Maroc — Art. 264 / Pratique contractuelle IT"
+      },
+
+      {
+        "id": "DEF_036",
+        "terme": "Personnalisation",
+        "aliases": ["Paramétrage", "Configuration", "Adaptation", "Customisation"],
+        "categorie": "technique",
+        "definition": "Ensemble des travaux d'adaptation du Logiciel standard aux besoins spécifiques du CLIENT, réalisés par configuration des paramètres existants, sans modification du code source (à distinguer des Développements Spécifiques). La Personnalisation est documentée dans un Guide de Personnalisation validé conjointement et n'affecte pas les droits de propriété intellectuelle du Prestataire sur le Logiciel.",
+        "source": "SYNTEC Numérique — Contrats de mise en œuvre progiciel"
+      },
+
+      {
+        "id": "DEF_037",
+        "terme": "Plan de Reprise d'Activité",
+        "aliases": ["PRA", "PCA", "Plan de Continuité d'Activité", "Disaster Recovery"],
+        "categorie": "securite",
+        "definition": "Document technique et organisationnel définissant les procédures à mettre en œuvre pour assurer la reprise des activités du CLIENT dans un délai défini (RTO — Recovery Time Objective) en cas de sinistre ou d'interruption majeure, avec un niveau de perte de données accepté (RPO — Recovery Point Objective). Le PRA est testé selon la périodicité prévue en Annexe.",
+        "source": "ISO 22301 — EBIOS Risk Manager / Directives DGSSI Maroc"
+      },
+
+      {
+        "id": "DEF_038",
+        "terme": "Prestataire",
+        "aliases": ["Fournisseur", "Vendeur", "Titulaire", "Éditeur"],
+        "categorie": "parties",
+        "definition": "La société désignée aux Conditions Particulières comme cocontractante du CLIENT, responsable de la fourniture du Logiciel, des Prestations et des Livrables définis au Contrat. Le Prestataire garantit disposer de l'ensemble des droits, autorisations, compétences et assurances nécessaires à l'exécution de ses obligations contractuelles.",
+        "source": "Droit marocain des obligations — DOC"
+      },
+
+      {
+        "id": "DEF_039",
+        "terme": "Prestations",
+        "aliases": ["Services", "Missions", "Travaux"],
+        "categorie": "prestations",
+        "definition": "Ensemble des missions, services, fournitures et livrables que le Prestataire s'engage à réaliser au bénéfice du CLIENT dans le cadre du Contrat, incluant notamment : installation et paramétrage du Logiciel, formation, assistance au démarrage, maintenance, support utilisateurs et évolutions fonctionnelles. Le périmètre exact des Prestations est défini aux Conditions Particulières et en Annexe.",
+        "source": "Usage courant — SYNTEC Numérique / Pratique bancaire"
+      },
+
+      {
+        "id": "DEF_040",
+        "terme": "Procès-Verbal",
+        "aliases": ["PV", "PV de recette", "PV de livraison", "Bon de livraison"],
+        "categorie": "contractuel",
+        "definition": "Document formel signé par les représentants habilités des deux Parties, constatant la réalisation d'un événement contractuel (livraison, recette, mise en service, formation). Le Procès-Verbal peut être de réception provisoire (sous réserves), de réception définitive ou de refus motivé. En l'absence de réponse dans le délai contractuel, la réception est réputée acquise selon les conditions définies.",
+        "source": "SYNTEC Numérique — Contrats-types mise en œuvre"
+      },
+
+      {
+        "id": "DEF_041",
+        "terme": "Propriété Intellectuelle",
+        "aliases": ["PI", "Droits de propriété intellectuelle", "DPI", "Droits d'auteur"],
+        "categorie": "propriete_intellectuelle",
+        "definition": "Ensemble des droits légaux protégeant les créations intellectuelles, incluant les droits d'auteur sur le Logiciel, les brevets, marques, savoir-faire et bases de données, tels que protégés par la Loi marocaine n° 2-00 sur la protection des œuvres littéraires et artistiques et n° 17-97 sur la propriété industrielle. Chaque Partie conserve l'intégralité de ses droits préexistants.",
+        "source": "Loi 2-00 / Loi 17-97 Maroc / OMPI"
+      },
+
+      {
+        "id": "DEF_042",
+        "terme": "Recette",
+        "aliases": ["Tests de recette", "UAT", "Validation", "Réception"],
+        "categorie": "gestion_projet",
+        "definition": "Processus contractuel formalisé par lequel le CLIENT vérifie, dans un environnement dédié, la conformité des Livrables ou du Logiciel aux spécifications contractuelles et aux critères d'acceptation préalablement définis. La Recette comprend les phases de recette fonctionnelle, technique et, le cas échéant, de performance. Elle aboutit à une réception avec ou sans réserves, ou à un refus motivé.",
+        "source": "SYNTEC Numérique / Norme IEEE 829"
+      },
+
+      {
+        "id": "DEF_043",
+        "terme": "Redevance",
+        "aliases": ["Redevance annuelle", "Maintenance financière", "Abonnement", "Royalties"],
+        "categorie": "finance",
+        "definition": "Somme périodique due par le CLIENT au Prestataire en contrepartie du droit d'utilisation du Logiciel et/ou des prestations de maintenance souscrites, selon les modalités de calcul, d'indexation et de facturation définies aux Conditions Particulières. La redevance peut être fixe, variable selon l'usage (nombre d'utilisateurs, volumétrie) ou mixte.",
+        "source": "Pratique éditoriale logicielle — SYNTEC Numérique"
+      },
+
+      {
+        "id": "DEF_044",
+        "terme": "Régie",
+        "aliases": ["Assistance Technique", "AT", "Prestation en régie", "Time & Material"],
+        "categorie": "prestations",
+        "definition": "Mode d'exécution de prestations intellectuelles dans lequel le Prestataire met à disposition du CLIENT des ressources humaines qualifiées, facturées à l'unité de temps (jour/homme), sans obligation de résultat défini a priori. En régie, le CLIENT exerce la direction fonctionnelle des travaux sous la responsabilité du Prestataire pour les aspects techniques et déontologiques.",
+        "source": "SYNTEC Numérique — Accord de Branche / Circulaire SYNTEC"
+      },
+
+      {
+        "id": "DEF_045",
+        "terme": "Reprise de Données",
+        "aliases": ["Migration de données", "Chargement initial", "Data migration"],
+        "categorie": "technique",
+        "definition": "Opération consistant à extraire, transformer et charger dans le Logiciel les données existantes du CLIENT issues de son Système d'Information antérieur, selon un plan de migration validé conjointement précisant le périmètre des données migrées, les règles de transformation, les critères de qualité et les modalités de validation. La Reprise de Données fait l'objet d'une recette spécifique.",
+        "source": "Pratique SYNTEC — Contrats de mise en œuvre progiciel"
+      },
+
+      {
+        "id": "DEF_046",
+        "terme": "Résiliation",
+        "aliases": ["Résiliation pour faute", "Résiliation pour convenance", "Rupture du contrat"],
+        "categorie": "contractuel",
+        "definition": "Extinction anticipée du Contrat à l'initiative de l'une des Parties, soit pour faute grave de l'autre Partie non régularisée dans le délai de mise en demeure contractuel (résiliation pour manquement), soit sans motif moyennant le respect d'un préavis défini (résiliation pour convenance). Les effets de la résiliation, notamment quant aux sommes dues et aux obligations post-contractuelles, sont régis par les Conditions Particulières.",
+        "source": "DOC Maroc — Art. 259 et suivants"
+      },
+
+      {
+        "id": "DEF_047",
+        "terme": "RGPD",
+        "aliases": ["Règlement Général sur la Protection des Données", "GDPR"],
+        "categorie": "protection_donnees",
+        "definition": "Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données. S'applique aux traitements impliquant des données de résidents de l'Union Européenne, indépendamment de la localisation du responsable de traitement.",
+        "source": "Règlement UE 2016/679 — CNIL / CNDP Maroc"
+      },
+
+      {
+        "id": "DEF_048",
+        "terme": "SaaS",
+        "aliases": ["Software as a Service", "Solution en mode SaaS", "Cloud applicatif", "Mode hébergé"],
+        "categorie": "cloud",
+        "definition": "Modèle de fourniture du Logiciel dans lequel le Prestataire met à disposition du CLIENT, via Internet ou un réseau privé sécurisé, l'accès à une application hébergée et opérée dans son infrastructure ou celle d'un tiers, sans installation locale. Le CLIENT accède au service par abonnement, le Prestataire conservant la responsabilité de l'exploitation, des mises à jour et de la disponibilité selon les engagements de niveau de service.",
+        "source": "NIST SP 800-145 / Référentiel Cloud Maroc ANPTIC"
+      },
+
+      {
+        "id": "DEF_049",
+        "terme": "Sécurité",
+        "aliases": ["Sécurité informatique", "Cybersécurité", "Sécurité des systèmes", "PSSI"],
+        "categorie": "securite",
+        "definition": "Ensemble des mesures techniques, organisationnelles et juridiques mises en œuvre pour assurer la confidentialité, l'intégrité, la disponibilité et la traçabilité des systèmes, données et services couverts par le Contrat, conformément aux exigences de la Directive Nationale de Sécurité des Systèmes d'Information (DGSSI Maroc) et aux normes ISO/IEC 27001 et 27002.",
+        "source": "ISO 27001 / DGSSI Maroc / Bank Al-Maghrib Circulaire 5/W/2021"
+      },
+
+      {
+        "id": "DEF_050",
+        "terme": "Sous-traitant",
+        "aliases": ["Sous-traitance", "Prestataire de rang 2"],
+        "categorie": "parties",
+        "definition": "Toute entité tierce à laquelle le Prestataire fait appel pour l'exécution de tout ou partie des Prestations avec l'accord préalable écrit du CLIENT. Le Prestataire demeure seul responsable vis-à-vis du CLIENT des prestations réalisées par ses sous-traitants et garantit que ceux-ci respectent les obligations contractuelles, notamment en matière de confidentialité et de protection des données.",
+        "source": "Loi 15-95 Code de Commerce Maroc / Usage SYNTEC"
+      },
+
+      {
+        "id": "DEF_051",
+        "terme": "Spécifications",
+        "aliases": ["Spécifications Fonctionnelles", "Spécifications Techniques", "SFD", "STD"],
+        "categorie": "documentation",
+        "definition": "Documents contractuels décrivant de manière exhaustive et opposable les fonctionnalités, règles de gestion, contraintes techniques, interfaces et critères de performance du Logiciel ou des Développements Spécifiques à réaliser. Les Spécifications Fonctionnelles Détaillées (SFD) et les Spécifications Techniques Détaillées (STD) constituent la base de référence pour la recette.",
+        "source": "Norme IEEE 830 / Pratique SYNTEC Numérique"
+      },
+
+      {
+        "id": "DEF_052",
+        "terme": "Support",
+        "aliases": ["Support technique", "Helpdesk", "Centre de service", "Hotline"],
+        "categorie": "maintenance",
+        "definition": "Service de prise en charge des demandes d'assistance, questions, signalements d'Anomalies et Incidents soumis par les équipes du CLIENT, accessible selon les canaux (téléphone, portail web, email) et plages horaires définis en Annexe. Le Support constitue le point d'entrée unique (SPOC — Single Point of Contact) pour toutes les sollicitations opérationnelles du CLIENT.",
+        "source": "ITIL v4 — Service Desk / HDI Standards"
+      },
+
+      {
+        "id": "DEF_053",
+        "terme": "Système d'Information",
+        "aliases": ["SI", "Système informatique", "Infrastructure IT"],
+        "categorie": "technique",
+        "definition": "Ensemble organisé de ressources (matériels, logiciels, données, procédures, personnel) permettant de collecter, stocker, traiter et diffuser l'information nécessaire aux activités du CLIENT. Le Système d'Information du CLIENT constitue l'environnement de production dans lequel s'insère le Logiciel objet du Contrat.",
+        "source": "CIGREF — Vocabulaire des systèmes d'information"
+      },
+
+      {
+        "id": "DEF_054",
+        "terme": "Taux de Disponibilité",
+        "aliases": ["Disponibilité", "SLA Disponibilité", "Uptime", "Taux de service"],
+        "categorie": "qualite_service",
+        "definition": "Indicateur contractuel exprimant, en pourcentage sur une période de référence (mensuelle ou annuelle), le rapport entre le temps pendant lequel le Service est pleinement opérationnel et le temps total de la plage de service contractuelle, déduction faite des fenêtres de maintenance planifiées. Un taux de disponibilité de 99,5 % sur une plage 8h-18h correspond à un maximum de 2,5 heures d'indisponibilité mensuelle.",
+        "source": "ITIL v4 / Référentiel SLA bancaire BAM"
+      },
+
+      {
+        "id": "DEF_055",
+        "terme": "Test d'Intrusion",
+        "aliases": ["Pentest", "Audit de sécurité", "Vulnerability Assessment"],
+        "categorie": "securite",
+        "definition": "Évaluation de sécurité réalisée par une équipe spécialisée autorisée, simulant des attaques sur les systèmes pour identifier les vulnérabilités exploitables. Dans le cadre du Contrat, le Prestataire peut être tenu de faire réaliser des tests d'intrusion périodiques sur les composants qu'il opère et d'en communiquer les résultats et plans de remédiation au CLIENT.",
+        "source": "DGSSI Maroc — Guide Pentest / OWASP"
+      },
+
+      {
+        "id": "DEF_056",
+        "terme": "Tiers",
+        "aliases": ["Tiers prestataire", "Éditeur tiers", "Partenaire technique"],
+        "categorie": "parties",
+        "definition": "Toute personne physique ou morale, autre que les Parties signataires du Contrat, à laquelle l'une des Parties peut faire appel dans le cadre de l'exécution du Contrat. Le recours à un Tiers ne décharge pas la Partie qui y fait appel de ses obligations contractuelles vis-à-vis de l'autre Partie.",
+        "source": "DOC Maroc — Principe de relativité des contrats"
+      },
+
+      {
+        "id": "DEF_057",
+        "terme": "Version",
+        "aliases": ["Versions", "Release", "Mise à jour", "Upgrade", "Version majeure", "Version mineure"],
+        "categorie": "technique",
+        "definition": "Livraison identifiée du Logiciel, désignée par un numéro de version selon la convention de nommage du Prestataire (versionnage sémantique : Majeure.Mineure.Correctif). Une Version Majeure apporte des évolutions fonctionnelles significatives, une Version Mineure améliore des fonctionnalités existantes et un Correctif remédie à des Anomalies. Chaque Version fait l'objet d'une note de version.",
+        "source": "Semantic Versioning 2.0 / SYNTEC Numérique TMA"
+      },
+
+      {
+        "id": "DEF_058",
+        "terme": "Forfait",
+        "aliases": ["Prestation au forfait", "Prix forfaitaire", "Fixed price"],
+        "categorie": "prestations",
+        "definition": "Mode d'exécution de prestations intellectuelles dans lequel le Prestataire s'engage à livrer un résultat défini (périmètre, qualité, délais) pour un prix global et ferme, indépendamment du temps effectivement passé. Le forfait implique une obligation de résultat et suppose une définition précise et préalable des spécifications. Toute modification de périmètre donne lieu à un avenant.",
+        "source": "SYNTEC Numérique — Accord de Branche Forfait / Art. 1710 Code civil français (référence)"
+      },
+
+      {
+        "id": "DEF_059",
+        "terme": "IaaS",
+        "aliases": ["Infrastructure as a Service", "Infrastructure en tant que service", "Cloud infrastructure"],
+        "categorie": "cloud",
+        "definition": "Modèle de fourniture de services Cloud dans lequel le Prestataire met à disposition des ressources d'infrastructure virtualisées (calcul, stockage, réseau) que le CLIENT provisionne et gère librement. Le Prestataire assure la disponibilité et la sécurité physique de l'infrastructure sous-jacente tandis que le CLIENT est responsable des systèmes d'exploitation, middleware et applications qu'il y déploie.",
+        "source": "NIST SP 800-145 / ISO/IEC 22123"
+      },
+
+      {
+        "id": "DEF_060",
+        "terme": "Garantie",
+        "aliases": ["Garantie contractuelle", "Période de garantie", "Garantie de bon fonctionnement"],
+        "categorie": "contractuel",
+        "definition": "Engagement du Prestataire de corriger sans frais supplémentaires, pendant une période définie suivant la mise en service ou la réception définitive, toute Anomalie ou non-conformité du Logiciel ou des Livrables par rapport aux spécifications contractuelles, sauf si cette non-conformité résulte d'une utilisation non conforme ou d'une modification non autorisée par le CLIENT.",
+        "source": "DOC Maroc / Code Civil — Garantie des vices cachés"
+      },
+
+      {
+        "id": "DEF_061",
+        "terme": "Interopérabilité",
+        "aliases": ["Compatibilité", "Intégration", "Interconnexion"],
+        "categorie": "technique",
+        "definition": "Capacité du Logiciel à échanger des données et à fonctionner conjointement avec d'autres systèmes ou applications du Système d'Information du CLIENT ou de tiers, en utilisant des protocoles, formats et standards ouverts ou documentés. Les exigences d'interopérabilité sont définies dans les Spécifications Techniques et constituent des critères de recette.",
+        "source": "Directive Européenne Interopérabilité / Cadre SI Maroc"
+      },
+
+      {
+        "id": "DEF_062",
+        "terme": "Migration",
+        "aliases": ["Migration applicative", "Migration de système", "Transition"],
+        "categorie": "gestion_projet",
+        "definition": "Opération de transfert, remplacement ou modernisation d'un système, application ou ensemble de données d'un environnement source vers un environnement cible, incluant la reprise des données, la configuration du nouveau système, les tests de non-régression et la conduite du changement. La Migration suit un plan détaillé en Annexe et comprend un plan de retour arrière.",
+        "source": "Pratique SYNTEC — Contrats de migration IT"
+      },
+
+      {
+        "id": "DEF_063",
+        "terme": "Propriété des Données",
+        "aliases": ["Données du CLIENT", "Données métier", "Restitution des données"],
+        "categorie": "protection_donnees",
+        "definition": "Le CLIENT est et demeure seul propriétaire de l'intégralité des données qu'il saisit, importe ou génère dans le cadre de l'utilisation du Logiciel. Le Prestataire ne peut utiliser ces données à aucune autre fin que l'exécution du Contrat. À l'expiration ou résiliation du Contrat, le Prestataire restitue l'intégralité des données du CLIENT dans un format ouvert et documenté dans un délai défini.",
+        "source": "Loi 09-08 Maroc / RGPD Art. 20 — Portabilité des données"
+      },
+
+      {
+        "id": "DEF_064",
+        "terme": "Comité Opérationnel",
+        "aliases": ["COOP", "Comité de suivi opérationnel", "Revue opérationnelle"],
+        "categorie": "gestion_projet",
+        "definition": "Instance de suivi régulier réunissant les responsables opérationnels des deux Parties, chargée de suivre l'avancement des Prestations, de valider les Livrables, de gérer les actions et risques opérationnels et de préparer les décisions soumises au Comité de Pilotage. Le Comité Opérationnel se réunit selon la périodicité définie aux Conditions Particulières et produit un compte-rendu.",
+        "source": "PMI PMBOK / Pratique gouvernance projet IT"
+      },
+
+      {
+        "id": "DEF_065",
+        "terme": "Anti-Corruption",
+        "aliases": ["Lutte anti-corruption", "Compliance", "Conformité déontologique"],
+        "categorie": "contractuel",
+        "definition": "Ensemble des engagements des Parties de se conformer aux lois et réglementations relatives à la lutte contre la corruption, le blanchiment de capitaux et le financement du terrorisme, notamment la Loi marocaine n° 46-19 relative à la lutte contre la corruption, le Code Pénal marocain et les conventions internationales applicables. Chaque Partie s'engage à ne pas offrir, promettre, accorder ou accepter tout avantage indu.",
+        "source": "Loi 46-19 Maroc / OCDE Convention anti-corruption / ISO 37001"
+      }
+
+    ]
+  }
+}

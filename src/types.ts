@@ -21,6 +21,8 @@ export interface Article {
   conditionOperator?: string;
   condition_generation?: string;
   variables_requises?: string[];
+  parentId?: string | null;
+  depth?: number;
   createdAt: number;
   updatedAt: number;
 }

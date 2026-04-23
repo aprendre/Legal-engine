@@ -1,0 +1,2609 @@
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 1 - sur 47 …………………. … 
+ PROGICIEL …………………  
+  
+ 
+ 
+  
+ 
+  
+CONTRAT DE LICENCE - MISE EN OEUVRE & MAINTENANCE  
+ 
+  
+ENTRE  
+ 
+ 
+ 
+ 
+………………………… 
+  
+L’Editeur/Intégrateur 
+ 
+ 
+ 
+ET 
+  
+ 
+Attijariwafa bank  SA 
+ 
+CLIENT  
+ 
+ 
+ 
+ 
+ 
+Le présent contrat ne peut en aucun cas être considéré comme 
+liant les Parties à quelque titre que ce soit sans la signature de  
+leurs mandataires habilités . 
+ 
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 2 - sur 47 …………………. …  
+  
+ 
+CONTRAT DE LICENCE - MISE EN OEUVRE & MAINTENANCE  
+ 
+ 
+ 
+ 
+ENTRE  
+………………………….. Société ……………….  au capital de ………………..,  Immatriculée au Registre 
+du Commerce et des Sociétés de ………………  sous le numéro ……………….. , Dont le siège 
+social est sis ………………………….dûment r eprésentée  à l’effet des présentes  par Monsieur 
+……………… , agissant en qualité de ……………. ,  
+ 
+Ci-après dénommée «  l’Editeur/ Intégrateur »,  
+ 
+ D’une part  
+ ET 
+ 
+Attijariwafa bank, Société anonyme, au capital de Dirhams 2.151.408.390,00 ; ayant 
+son siège social à Casablanca au 2, Boulevard Moulay Youssef, immatriculée au registre de commerce de Casablanca sous le numéro 333, Agréée en qualité d’établissement de 
+crédit par arrêté du Ministre  des Finances et de la Privatisation n° 2269 -03 du 22 
+décembre 2003 tel que modifié et complété, dûment représentée à l’effet des présentes par: 
+ Madame/ Monsieur ………………  en sa qualité de …………………  ; 
+ Madame/ Monsieur ………………. en sa qualité de ……………………..  
+ 
+Agissant tant pour son propre compte que pour le compte de ses Filiales  
+   
+Ci-après dénommée « le CLIENT  » 
+,  
+D’autre part  
+   
+ 
+Ci-après dénommées individuellement la «  Partie  » et collectivement les «  Parties  ». 
+Chacun des signataires du présent Contrat garantit que le pouvoir en vertu duquel il agit n’a 
+pas été révoqué ou limité et qu’il est suffisant pour obliger les représentées dans ce Contrat.   
+ 
+ 
+      
+ 
+      
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 3 - sur 47 …………………. … 
+ PREAMBULE  
+ 
+L’Editeur/Intégrateur  est un éditeur de progiciel destiné à la gestion de …………………………..  ., 
+notamment celle afférente aux activités ………………………………. . 
+ 
+Attijariwafa bank,  ayant lancé une consultation pour l’acquisition  et la mise en œuvre d’une  
+solution informatique intégrée pour ses propres activités, a opté pour la solution …………………….  
+dont les modules/ le Progiciel  présenté (s) par ………………………………. semblent  adapté s aux 
+besoins exprimés par Attijariwafa bank . 
+ 
+Les activités …………… d’Attijariwafa bank sont en filigrane dans les activité s d’un certain nombre  
+d’entités  du Groupe dont la plus importante est le …………………… qui traite un flux d’informations, 
+de données et de dossiers importants . Cette volumétrie  donne lieu aujourd’hui à une surcharge 
+de traitement avec tous les risques y afférent s outre l’atteinte à la plus -value  …………………… qui 
+se trouvent encombrés par les traitement s manuel s. 
+  
+Afin de réduire les risques relatés ci -dessus et faire face aux nouveaux défis de croissance du  
+Groupe, Attijariwafa bank  a exprimé le besoin d’acquérir une solution informatique lui assurant 
+l’automatisation  des traitements,   la maitrise des risques opérationnels, …………………..  
+l’optimisation du travail ……………………..  
+ 
+Attijariwafa bank , de par cette solution informatique, projette la couverture d’un certain 
+nombre de ………………….  outre d’autres domaines dont les besoins peuvent être exprimés 
+ultérieurement ,- dont notamment :  
+ 
+ …………………  ; 
+ ……………………….  ; 
+ ……………………………..  ; 
+ 
+Pour ce faire, A ttijariwafa bank  a retenu L’Editeur/Intégrateur  au titre de la réalisation du Projet 
+susvisé et ce, dans la mesure où ce derni er a expressément exposé, soutenu et démontré qu' il 
+dispose de l'expertise, du savoir -faire, de la méthodologie, des moyens et des compétences 
+adéquates pour assurer la maîtrise d'œuvre du Projet et garantir non seulement la réalisation conforme et performante du projet suivant les besoins formulés par    Attijariwafa bank  mais 
+aussi et surtout la maintenance de la solution dans une perspective évolutive conf ormément à 
+l’intention des Parties.  
+ 
+Attijariwafa bank  assure avoir remis à 
+L’Editeur/Intégrateur  l’ensemble des éléments nécessaires 
+à la bonne compréhension par ce derni er du Projet d’Attijariwafa bank  et reconnaît qu’un défaut 
+de sa part serait susceptible d’affecter les Prestations à réaliser par L’Editeur/Intégrateur . 
+ Les Parties s’engagent à collaborer et à échanger les informations nécessaires à une bonne 
+exécution des Prestations. Elles conviennent de procéder à un échange permanent d’informations en vue de contribuer à la réussite du projet et permettre d’éviter la génération 
+de difficultés préjudiciables aux intérêts des Parties.       
+ 
+L’Editeur/Intégrateur  s'est déclaré, prêt à mener le Projet dans un véritable esprit de 
+collaboration et s’est déclaré apte à répondre aux exigences d’A ttijariwafa bank  en termes de 
+sécurité, de confidentialité, de niveau de performance, de qualité des Prestations demandées 
+par Attijariwafa bank  et le respect des délais impartis dans le calendrier précisé en Annexe des 
+présentes . 
+ 
+C’est sur la base de l’ensemble de ces prérequis , qu’ Attijariwafa  bank a retenu 
+L’Editeur/Intégrateur  tant pour la concession du droit d’utilisation du progiciel que pour sa mise 
+en œuvre et sa maintenance . 
+ 
+Pour la formalisation de leur relation contractuelle autour de ce projet, les Parties ont convenu de mettre en place le présent  Contrat intégrant les trois étapes de la relation contractuelle et 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 4 - sur 47 …………………. … 
+ ce pour garantir  la cohérence des engagements  et éviter les redondances qui peuvent être 
+source de divergences d’interprétation.  
+ 
+Ainsi,  le plan du   Contrat se décline comme suit  : 
+ 
+1. Définition s ; 
+2. Concession du droit d’utilisation du progiciel  ; 
+3. Mise en œuvre  du projet ; 
+4. Maintenance  du progiciel  ; 
+5. Stipulations communes  aux trois étapes  ; 
+6. Annexes . 
+ 
+CECI ETANT EXPOSE, LES PARTIES ONT CONVENU ET ARRETE CE QUI SUIT  : 
+  
+-I-DEFINITIONS  
+  1- Matériel  
+Désigne le serveur qui héberge le P rogiciel ainsi que l'équipement informatique composé d'un 
+ou plusieurs ordinateurs, reliés en réseau ou non, de ses périphériques ou accessoires et destiné à l'Utilisation du Progiciel.  
+ 
+2 - Progiciel  
+Désigne l'ensemble complet et documenté de programmes destinés à une même application 
+ou une même fonction, conçu et réalisé exclusivement par L’Editeur/Intégrateur  qui dispose des 
+droits d'exploitation nécessaires dudit Progiciel qu’il communique au CLIENT. Le Progiciel objet 
+du présent Contrat, conçu et réalisé sous l a forme de Modules complémentaires dédiés aux 
+grandes missions ……………………, se caractérise par une  architecture originale  déployée autour 
+du « …………….. » placé au cœur de la Solution , laquelle architecture  garantit une maîtrise globale 
+de l’information grâce à la parfaite intégration transversale des Modules «  métiers  » entre eux . 
+ 3 -Documentation  
+Désigne toute information et tout support écrits  ou numériques fourni s par 
+L’Editeur/Intégrateur  
+mais aussi, à titre non limitatif, toute information incluse dans tout autre document fourni par 
+L’Editeur/Intégrateur  tels que manuels, supports de cours, diagrammes logiques, schémas, 
+organigrammes et dessins, afférents au Progiciel, destinés aux utilisateurs et/ou 
+administrateurs du Progiciel.  
+ 
+4 – Module  Désigne  : 
+ Un ensemble de programmes constitués pour chacun d'eux d'une série d'instructions lisibles en machine sous la forme de code objet enregistrés sur un support informatique 
+qui peuvent fonctionner séparément ou concomitamment,  
+ Ainsi qu’une documentation s'y rapportant, permettant l’installation et l'utilisation des programmes et en décrivant les fonctionnalités, ci -dessus désignée «  Documentation  ». 
+ 5 – Lot 
+Il s’agit d’un livrable comprenant un ou plusieurs Modules Progiciels dans leur entièreté et dont 
+le contenu est spécifié dans le présent Contrat.  
+  
+ 
+ 6 - Site d'Utilisation  
+Désigne le lieu géographique où sera situé le serveur sur lequel sera chargé et hébergé le Progiciel, à partir duquel il sera utilisé et où se dérouleront, le cas échéant, les prestations de maintenance . Le Site d'Utilisation  du Progiciel  est précisé en Annexe N°  2. 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 5 - sur 47 …………………. … 
+  
+7 – Filiales  
+Désigne toute entité que le Client contrôle au sens des articles 143 et 144 de la Loi marocaine 
+20-05 relative aux sociétés anonymes. Une telle entité est considérée comme Filiale 
+uniquement pour la durée pendant laquelle le Client continuera à détenir de tels droits de vote.  
+Une société sera considérée comme en contrôlant une autre :  
+- Lorsqu’elle détient directement ou indirectement une fraction du capital lui conférant la 
+majorité des droits de vote dans les assemblées générales de cette société.  
+- Lorsqu'elle dispose seule de la majorité des droits de vote dans cette société en vertu 
+d'un accord conclu avec d'autres associés ou actionnaires et qui n'est pas contraire à l'intérêt 
+de la société ;  
+- Lorsqu'elle détermine en fait, par les droits de vote dont elle dispose, les décisions dans 
+les assemblées générales de cette société ;  
+- Lorsqu'elle est associée ou actionnaire de cette société et dispose du pouvoir de nommer 
+ou de révoquer la majorité des membres des organes d'administration, de direction ou de surveillance de cette société.  
+Elle est présumée exercer ce contrôle lorsqu'elle dispose directement ou indirectement, d'une fraction des droits de vote supérieur à 40 % et qu'aucun autre associé ou actionnaire ne détient directement ou indirectement une fraction supérieure à la sienne.  
+Pour l'application des mêmes sections du présent chapitre, deux ou plusieurs personnes agissant de concert sont considérées comme en contrôlant conjointement une autre lorsqu'elles déterminent en fait les décisions prises en assemblée générale.  
+ 
+8 - Utilisateur Final ou CLIENT  
+Désigne Le CLIENT et ses Filiales .   
+ 9 - Utilisation  
+Désigne l'installation du Progiciel dans la mémoire du Matériel, notamment dans la mémoire 
+RAM, le disque dur ou tout autre support de mémorisation ou de stockage puis l'activation et l'usage de ses fonctionnalités. Le Progiciel peut être utilisé en réseau  sous réserve que 
+l'Utilisateur Final ait souscrit autant de licences que de copies du Progiciel utilisées simultanément. Aux termes de la licence, le mot "Utilisation" renvoie aux conditions définies à l'Article 3 ci-après . 
+ 
+10 – Installation du Progiciel s’entend par  : 
+• une Installation de  Production utilisée pour effectuer la production sur les données 
+réelles du CLIENT. 
+• Une Installation de Développement qui permet au SI du CLIENT  de réaliser les travaux 
+d’interfaçage et de tester les nouvelles Versions du Progiciel avant leur mise à 
+disposition sur l’installation d’acceptation.  
+• Une Installation d’Acceptation qui permet aux utilisateurs de tester et de valider les 
+différentes versions du Progiciel avant leur mise en exploitation réelle.  
+ 11 - Proposition commerciale  
+Désigne l’Offre faite par L’Editeur/Intégrateur  au CLIENT   à partir de l'étude de s besoins exprimés 
+par ce dernier,  référencée  sous  N°……………………. et annexée aux présent Contrat, contenant 
+l’offre financière et l’offre Fonctionnelle et Méthodologie de déploiement de la solution 
+……………… .   
+ 12 - Prestations  
+Désigne l’ensemble des missions devant être réalisées par L’Editeur/Intégrateur  et les livrables  
+devant être fournis par ce derni er, tels qu’ils sont  décrits et détaillés dans le présent Contrat 
+et dans ses Annexes.  
+ 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 6 - sur 47 …………………. … 
+ 13 - Anomalies  
+Par « Anomalie », on entend tout bogue, défaut, dysfonctionnement, erreur, non -conformité , 
+dégradation des performances ou problème d’utilisation du  Progiciel , de ses évolutions ou mises 
+à jour, rencontrée par le CLIENT  et fournie à ....................... ou constatée par 
+....................... sur l’environnement du CLIENT  et comprenant :  
+(i) Description  des commandes et des procédures qui font apparaître l’Anomalie,  
+(ii)  Description  du système d’exploitation,  
+ Indication  de la version du Progiciel,  
+(iii) Description  détaillée de l’Anomalie,  
+(iv) Exemples  de données entrantes et sortantes,  
+(v) Toute  autre circonstance spécifique, utile, relative à la découverte de l’Anomalie.  
+ 
+13.1 - Par « Anomalie Bloquante » : on entend toute Anomalie bloquante reproductible,  
+rendant impossible l’utilisation du Progiciel, d’une fonctionnalité essentielle du Progiciel.  
+13.2 - Par « Anomalie Sévère » : on entend toute Anomalie sévère reproductible dégradant 
+l’utilisation d’une fonctionnalité importante, mais non essentielle, du Progiciel et pour laquelle aucune autre fonction disponible dans le Progiciel ne permet de contourner ce déficit 
+fonctionnel.  
+13.3 - Par « Anomalie Ni Bloquante Ni Sévère » : on entend toutes les Anomalies 
+reproductibles qui ne sont ni bloquantes, ni sévères.  
+ 14 - Personnalisation  
+Désigne l’ensemble des travaux de toute nature, d’ordre notamment, informatique, graphique 
+et artistique, réalisés par L’Editeur/Intégrateur  en application du présent Contrat et destinés à 
+adapter le Progiciel pour le rendre conformes aux besoins exprimés par le CLIENT  et examinés 
+par ……………… pour faire l’objet des  Guides de Personnalisation.  
+ 
+15 - Guide de Personnalisation  
+Désigne le document de référence nécessaire à la personnalisation du  (des) module(s) de 
+L’Editeur/Intégrateur  qui seront livrés au CLIENT  sous forme de Version de Référence. Il a pour 
+but de formaliser le périmètre des ajustements  du Progiciel ……………..  pour l’adapter aux 
+besoins du CLIENT . 
+ 
+Le Guide de Personnalisation reproduit les contenus standards des écrans de chaque module 
+de …………….  ., afin de permettre au CLIENT  de sélectionner les champs et rubriques qu’il 
+souhaite supprimer, ajouter ou modifier.  
+ 
+Le Guide de Personnalisation fait partie des documents contractuels applicables à la mise en 
+place chez le CLIENT  de ………………….. , hors Interfaces et Reprise des Données .  
+ 16 - Version s 
+Définition Version Mise en œuvre  Définition Version Maintenance  
+Version Standard  
+Désigne la version du Progiciel non 
+personnalisée de…………………comprenant les modules acquis par le CLIENT ainsi que les 
+fonctionnalités y afférentes.  
+Version de Référence  
+Désigne la version livrée au CLIENT  et 
+personnalisée conformément aux besoins 
+exprimés par ce dernier dans les Guides de Personnalisation.  
+ 
+Version Définitive ou Version de 
+Déploiement  
+Désigne la version livrée au CLIENT  et 
+corrigée des éventuelles anomalies 
+remontées par ce dernier à l’issue de s Version Mineure : désigne toute mise à 
+jour destinée, selon le cas à apporter ou à 
+consolider des corrections d'Anomalies 
+éventuelles (Version Mineure corrective) ou 
+des améliorations concernant la simplicité 
+d'utilisation ou la rapidité d'exécution du 
+Progiciel ou de certa ines de ses 
+fonctionnalités (Version Mineure évolutive).  
+  
+Version Majeure : désigne toute mise à 
+jour substantielle du Progiciel résultant d'un 
+investissement conséquent en Recherche et 
+Développement de la part de ……………….  et 
+apportant des fonctionnalités ou 
+caractéristiques nouvelles au Progiciel ou 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 7 - sur 47 …………………. … 
+ recette s des fonctionnalités, des interfaces 
+et de la reprise des données d ans la version 
+de Référence.  
+ améliorant de manière significative son 
+noyau ou " moteur …………….  ". Chaque 
+Version Majeure s'accompagne d'un numéro 
+de Version incrémenté.  
+ 
+17- Administration Autonome  
+Désigne le module livré et installé en Lot 1 et en L ot 2 par L’Editeur/Intégrateur  permettant aux 
+administrateur(s) du Progiciel d’ajouter des champs et onglets sans besoin de l’assistance de 
+L’Editeur/Intégrateur  et après la formation prévue à cet effet et l’accompagnement prévu dans 
+la Proposition commerciale de L’Editeur/Intégrateur  
+ 
+18 - Licence serveur. 
+Les licences serveurs correspondent aux modules métiers et modules transverses nécessaires 
+à la couverture des   besoins  du CLIENT . 
+ 19 - Licences utilisateurs.  
+La solution ………………….  fonctionne avec des licences  : 
+ A définir par les métiers en fonction de leur besoin  
+ 20 - Interface  :  
+C’est un programme qui permet d’échanger et transformer des données entre applications.  
+ 
+21 - Plan d’Assurance Qualité  ou PAQ :  
+ 
+Le PAQ définit les dispositions particulières mises en œuvre sur le Projet, réputées satisfaire 
+les exigences du CLIENT, celles de l’Editeur/Intégrateur  en matière de qualité.  
+ 
+Ces dispositions sont prises en considération lorsque le Projet est initialisé et sont revues voire 
+modifiées si nécessaire pendant toute la durée de vie du Projet.  
+Ces objectifs sont les suivants : 
+ donner au CLIENT  l'assurance de la qualité des Prestations réalisées au titre de ce 
+projet,  
+ fixer les droits, devoirs et responsabilités du CLIENT  et de l’Editeur/Intégrateur  en 
+matière de suivi de la qualité,  
+ indiquer tous les moyens possibles pour répondre aux exigences techniques et qualité du CLIENT , 
+ donner au responsable de la qualité les éléments qui lui permettent d'organiser son plan d'action en matière de qualité (circulation de l'information, actions de contrôle, etc.),  
+ donner à tous les participants du Projet les procédures, règles et méthodes applicables sur le Projet,  
+ donner à ces participants une définition des tâches qu’ils doivent accomplir ainsi qu’une vision d’ensemble de l’intégration de celles -ci dans l’ensemble des travaux à mener,  
+ et d’assurer ainsi la cohérence des travaux menés dans le cadre de ce Projet.  
+ 22 - Recette :  
+Désigne la séquence des opérations par lesquelles , le bon fonctionnement, la conformité des 
+travaux, des composants informatiques, des programmes transformés, des Lots, des données 
+et plus généralement des prestations réalisées par  l’Editeur/Intégrateur  sont contrôlé es. 
+L’exécution des Plans de Recette  conduit au refus de réception, à la réception provisoire ou à 
+la réception définitive.  
+ 
+23 – Documentation Contra ctuelle  :  
+Désigne l’ensemble des documents contractuels en ce compris et limitativement le Contrat de 
+licence, mise en œuvre et de maintenance du Progiciel …………………. , les Guides de 
+Personnalisation,  l’Offre Commerciale et les réponses aux questionnaires, l’Appel d’Offres, l es 
+Annexes  et Avenants.  
+ 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 8 - sur 47 …………………. … 
+ 24 – Calendrier Prévisionnel  : 
+Désigne le document retraçant les différentes étapes du Projet et des livrables y afférents, tel 
+qu’arrêté par les Parties et annexé à l’Offre Commerciale . 
+ 25 – Calendrier Définitif  : 
+Désigne le document qui va être arrêté et validé par les Parties, en Comité Projet, en 
+remplacement d u Calendrier Prévisionnel, et  ce à l’issue de la phase d’initialisation.  Une fois 
+établi  et visé par les Parties , le Calendrier Définitif  annulera et remplacera la Calendrier 
+Prévisionnel.   
+ Le Calendrier Définitif ne fait foi que sous réserve de modifications décidées conjointement par les Part ies en Comité de Projet et validées en Comité de Pilotage.  
+ 26 – Développements Spécifiques  :   
+Programmes informatiques  spécifiquement réalisés pour les besoins du CLIENT  désignant 
+l'ensemble des algorithmes correspondant à des processus ou traitements présentant un 
+caractère d'originalité et de spécificité propres à l'activité du CLIENT  et destinés à assurer 
+l'interopérabilité du Progiciel avec d’autres Progiciels/Logiciels du CLIENT , à l'exclusion des 
+Progiciels de l’Editeur/Intégrateur et de leurs paramétrages et personnalisations.  
+ 
+ 
+II.  CONCESSION DU DROIT D’UTILISATION  DE LA LICENCE  DU PROGICIEL …………..  
+ 
+ 
+ARTICLE 1 - OBJET  
+Au terme des présentations du Progiciel qui lui ont été faites par l’Editeur/Intégrateur et qui lui 
+ont permis de prendre connaissance des fonctionnalités et des caractéristiques essentielles  
+dudit Progiciel , le CLIENT , après avoir évalué ses besoins , a manifesté sa volonté d’en souscrire 
+une licence d’utilisation .  
+ 
+L’Editeur/Intégrateur ayant évalué l’adéquation du Progiciel dans toutes ses fonctionnalités et 
+caractéristiques  essentielles aux besoins du CLIENT accepte de concéder à ce dernier,  selon les 
+modalités et conditions définies au présent Contrat, un droit d'Utilisation du Progiciel tel que 
+décrit en Annexe N°  1. 
+ ARTICLE 2 – DUREE  - Prise d’effet  
+La présente licence est  concédée et acceptée pour la durée légale de protection du Progiciel 
+par les Droits de Propriété intellectuelle.  
+ Elle débutera à la date de signature du présent Contrat  et prendra effet à compter de la 
+signature du Procès -verbal  de Recette de la Version S tandard du Progiciel  par les Parties.  
+ ARTICLE 3 - DROIT D'UTILISATION  
+3.1 - Principe  
+Le droit d'Utilisation du Progiciel est concédé par l’Editeur/Intégrateur au CLIENT  à concurrence 
+du nombre de licences utilisateurs souscrites et payées par ce dernier , pour la durée de 
+protection légale des droits d’auteur sur le Progiciel , à titre non exclusif, non cessible et non 
+transférable  et pour une Utilisation personnelle par le CLIENT  sur le Matériel et à partir du Site 
+d'Utilisation définis en Annexe 2. 
+ Le droit d'Utilisation du Progiciel objet du présent Contrat n'est concédé au CLIENT  qu'après 
+paiement du prix  convenu pour les licences souscrites et toute prestation venant compléter ou 
+enrichir l'application livrée  et ce, dans les termes et les modalités arrêtées  à l’Annexe 5 
+« Modalités Financières  ».  
+ 
+Aussi longtemps que cette condition n'aura pas été entièrement remplie, le CLIENT ne pourra 
+se prévaloir de la qualité d'utilisateur légitime du Progiciel .  
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 9 - sur 47 …………………. …  
+ Dans ce cadre, la protection du Progiciel est assurée par l’Editeur/Intégrateur  via une clé de 
+protection logique correspondant au nombre de licences souscrites.  
+ 
+3.2 Bénéficiaires  
+Le droit d'Utilisation est également  concédé aux Filiales au nom desquelles Attijariwafa bank a 
+conclu le présent Contrat à condition que ceci n'entraine aucun transfert géographique du Site 
+d'Utilisation et moyennant l’adhésion de ces dernières au présent Contrat .  
+ 
+Le droit d’Utilisation pourra éventuellement être concédé aux Sociétés non Bénéficiaires 
+moyennant l’adhésion de ces dernières au présent Contrat via la signature d’un document 
+dénommé «  Formulaire d’Adhésion  Filiale  » dont un modèle figure en Annexe 4 du présent 
+Contrat.  
+ L’Editeur/Intégrateur pourra légitimement s'opposer à étendre le droit d'Utilisation à toute 
+entité dont l'accès au Progiciel serait susceptible de générer un conflit d'intérêt ou une situation 
+concurrentielle préjudiciable à l’Editeur/Intégrateur et ce, après l’avoir dûment et valablement 
+justifié au CLIENT . 
+ 
+3.3 Transfert du Site d'Utilisation  
+Tout transfert ou changement substantiel du Site d'Utilisation devra être notifié au préalable à  
+l’Editeur/Intégrateur et au plus tard dans le mois précédent le transfert.  
+ l’Editeur/Intégrateur ne pourra s'y opposer sans juste motif tel qu'un conflit d'intérêt ou 
+situation concurrentielle et dans la mesure où le CLIENT  aura expressément accepté par 
+avenant au Contrat l'actualisation des modalités pratiques et financières pouvant en découler, en particulier concernant les prestations de maintenance . 
+ Si le changement provenait de la mise en infogérance ou de l'externalisation de l'exploitation des systèmes d'information du CLIENT  par le biais d'un tiers, le consentement de 
+l’Editeur/Intégrateur  nécessitera la signature préalable d'un avenant tripartite fixant les 
+conditions de ce transfert et matérialisant l'engagement de l'infogérant sur ses droits et obligations envers le CLIENT et l’Editeur/Intégrateur.  
+ 
+En tout état de cause le CLIENT  demeure garant envers. L’Editeur/Intégrateur  du respect par 
+son prestataire des dispositions du présent Contrat sous peine de résiliation.  
+ 
+3.4 Copies de sauvegarde  
+L’Editeur/Intégrateur  autorise le CLIENT  à faire une seule copie de tout ou partie du Progiciel 
+uniquement à des fins de sauvegarde pour permettre le remplacement d'un exemplaire usé ou 
+défectueux. Pour des raisons de sécurité cette copie ne sera exécutable qu'en cas de défaillance 
+de l'exemplai re original du Progiciel en exploitation.  
+ Par dérogation à ce qui précède, le CLIENT est également autorisé à effectuer une copie du 
+Progiciel uniquement sur un environnement dédié aux tests de sécurité en vigueur chez le 
+CLIENT . 
+ 
+Cette copie ne doit pas être confondue avec les copies du Progiciel que 
+L’Editeur/Intégrateur  aura 
+pu exceptionnellement autoriser au CLIENT dans une version non destinée à l'exploitation et 
+installées sur un serveur de test et de recette ou de pré production.  
+Toute copie devra indiquer et préserver clairement les mentions relatives au droit de propriété 
+de l’Editeur/Intégrateur  
+ 
+3.5 - Actes soumis à restrictions  
+En acceptant cette concession, l'Utilisateur Final s'interdit tout type d'usage non explicitement 
+autorisé par le présent Contrat et notamment les actes mentionnés à l'article 6  " Propriété 
+Intellectuelle ". Tout usage ou reproduction fait par l'Utilisateur Final dans des conditions différentes devra faire l'objet d'une convention séparée avec l’Editeur/Intégrateur  
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 10 - sur 47 …………………. …  
+ En outre, l’Editeur/Intégrateur  se réserve le droit exclusif de procéder à la correction des 
+erreurs éventuelles contenues dans le Progiciel  dans le  respect et le maintien de la compatibilité 
+des corrections effectuées avec les équipements du CLIENT  et de la prise en compte de l’état 
+de l’art et de la technique dans une optique évolutive . 
+ 
+3.6 - Observation et Décompilation  
+Le droit du CLIENT  à procéder à l'observation du Progiciel ainsi que celui d'obtenir les 
+informations indispensables à l'interopérabilité du Progiciel est en tout état de cause strictement limité au cadre légal en vigueur à la date de ses investigations ou manipulations, 
+tout dépassement de ce cadre étant susceptible de constituer une contrefaçon.  
+ 
+ARTICLE 4 REDEVANCE  
+En contrepartie de la Licence d'Utilisation du Progiciel, le CLIENT  règle à l’Editeur/Intégrateur  
+pour la ou les périodes convenues la ou les redevance(s) hors taxes stipulée(s) «  Coût des 
+Licences  » telles que prévues à l'Annexe 5 du présent Contrat  et relative aux «  Modalités 
+Financières  ». 
+ ARTICLE 5 - GARANTIE S 
+5.1 - Garantie d e conformité du Progiciel  
+Pour chacun des Modules du Progiciel, l’Editeur/Intégrateur s'engage, au titre de la garantie 
+contractuelle et en dehors de tout es Prestations   de maintenance, à mettre en œuvre tous les 
+moyens dont il dispose pour remédier aux Anomalies. Les délais nécessaires à cette opération 
+ne devront en aucun cas être comptabilisés dans le planning général des Prestations  ; 
+l’Editeur/Intégrateur supportera toutes les conséquences qui en découlent , notamment 
+financières . 
+ 
+L’Editeur/Intégrateur garantit la conformité du Progiciel à ses caractéristiques fonctionnelles, 
+sous réserve d'une Utilisation conforme à sa Documentation et aux instructions de 
+l’Editeur/Intégrateur sur le Matériel spécifié en Annexe N° 2.  
+ 
+A ce titre, l’Editeur/Intégrateur  corrigera gratuitement pendant six (6) mois à compter de la 
+date de livraison , toute anomalie reproductible portée à sa connaissance  par le CLIENT . Cette 
+garantie couvre le P rogiciel livré en ne peut en aucun se confondre avec la garantie 
+contractuelle relative à la mise en œuvre de ce progiciel dont la date d’effet court à partir de la date de mise en production.   
+ 
+Aux fin s de la présente garantie et dans la mesure du possible, le CLIENT établira un compte -
+rendu écrit de ces Anomalies en donnant tous les éléments nécessaires à leur identification par 
+l’Editeur/Intégrateur Ce compte rendu devra être porté à la connaissance de 
+l’Editeur/Intégrateur dès la constatation de l'A nomalie par le CLIENT.  
+ 
+L’Editeur/Intégrateur est tenu  de résoudre l'A nomalie constatée au moyen d'une solution de 
+contournement  temporaire  adéquate et conforme aux attentes du CLIENT . 
+ Le CLIENT reconnaît être informé qu’en l’état actuel de la technique, il n’est pas possible de 
+garantir que le Progiciel fonctionnera sans discontinuité ni bogues.  
+ 
+5.2 - Exclusions  
+La présente garantie du Progiciel est notamment exclue en cas :  
+ 
+- d'Anomalie non imputable au Progiciel ni à l’Editeur/Intégrateur , 
+- de mo difications de l'environnement M atériel ou du système d'exploitation  du CLIENT  non 
+portées à la connaissance de l’Editeur/Intégrateur,  
+- de mauvais fonctionnement d'adjonctions ou de dispositifs au Progiciel non agréés par 
+l’Editeur/Intégrateur,  
+- de défaillances ou variations de courant électrique ou du réseau de télécommunications  
+endommageant substantiellement  le Progiciel à moins d’un déficit des règles de sécurité 
+inhérentes au Progiciel , 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 11 - sur 47 …………………. …  
+ - de défaillances ayant pour origine l'utilisation d'un logiciel non expressément couvert par la 
+présente licence  et non portée s à la connaissance de l’Editeur/Intégrateur,  
+- de modification ou d’altérations  substantielles  apportée s au Progiciel par le CLIENT ou par un 
+tiers sans l'accord écrit préalable de l’Editeur/Intégrateur  Il en va de même de toute  tentative 
+de modification  non agréée par l’Editeur/Intégrateur  et non couvertes par les autorisations 
+accordées par ce derni er, 
+-d’Anomalies non  reproductibles par le CLIENT , 
+- introduction d'un virus informatique ayant un effet sur le bon fonctionnement de 
+l'Environnement du CLIENT ou du Progiciel  imputable au CLIENT , 
+- intrusion préjudiciable d'un tiers dans les équipements informatiques du CLIENT , 
+- changement d'hébergement ou de système d'hébergement  non porté à la connaissance de 
+l’Editeur/Intégrateur conformément à l’article 3.3 «  Transfert du site d’utilisation du présent 
+Contrat  ». 
+ 
+5.3 Garantie d’évolution  du Progiciel  :  
+L’Editeur /Intégrateur garantit la capacité d’évolution du Progiciel, conçu de façon à permettre 
+son utilisation par un nombre croissant d’utilisateurs sans limite logiciel et apte à évoluer en 
+fonction de l’état de la technique .    
+ 
+Cette garantie d'évolution est considérée par le CLIENT  comme une exigence déterminante du 
+Contrat, afin de permettre aux utilisateurs de son système d’information de procéder, dans les 
+mêmes conditions que le permettrait le système d’information actuel avant l’installation de la 
+nouvelle Solution.  
+ 
+ARTICLE 6 - PROPRIETE INTELLECTUELLE  
+6.1 - Principe  
+L’Editeur /Intégrateur conserve, en sa qualité d'auteur, les droits exclusifs de propriété 
+intellectuelle sur le Progiciel, sa documentation et de toutes les informations associées, y 
+compris toute copie de sauvegarde, ainsi que toutes les prérogatives s'y rattachant.  
+ 
+En conséquence, le CLIENT  s'interdit tout agissement, tout acte pouvant porter atteinte 
+directement ou indirectement aux droits d'auteur sur le Progiciel, qui est notamment protégé 
+par le Code de la Propriété Intellectuelle  français . Ainsi il est notamment interdit au CLIENT  de 
+procéder à ou de faire procéder pour son compte à :  
+- Toute reproduction par quelque moyen que ce soit du Progiciel et de la documentation à 
+l'exception des copies de sauvegarde telles que mentionnées à l'article 3.4 , 
+- Toute utilisation en service bureau, toute représentation, diffusion ou commercialisation du 
+Progiciel, que ce soit à titre gracieux ou onéreux , 
+- Toute mise à disposition directe ou indirecte du Progiciel au bénéfice d'un tiers, notamment 
+par location, cession ou prêt , 
+- L'adaptation, la modification, la transformation, l'arrangement du Progiciel pour quelque 
+raison que ce soit, notamment en vue de la création d'un progiciel et/ou d'un logiciel dérivé, toute transcription, directe ou indirecte, ou traduction dans d'autre s langues du Progiciel, ainsi 
+que sa modification même partielle en vue, notamment, d'une Utilisation sur tout autre matériel 
+que celui décrit dans les prérequis  techniques. Il en va de même pour la Documentation 
+associée.  
+ 
+Le CLIENT n'acquiert sur le Progiciel aucun autre droit que ceux qui lui sont expressément 
+concédés aux termes du Contrat. Il n'acquerra notamment aucun  droit de propriété . Dans le 
+cas où les prestations déboucheraient sur des Développements Spécifiques, et sous réserve 
+des droits de propriété de l’Editeur/Intégrateur,  le CLIENT aura :  
+- Le droit d ’utiliser et d’exploiter tout ou partie des Développements Spécifiques, y 
+compris le droit de les adapter, sous réserve des droits moraux de l’auteur,  
+- Les droits de reproduction, d’adaptation, de traduction ou de modification des 
+Développements Spécifiques.  En vertu de l'article L121- 1 du Code de la Propriété 
+Intellectuelle  français , le CLIENT  s'engage à conserver toutes les mentions de propriété 
+intellectuelle et notamment le copyright de l’Editeur/Intégrateur  relatives au Progiciel 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 12 - sur 47 …………………. …  
+ et à sa Documentation. Il s'engage de la même façon à conserver toutes les mentions 
+de propriété industrielle et notamment les marques de l’Editeur/Intégrateur.  Le CLIENT 
+s'engage à faire respecter ces dispositions tant par son personnel que par tout tiers 
+susceptible d'y avoir accès.  
+Par ailleurs, l’Editeur/Intégrateur déclare n’avoir aucun droit de reproduction ou 
+d’incorporation desdits Développements Spécifiques dans d’autres Versions du 
+Progiciel destinées  à être mise sur le marché, sans l’accord préalable et écrit du 
+CLIENT, d’une part et moyennant rétribution de ce dernier qui sera préalablement 
+négociée entre eux soit sous forme de royalties ou de redevances fixes.  
+ 
+6.2 - Garantie en cas de contrefaçon  
+l’Editeur/Intégrateur garantit qu’il est le titulaire  exclusif et légitime des droits de propriété 
+intellectuelle attachés au Progiciel et le cas échéant qu’il a acquis les droits suffisants et non 
+litigieux pour en accorder une licence au CLIENT . Si l'Utilisation du Progiciel concédé était 
+susceptible de motiver une action en contrefaçon, l’Editeur/Intégrateur  s'engage, à tout 
+moment, et à ses frais, à remplacer le Progiciel concédé par un programme non -contrefaisant , 
+adéquat , répondant aux besoins exprimés par le CLIENT  tout en  précis ant au CLIENT  les délais 
+et moyens à mettre en œuvre pour ce faire , à le modifier afin d'éliminer toute contrefaçon, ou 
+à le reprendre contre remboursement au CLIENT  d’une somme équivalente au montant de la 
+redevance au titre du droit de concession d’utilisation du Progiciel objet des présentes.  
+ 
+l’Editeur/Intégrateur prendra à sa charge, tous dommages et intérêts auxquels pourrait être 
+condamné le CLIENT  par une décision de justice devenue définitive et ayant pour base exclusive 
+la démonstration d'une contrefaçon soit d'un droit d'auteur, soit d'un autre droit de propriété 
+intellectuelle  inhérent  au Progiciel .  
+ 
+Réciproquement, le CLIENT  déclare qu'il est le titulaire légitime de tous les droits d'Utilisation, 
+de modification et/ou plus généralement de propriété intellectuelle relatifs aux éléments qu'il 
+met à la disposition de l’Editeur/Intégrateur dans le cadre du Contrat  et garantit de ce fait 
+l’Editeur/Intégrateur contre toute revendication de tiers.  
+ ARTICLE 7 -DEPOT DES CODES SOURCES  
+7-1 l’Editeur/Intégrateur  certifie qu'il  a déposé les code s sources du Progiciel dans sa Version 
+Standard auprès de l’A.P.P (Agence pour la Protection des Programmes), située 119 rue de 
+Flandre à PARIS et s’engage, sur demande formelle du CLIENT  et aux frais de celui -ci, à déposer 
+les codes sources de toute mise à jour du Progiciel auprès de ladite Agence . 
+7-2 Toute modification ou adaptation apportée par l’Editeur/Intégrateur  au Progiciel et à la 
+documentation organique fera l'objet, au moins une fois par an d'un dépôt complémentaire.  
+7-3 Une copie de l’attestation du  contenu du dépôt concernant le Progiciel devra être remise 
+annuellement au CLIENT ou à un Tiers autorisé.  
+7-4 La copie des textes définissant les droits du CLIENT  et les obligations à satisfaire dans le 
+cadre de la convention liant l’Editeur/Intégrateur  et l’A.P.P  peut être adressée sur demande au 
+CLIENT . 
+7-5 l’Editeur/Intégrateur  déclare avoir autorisé l’A.P.P , à tenir le CLIENT informé des dépôts 
+successifs et autorise par ailleurs le CLIENT  à se faire communiquer toute information utile à 
+ce sujet par ladite Agence.  
+7-6 Les cas permettant au CLIENT  de demander à l’APP l’accès aux sources du Progiciel sont 
+les suivants :  
+- Le redressement ou la liquidation judiciaire sans reprise des engagements de 
+l’Editeur/Intégrateur  envers le CLIENT  dans un délai d’un mois à compter du jugement 
+prononçant le redressement ou la liquidation, si le Contrat n’est pas continué par le 
+mandataire judiciaire.  
+- Dans le cas où l’Editeur/Intégrateur  cesserait d’exécuter l’une quelconque de ses 
+obligations du fait d’une cessation d’activité et sans reprise par un tiers capable d’assurer un niveau de service équivalent au titre de la garantie contractuelle, ou de la 
+maintenance, malgré une mise en demeu re par lettre recommandée restée infructueuse 
+pendant un délai de huit (8) jours ouvrés.  
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 13 - sur 47 …………………. …  
+ En cas d’accès dans les conditions ci -dessus et d’utilisation de l’exemplaire des sources, le 
+CLIENT  peut corriger l’exemplaire des sources en le modifiant, en l’adaptant, en l’améliorant 
+mais uniquement en cas d’erreur ou d’anomalie sur l’exemplaire du Progiciel utilisé par le 
+CLIENT . Les corrections de l’exemplaire des sources du Progiciel s’effectuent sous la seule 
+responsabilité du CLIENT . 
+ 
+ARTICLE 8 - RESPONSABILITE  
+8.1 Obligations du CLIENT : 
+Le CLIENT  s’oblige  à: 
+- se prémunir par tout moyen à sa convenance des risques de destruction de ses données ou 
+de dommages à ses fichiers  lorsqu’ils ne sont pas imputables au fait de l’Editeur/Intégrateur  ou 
+au Progiciel objet du présent Contrat , 
+- assurer la sécurité de son environnement de ses programmes en adoptant une protection 
+antivirus  appropriée.  
+ 
+En conséquence, le CLIENT  renonce à mettre en cause la responsabilité de l’Editeur/Intégrateur  
+dans ces cas.  
+ En tout état de cause, 
+l’Editeur/Intégrateur  ne saurait être tenu pour responsable des dommages 
+occasionnés par la perte de données non sauvegardées  par le CLIENT . 
+8.2 Obligations de l’Editeur/Intégrateur  
+l’Editeur/Intégrateur  s’oblige à livrer son Progiciel dans sa V ersion Standard,  contenant 
+l’ensemble des fonctionnalités standards  des modules présentés au CLIENT  à l’issue de la phase 
+de cadrage, ceux -ci ayant été présentés après analyse des besoins du CLIENT , appréhendés 
+lors des réunions précédant l’Offre de l’Editeur/Intégrateur  et  déterminant l’acceptation du 
+CLIENT .   
+8.3 - Limitation de responsabilité  
+l’Editeur/Intégrateur  exclut la réparation à quelque titre que ce soit, des dommages indirects tels 
+que manque à gagner, préjudice commercial ou financier, augmentation de frais généraux, conséquence du recours de tiers ou perte  trouvant leur origine ou étant la conséquence du 
+Contrat, ainsi que des dommages causés à des personnes ou à des biens distincts de l'objet du Contrat . 
+ 
+Dans l’hypothèse où la responsabilité de 
+l’Editeur/Intégrateur  serait retenu , le montant total des 
+indemnités que ce dernier pourrait être amené à verser au CLIENT  ne pourra excéder deux fois  
+et demi le montant de la redevance perçue au titre de la concession du droit d’utilisation, et ce 
+quels que soient le fondement juridique de la réclamation et la procédure employée pour la 
+faire aboutir , sans préjudice de son droit de réclamer des dommages et intérêts . 
+  
+ARTICLE 9 - INFORMATIQUE ET LIBERTES - PROTECTION DES DONNEES A CARACTERE 
+PERSONNEL  
+Les Parties conviennent que les Lois et Règlementations régissant la Protection des données à 
+caractère personnel en vigueur dans leurs juridictions respectives sont susceptibles de 
+s'appliquer aux données gérées au travers du Progiciel et qu'il est de la responsabilité de 
+chacune des Parties concernées d'effectuer en temps utile les formalités de déclaration 
+légalement applicables auprès des autorités compétentes  de son pays.  
+Les Annexes x &x1 jointes aux présentes pour en faire partie intégrante décrivent en détail les 
+conditions relatives au traitement des données à caractère personnel respectivement au Maroc 
+à travers la Loi 09 -08 et celui relatif au RGPD.  
+ 
+ARTICLE 10 – RESILIATION  
+En cas de manquement grave par l’une des Parties à  l’une quelconque de ses obligations 
+substantielles, définies aux présentes, la concession du droit d’utilisation du Progiciel sera 
+résiliée de plein droit et sans formalités préalables, un mois après la r éception par la Partie 
+défaillante d’une lettre recommandée avec avis de réception émanant de l’autre Partie faisant 
+état des manquements  constatés.  
+ 
+L’exercice de cette faculté de résiliation ne dispense pas la Partie défaillante de remplir les 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 14 - sur 47 …………………. … 
+ obligations contractées jusqu’à la date de prise d’effet  de la résiliation et ce, sans préjudice de 
+tout recours dont pourrait disposer l’autre Partie.  
+ 
+10-1 La concession du droit d'Utilisation du Progiciel sera résiliée de plein droit aux torts 
+exclusifs du CLIENT  s'il procède aux actes suivants, à savoir  :  
+- s’il porte intentionnellement atteinte au système de protection de l’Editeur/Intégrateur  ; 
+- s’il réalise des copies illicites du Progiciel et/ou de sa Documentation ;  
+- s’il se dépossède, du Progiciel au profit d'un tiers  ;   
+- s’il transfère le Progiciel hors du Site d'Utilisation sans se conformer aux exigences définies à 
+l'article 3.3 du présent Contrat, selon le cas, sans l’information préalable de de 
+l’Editeur/Intégrateur . 
+ 
+En cas de résiliation consécutives à l’un des cas susmentionnés , le CLIENT devra  : 
+- cesser immédiatement toute Utilisation du Progiciel,  
+- restituer tous les éléments originaux qui lui ont été remis pour l'exécution du présent Contrat, 
+tels que les supports magnétiques et la Documentation, ainsi que toutes copies éventuelles de ces éléments y compris la copie de sauvegarde.  
+  
+10-2 
+l’Editeur/Intégrateur  sera considéré comme défaillant dans les cas où il  serait dans 
+l’impossibilité  d’exécuter, pour une cause qui lui est exclusivement imputable, en tout ou partie, sauf en cas de force majeure, les prestations qui lui incombent au titre de la concession 
+de la licence d’utilisation et en particulier les délais de livraisons prévus dans le  Calendrier et/ou 
+non-conformité des Progiciels  livrés selon les spécifications techniques visées dans la 
+documentation associée aux Progiciels.  
+  
+III. MISE EN ŒUVRE DU PROGICIEL ………………..  
+  ARTICLE 11 – OBJET  
+Le présent Contrat a pour objet de définir les conditions dans lesquelles l’Editeur/Intégrateur  
+s’engage à réaliser les Prestations de mise en œuvre du Progiciel.  
+ Les  conditions et obligations selon lesquelles 
+l’Editeur/Intégrateur  réalisera dans le cadre de la 
+maîtrise d’œuvre globale des Prestations objet du présent Contrat, constitue un engagement de résultat  déterminant du consentement du CLIENT  quant à la réalisation parfaite et définitive 
+desdites Prestations et ce, nonobstant toute éventuelle interprétation contraire qui serait donnée à l’une quelconque des stipulations du Contrat.  
+ Les Prestations confiées à 
+l’Editeur/Intégrateur  au titre du dit engagement, détaillées dans l’Offre,  
+se déclinent comme suit  : 
+ 
+1. Le pilotage du Projet ; 
+2. L’initialisation du Projet ; 
+3. La Mise à Disposition du Progiciel ………………… ; 
+4. La formation à la Version S tandard du Progiciel  ; 
+5. L'analyse des besoins du CLIENT  à travers :  
+ Les Ateliers de remplissages des Guides de personnalisation  ; 
+ La Cartographie des utilisateurs et Gestion des Droits d’accès  ; 
+ Si d’autres prestations (a définir par le métier). 
+6. La Personnalisation du Progiciel (personnalisat ion des modules transverses en Lot 1 
+et Lot 2) ………………………… ; 
+7. La reprise des données existantes  ; 
+8. La réalisation d es Interfaces avec les systèmes existants : 
+9. L’assistance aux recettes fonctionnelles et techniques  ; 
+10. La Mise en production  ; 
+11. L'installation technique du Progiciel ………………..  dans l’environnement du CLIENT  ; 
+12. La formation à l' utilisation du produit dans sa Version D éfinitive  ; 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 15 - sur 47 …………………. …  
+ 13. Le Transfert de compétence, mise à jour et évolutivité du Système  ; 
+14. La Garantie de six (06) mois après la mise en production du Progiciel . 
+ 
+Pour les besoins du présent Contrat , l’Editeur/Intégrateur  reconnaît avoir reçu du CLIENT  
+l’ensemble des informations utiles à l’élaboration de sa Proposition.  
+ARTICLE 12 – DUREE -PRISE D’EFFET  
+Le présent Contrat prend effet à la date de signature des Parties  et qui donnera lieu au 
+versement de l’acompte contractuel . 
+ 
+Le présent Contrat est conclu pour la durée nécessaire à la  parfaite  réalisation des Prestations  
+qui en sont l’objet sans pour autant que celle -ci n’excède la durée prévue dans le Calendrier 
+Définitif  tel que défini au présent Contrat.   
+ 
+Ledit Calendrier Définitif  sera annexé aux présentes pour en faire partie intégrante , et ne fera 
+foi que sous réserve de modifications décidées conjointement par les Parties en Comité de 
+Projet et validée s en Comité de Pilotage . 
+ 
+Etant précisé que tout modification ultérieure du Calendrier Définitif, n’emportera aucune 
+charge  financière supplémentaire pour le CLIENT . 
+ 
+ARTICLE 13 – MODALITES TECHNIQUES GENERALES  
+13.1 - Prérequis  techniques  
+Il appartient au CLIENT  de s’assurer que son environnement est conforme aux prérequis  
+techniques qui lui ont été recommandés par l’Editeur/Intégrateur  tenu par le devoir de conseil  
+envers le CLIENT  compte tenu de son expertise dans le choix des prérequis  techniques à utiliser 
+pour éviter tout défaut de complémentarité ou de compati bilité avec les livrables . 
+ En cas de b ogue informatique résultant de l’utilisation des prérequis  techniques recommandés 
+par 
+l’Editeur/Intégrateur  ce dernier s’engage à trouver une solution de contournement temporai re 
+dans l’attente de  trouv er la solution adéquate et définitive  au dysfonctionnement constaté . 
+ Tout retard pouvant être engendré par lesdits dysfonctionnements sera pénalisé par la gratuité 
+des prestations fournies par 
+l’Editeur/Intégrateur  durant toute la période nécessaire à leur 
+correction.   
+13.2 - Prestations d’installation   
+L'installation du Progiciel, se fera par le CLIENT  avec l’assistance de l’Editeur/Intégrateur  et sur 
+la base de  ses recommandations . Dans tous les cas, l’Editeur/Intégrateur  fournit au service 
+informatique du CLIENT  toute la documentation requise pour l’installation du Progiciel (y 
+compr is la liste des fichiers installés)  et demeure garant du succès de ladite installation.   
+ 
+ 
+13.3–  Sécurité    
+La protection de l’accès aux données du Progiciel via l’intranet nécessite la mise en œuvre par 
+le service informatique du CLIENT  d’outils, de moyens et de procédures de sécurité, de 
+protection et de sauvegarde adaptés à son réseau en place et conformes à l’état de l’art en la matière.   
+ 
+Bien entendu, 
+l’Editeur/Intégrateur  dédiera au CLIENT  tout conseil  ou recommandation 
+nécessaire s à la sécurité des données du Progiciel  en cas de besoin.  
+13.4 - Gestion des risques  
+13.4.1 – Principes  
+Les risques et les facteurs de risque d oivent  être identifiés par l’Editeur/Intégrateur  dès le 
+démarrage du Projet et en tout état de cause lors de la Phase de cadrage et d’étude d’impact  
+consécutives au lancement du Projet.   
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 16 - sur 47 …………………. …  
+ Les facteurs de risque et d’impact sur l a mise en œuvre du Projet seront listés avec leur 
+probabilité et leur criticité. Les variations de ces caractéristiques devront être mises en 
+évidence à chacun des C omités  Projet et des Comités de P ilotage de l’avancement des 
+Prestations. Le support qui permettra  de les suivre constitue un Livrable du Projet  à la charge 
+de l’Editeur/Intégrateur.  
+ 
+La liste des risques identifiés  sera tenue à jour par l’Editeur/Intégrateur  et étudiée à chaque 
+Comité de Projet habilité à statuer sur les risques  technique s et opérationnels inhérents  à la 
+réalisation des prestations. 
+13.4.2 – Analyse et gestion des risques  de performance  
+Chaque risque fera l’objet d’un suivi par l’Editeur/Intégrateur . Ce derni er s’engage, dans le cadre 
+de l’exercice de son devoir de conseil, à alerter le CLIENT  en cas de détection de risque critique 
+ayant un impact de propagation , ne pouvant trouver d’action préventive ou corrective, sans 
+engendrer des dégradations  de performance . 
+ 
+Cette alerte devra être notifiée au CLIENT  par écrit quel qu’en soit le support et  devra figurer 
+dans les PV du C omité Projet et  du Comité de Pilotage  le cas échéant.  
+ ARTICLE 14 – OBLIGATIONS DES PARTIES  
+14.1 – Déclarations et Obligations de l’Editeur/Intégrateur : 
+14.1.1- Déclarations de 
+l’Editeur/Intégrateur  
+L’Editeur/Intégrateur  déclare et garantit au CLIENT  que : 
+a) il est une société régulièrement constituée, jouissant de la personnalité morale et 
+possédant la pleine capacité juridique de conclure le Contrat et d'en exécuter et respecter 
+les termes et conditions ;  
+b) la signature et l'exécution du Contrat ont été régulièrement autorisées par ses organes 
+sociaux et ne requièrent aucune autorisation d'aucune autorité compétente qui n'ait été 
+obtenue ;  
+c) la signature du Contrat et l'exécution des obligations qui en découlent pour lui ne 
+contreviennent, ni à ses statuts ni à un quelconque engagement auquel il pourrait être 
+tenu, ni ne violent en aucune façon les lois ou règlements qui lui sont applicables ;  
+d) aucune procédure judiciaire, administrative ou arbitrale n'est en cours, ou à sa connaissance, n'est sur le point d'être engagée à son encontre pour empêcher ou interdire 
+la signature ou l'exécution du Contrat ou qui pourrait avoir un effet défavorable im portant 
+sur son activité, ses actifs ou sa situation financière ;  
+e) aucun événement susceptible d'avoir un effet défavorable important sur son activité, son 
+patrimoine ou sa situation économique et financière n'est survenu depuis la clôture de son dernier exercice social et il n'existe aucun fait constituant ou manifestem ent 
+susceptible de constituer un cas de résiliation des présentes ;  
+f) ses derniers bilans et comptes de résultats sociaux, ont été établis selon les principes comptables généralement admis, sont réguliers et sincères et donnent une image fidèle 
+de son patrimoine, de sa situation financière et de ses résultats ;  
+g) il est titulaire de polices d'assurance pour des montants et des couvertures de risques de 
+dommage et de responsabilité adaptés à la nature de ses activités  ; 
+14.1.2 Obligations de l’Editeur/Intégrateur  
+L’Editeur/Intégrateur  s'engage à exécuter le Contrat et à exercer son devoir de conseil envers 
+le CLIENT  avec tout le soin et toute la diligence requise par sa profession.  
+l’Editeur/Intégrateur  sera seul responsable vis -à-vis du CLIENT  de la parfaite exécution des 
+Prestations qui lui incombent dans les conditions prévues dans les présentes, et s’oblige 
+notamment à  : 
+i. Assurer le pilotage du Projet conformément aux conditions contractuelles  ; 
+ii. Exécuter ses obligations aux termes du Contrat conformément aux normes professionnelles admises en pareille matière ;  
+iii. Fournir les livrables et/ ou rapports intermédiaires relatifs aux Prestations tels que définis 
+dans l’Annexe 7  et/ou dans le PAQ  définitif qui sera  joint aux présentes pour en faire 
+partie intégrante.  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 17 - sur 47 …………………. …  
+ iv. Participer régulièrement et activement aux réunions de direction du Projet en émettant 
+les avis et les recommandations requises pour mener à bien le Projet et permettre sa 
+réalisation dans les délais  ; 
+v. Nommer par écrit un responsable qualifié au sein de son équipe , dûment  habilité à 
+signer conjointement avec le représentant du CLIENT  les comptes rendus d’intervention 
+au titre des Prestations objet des présentes  ; 
+vi. Assurer la disponibilité des équipes affectées au Projet afin de concrétiser une mise en 
+œuvre optimale du projet ; 
+vii. Affecter à la réalisation du Projet une équipe pluridisciplinaire, constituée selon les 
+exigences et la particularité du Projet en fonction des compétences et qualifications de 
+ses membres et la maintenir jusqu’à l’aboutissement du Projet ;  
+viii. Garantir la disponibilité des ressources affectées à la Mission sauf cause indépendante 
+de sa volonté telle qu’un cas de force majeure et dans la limite de la durée du Projet  ; 
+ix. Maintenir le responsable du Projet désigné pour diriger la Mission pendant toute la durée 
+de la Mission  ; 
+x. Ne procéder à aucun changement de ses consultants et veiller, en cas de départ d’un 
+consultant, à le remplacer par un consultant présentant un niveau de compétences et 
+expérience au moins équivalent et ce, pendant la durée du Projet  ; 
+xi. Informer préalablement le CLIENT  et en requérir son accord en cas de changement de 
+l’organisation et de la composition de l’équipe mise en place pendant la durée du Projet  ; 
+xii. Retirer et/ou remplacer l’un des membres de son équipe sur demande du CLIENT  pour 
+des raisons objectives et dûment justifiées  ; 
+xiii. Pourvoir immédiatement au remplacement d’un des membres de l’équipe de 
+l’Editeur/Intégrateur  en cas de maladie ou d’accident l’empêchant de poursuivre ses 
+prestations pour une durée supérieure à 1 (une) semaine. L’agrément et la mise en place du nouveau consultant seront soumis à l’information préalable du CLIENT .  Les 
+frais de remplacement sont à la charge de 
+l’Editeur/Intégrateur  et compren dront  le cas 
+échéant, les dépenses qui résulteraient de l’éventuelle nécessité de la présence 
+simultanée sur place du  consultant à remplacer et de son remplaçant ; 
+xiv. Prévenir immédiatement le CLIENT , en lui fournissant toutes les pièces justificatives 
+nécessaires, de toutes les transformations statutaires ou projets de transformation 
+affectant, notamment son capital social, sa nature juridique, son objet ou sa capacité 
+juridique.  
+14.2 – Obligations du CLIENT  : 
+Le CLIENT  s’engage à collaborer activement et régulièrement avec l’Editeur/Intégrateur  dans le 
+cadre de la Prestation  de Personnalisation du Progiciel. Il devra communiquer à 
+l’Editeur/Intégrateur  les informations que ce derni er jugera utiles pour remplir ses obligations.  
+ 
+Le CLIENT  déclare avoir évalu é ses besoins de façon précise , dans le cadre des échanges 
+précéd ant l’Offre Fonctionnelle de l’Editeur/Intégrateur  et a appréci é leur couverture fonctionnelle 
+et technique par la solution proposée par l’Editeur/Intégrateur . 
+Le CLIENT  reconnaît avoir reçu de l’Editeur/Intégrateur  lors de son expression de besoins, les 
+informations nécessaires , ce qui lui a permis d'apprécier leur couverture fonctionnelle par le 
+Progiciel proposé par l’Editeur/Intégrateur . 
+L’Editeur/Intégrateur  s'engage à répondre aux questions complémentaires du CLIENT  et ce dans 
+le cadre d’une réévaluation éventuelle des besoins du CLIENT  et une redéfinition du Calendrier 
+Prévisionnel d’exécution des Prestations objet des présentes .  
+L’Editeur/Intégrateur  précise qu’il mène une mission de personnalisation du Progiciel et non 
+d'organisation métiers. Néanmoins, l’Editeur/Intégrateur  est tenu dans ce cadre à un devoir de 
+conseil et se doit d’alerter le CLIENT sur ses choix d’organisation dont il assume seul la 
+responsabilité et leurs effets induits sur le Progiciel.  
+ 
+Le CLIENT  doit s'assurer qu'il dispose de la compétence requise pour l'Utilisation du Progiciel.  
+ 
+ARTICLE 15 – CONDUITE DE PROJET  
+15.1 - Méthodologie de projet  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 18 - sur 47 …………………. …  
+ Les Prestations et la méthodologie de projet sont décrites au présent Contrat et dans la  
+Proposition Commerciale de l’Editeur/Intégrateur . 
+ 
+Le projet est divisé en deux (2) L ots : 
+ 
+Le Lot 1 comporte les Modules suivants  : 
+ Module «  ………………….  » ; 
+ Module «  ……………..  » ; 
+ Module «  ……………… » ; 
+ Module «  ………………………. » ;  
+ 
+Le Lot 2 comporte les Modules suivants  : 
+ Module «  ……………… » ; 
+ Module «  …………………………… » ; 
+ Module «  …………………….  ». 
+ 
+Il est convenu entre les Parties que ces deux (2) L ots seront réalisés suivant la chronologie 
+prévue à cet effet dans le Calendrier Prévisionnel.  
+ 
+Toutefois, et à la demande du CLIENT , une période d’observation pourrait être demandée, le 
+cas échéant  entre la mise en œuvre du Lot 1 et du Lot 2 . Sachant que les équipes dédiées au 
+Projet, capitaliseront sur les travaux menés lors du Lot 1.  
+ 
+Il est également entendu entre les Parties que la méthodologie de projet décrite au présent 
+Contrat et dans la  Proposition Commerciale de l’Editeur/Intégrateur  ainsi que le Calendrier 
+Prévisionnel (Annexe 3) sont applic ables à chacun de ces deux (2) L ots.  
+15.2 - Instances de suivi et de contrôle de réalisation des Prestations  : 
+15.2- 1 : Intervenants CLIENT  
+ Directeur de Projet  ayant pour mission  : 
+ Orient ation du  Projet  ; 
+ Arbitr age des choix significatifs  ; 
+ Pilotage de  la relation contractuelle avec les prestataires  ; 
+ Assist er aux comités de pilotage ;  
+ responsab ilité de la coordination de l’équipe Projet CLIENT  et est l’interlocuteur 
+privilégié de l’Editeur/Intégrateur . 
+ Chef de Projet Utilisateur (CP)  ayant pour mission  :  
+ Connaissance des outils en place ;  
+ Maîtrise des évolutions souhaitées dans l'application ;  
+ Centralis ation les demandes des intervenants Projets ;  
+ Animation de l'équipe  ; 
+ Pilotage la relation avec les équipes utilisateurs.  
+ 
+ Utilisateur Clé (UC)  ayant pour mission  : 
+ Participation  à la phase d'expression de besoins ;  
+ Conception de l'application ; 
+ Maîtrise des évolutions souhaitées dans l'application ;  
+ Centralis ation les demandes des intervenants Projets.  
+ Chef de Projet Informatique (CPI)  ayant pour mission  : 
+ Pilotage du Projet technique ; 
+ Validation de l’architecture technique ;  
+ Mise en place des environnements de validation (Serveur de pré production, 
+serveur de recette)  
+ Participation  aux recettes techniques et fonctionnelles  ; 
+ Participation  à la communication et au déploiement de la solution.  
+15.2- 2 : Intervenants l’Editeur/Intégrateur  
+ Directeur de Projet  
+ Assiste aux comités de pilotage ;  
+ Est responsable des intervenants de l’Editeur/Intégrateur  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 19 - sur 47 …………………. …  
+  Chef de Projet  
+ Assure le pilotage du Projet  ; 
+ Analyse l'expression de besoins ;  
+ Est l’i nterlocuteur privilégié de l'équipe Projet ;  
+ Coordonne toutes les phases et les intervenants du Projet  ; 
+ Rédige les livrables de pilotage du projet et les soumet au Directeur Projet 
+CLIENT  pour validation : 
+ Planning détaillé du projet actualisé au fil de l'eau , 
+ Support et CR des comités projet , 
+ Support et CR des comités de pilotage , 
+ Tableau de suivi des risques et alertes , 
+ Tableau de suivi des actions , 
+ Tableau de suivi des livrables  
+ Responsable Qualité  
+ Est Responsable de l’assurance Qualité du Projet  ; 
+ Teste les Versions  ; 
+ Vérifie l’adéquation fonctionnelle des livraisons  / SFD ;  
+ Expert Technique  
+ Met en place  l'Architecture Technique ;  
+ Participe à l’installation  des Versions ;  
+ Met en  place les interfaces.  
+ Ingénieur Développement  
+ Réalis e la personnalisation et le paramétrage de la solution ;  
+ Réalis e les interfaces.  
+ Formateur Equipe M étier 
+ Forme l'équipe Projet ;  
+ Analyse les besoins de personnalisation  et de formation supplémentaire, le cas 
+échéant . 
+15.2- 3 : Instances  
+ Le Comité de Pilotage  
+ Participants  : Le Directeur de Projet du CLIENT , Le Directeur de Projet de 
+l’Editeur/Intégrateur . (en option), Le Chef de Projet de l’Editeur/Intégrateur , le(s) 
+responsable(s) au sein du Comité de Pilotage de chaque domaine, le responsable 
+de la MOA et la DSI,  
+ Sa mission consiste à s uivre l’avancement global du projet, à fixer les priorités 
+au Comité de P rojet, se prononcer sur les éventuels arbitrages.  
+ Fréquence  des réunions : Toutes les ………………semaines environ.  
+ Le Comité de Projet  
+ Participants  : L’équipe Projet ( CLIENT  et l’Editeur/Intégrateur ). 
+ Sa mission consiste à sui vre l’avancement détaillé du projet, synthétiser les 
+ateliers, reporter au Comité de Pilotage.  
+ Fréquence  des réunions : Toutes les semaines.  
+ 
+15.3-  Calendrier  
+La date de début des Prestations est fixée d’un commun accord entre les Parties .  
+ Le Calendrier Prévisionnel d’exécution qui sera réajusté au démarrage du Projet, débutera à la 
+date arrêtée par les Parties après signature du Contrat et  versement de l’acompte contractuel, 
+conformément  aux stipulations contractuelles  détaillées en Annexe 5.  
+ 
+Cette date constituera le T zéro sur lequel sera aligné le C alendrier Prévisionnel d’exécution 
+des différentes phases de la mise en œuvre du Progiciel  prévu à l’Annexe 3  des présentes.  
+15.4-  Phase  d’initialisation des Prestations et Réunion de lancement  
+La réunion de lancement a pour objet de présenter les équipes, d’établir le planning de la 
+conduite d u projet et de remettre les Guides de Personnalisation au CLIENT.  
+Comme indiqué à l’article 14 -1-2. (v)  des présentes , l’Editeur/Intégrateur  désignera parmi son 
+personnel un chef de projet et un directeur de projet dont il communiquera les identités au 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 20 - sur 47 …………………. …  
+ CLIENT . Lesdits chef de projet et directeur de projet seront responsables du bon déroulement 
+et de l’achèvement des Prestations et représenteront valablement l’Editeur/Intégrateur  auprès 
+du CLIENT .  
+ 
+LE CLIENT  désignera à l’Editeur/Intégrateur  dans les mêmes conditions et modalités, son 
+représentant qualifié, ci -après dénommé «  le Représentant du CLIENT » ou « le Directeur de 
+projet  », qui sera le correspondant attitré de l’Editeur/Intégrateur . Ce Représentant devra avoir 
+tous pouvoirs pour engager techniquement le CLIENT aux fins de  la réalisation des Prestations  
+sauf lorsque la décision à prendre nécessite l’intervention d’instances supérieures . Il appartient 
+au CLIENT  de lui accorder toutes les habilitations ou mandats nécessaires à cet effet.  
+ 
+La désignation d’un nouveau représentant par l’une ou l’autre des Parties n’emportera aucune 
+modification aux Prestations signées ou en cours de réalisation.  
+ 
+Si au cours de la réalisation des Prestations une difficulté apparaît, les Parties s’engagent à 
+s'en informer le plus vite possible et à se concerter pour mettre en place la meilleure solution 
+possible dans les meilleurs délais.  
+15.5 - Installation de la Version  Standard du Progiciel et Formation de l’équipe projet 
+du CLIENT  aux modules standards  
+L’Editeur/Intégrateur  s’engage à mettre à disposition du CLIENT  la Version Standard du Progiciel.  
+ 
+Le CLIENT  rendra ses ressources techniques, hommes et matériels disponibles suivant le 
+Calendrier Prévisionnel d’exécution fixé par les Parties.  
+ Après signature du procès -verbal de mise à disposition ou d’installation du Progiciel dans sa 
+Version Standard, 
+l’Editeur/Intégrateur  assurera une formation à l’équipe Projet du CLIENT  dans 
+les termes et conditions convenus  et remettra au CLIENT toute la documentation standard 
+associée au Progiciel.  
+15.6 - Remplissage des Guides de Personnalisation  
+En collaboration avec l’équipe projet du  CLIENT , l’équipe projet  de l’Editeur/Intégrateur  analyse 
+les besoins de personnalisation, afin de les intégrer au Progiciel lors de réunions et ce 
+conformément au C alendrier Prévisionnel détaillé en Annexe 3. 
+ A cette fin il appartient au CLIENT  de désigner son équipe Projet avec laquelle , 
+l’Editeur/Intégrateur  remplira  et validera les Guides de Personnalisation.  
+ Au cours de la phase de personnalisation, 
+l’Editeur/Intégrateur  organisera des ateliers de 
+définition des besoins animés par le Chef de Projet de l’Editeur/Intégrateur  assisté d’un 
+consultant Fonctionnel de l’Editeur/Intégrateur  afin d’accompagner et de conseiller le CLIENT . 
+ Les Guides de Personnalisation doivent être  rempli s par 
+l’Editeur/Intégrateur  et complétés le cas 
+échéant  suivant ce qui a été arrêté lors des différents ateliers. Le CLIENT procèdera à leur  
+validation dans les délais et selon la procédure décrite ci -après.   
+ 
+Ainsi l’Editeur/Intégrateur  procèdera à la livraison d’un  Guide de Personnalisation par M odule 
+dans un délai ne dépassant pas 5 jours ouvrés après la clôture des travaux des ateliers relatifs 
+audit Module.  
+ Suite à la réception de ce document  par le CLIENT , ce dernier  disposera d’un délai maximum 
+de 10 jours ouvrés pour se prononcer sur sa validation.  
+ 
+En cas de non-approbation  du contenu du Guide de Personnalisation par le CLIENT , 
+l’Editeur/Intégrateur  devra  procéder à sa mise à jour  dans les  deux (0 2) jours ouvrés qui suivent  
+sa restitution par le CLIENT.   
+ 
+La validation finale de ce document par le CLIENT  devra se faire dans un délai maximum de 
+cinq (05) jours ouvrés de leur réception et ce en conformité avec le  Calendrier P révisionnel 
+objet de l’Offre Commerciale jointe  aux présentes.   
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 21 - sur 47 …………………. … 
+  
+Le Guide de Personnalisation validé et signé deviendra le document de référence nécessaire à 
+la personnalisation des modules qui seront livrés sous forme de Version de Référence.  
+ A défaut de validation dans les délais convenus, la partie diligente ou non défaillance pourra 
+actionner la procédure d’escalade prévue à l’article 25  des présentes .  
+ ARTICLE 16 – MISE A DISPOSITION- INSTALLATION ET RECETTE DES DIVERSES 
+VERSIONS DE REFERENCE (Version de R éférenc e personnalisée, puis avec les 
+Interfaces, puis avec la reprise de données existantes)  
+ 16-1  : l’Editeur/Intégrateur  s’engage à mettre à disposition du CLIENT  ou à installer sur son 
+environnement les Versions de Référence du Progiciel conformes aux  : 
+ Guides de Personnalisation validés par les Parties  ; 
+ Spécifications des interfaces et  ; 
+ Spécifications des modules de reprise de données.  
+ 
+La mise à disposition ou l’installation des Versions de Référence du Progiciel …………………  
+contenant les Modules commandés a pour but de   permettre au CLIENT de visualiser et 
+d’utiliser le résultat de la personnalisation du Progiciel après son adaptation à ses besoins tels 
+qu’ils sont exprimés et validés, dans le Guide de Personnalisation de chacun des Modules,   par 
+le CLIENT . 
+ 
+Il est précisé que le CLIENT  ne pourra pas formuler de nouvelles demandes, d’ajouts ou de 
+modifications de la Personnalisation hors du périmètre initialement convenu, tel que défini dans les Guides de Personnalisation et dans les spécifications validés, à moins que la demande d’ajout s ou de modification ne se justifie par   une omission imputable à 
+l’Editeur/Intégrateur  
+pouvant être révélée lors de la procédure de Recette.  
+ La Version de Référence sera mise à disposition du CLIENT  ou installée sur son environnement 
+de recette dans les délais définis au Calendrier Définitif Annexé au présent Contrat  et donnera 
+lieu à la signature d’un procès -verbal d’installation.  
+ A chaque livraison d’une Version du Progiciel, 
+l’Editeur/Intégrateur  remettra au Responsable 
+Technique du CLIENT  une version provisoire de la documentation technique (dossier 
+d’installation et d’intégration, et dossier d’exploitation), laquelle décrit les éléments techniques nécessaires à l’installation de la V ersion du Progiciel   livrée au CLIENT  dans un 
+environnement   standard conforme aux prérequis  techniques de 
+l’Editeur/Intégrateur  et ce en 
+vue de sa mise en exploitation.  
+ 
+La réception des paramétrages et développements spécifiques (Version de R éférence, 
+interfaces, reprises de données) s'effectue selon le Calendrier Définitif  prévu par les Parties tel 
+qu’indiqué à l’Annexe 3 des présentes. Le CLIENT  recette, avec l’assistance de 
+l’Editeur/Intégrateur  les développements spécifiques et les fonctionnalités du Progiciel 
+paramétrés par l’Editeur/Intégrateur , à l'aide du jeu d'essai correspondant. Les résultats de cet 
+essai sont consignés dans un procès -verbal de réception.  
+16-2 :  Sous réserve de la confirmation de leur durée dans le Calendrier Définitif, les phases de 
+Recettes convenues se dérouleront comme suit:  
+• Recette de Version de Référence d’une durée de 3 semaines  ;   
+• Recette des Interfaces d’une durée de 2 semaines  ; 
+• Recette de la Reprise des données d’une durée de 2 semaines  ; 
+• Recette définitive d’une durée d’une semaine. Il s’agit d’une vérification avant mise en production.  
+ A cet effet, la Recette a pour objectif de contrôler que les développements effectués par 
+l’Editeur/Intégrateur  sont conformes aux  : 
+• Guides de Personnalisation  ; 
+• Spécifications des interfaces  ; 
+• Spécifications de la reprise des données  ; 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 22 - sur 47 …………………. …  
+ Tels qu’approuvés par le CLIENT.  
+ 
+Par ailleurs, Le CLIENT  procède à la réception des réalisations à la date convenue entre les 
+Parties, étant entendu que l’Editeur/Intégrateur  s’engage à réaliser avant chaque livraison une 
+recette unitaire afférente à chacune des réalisations.  
+ 
+L’Editeur/Intégrateur  fournira au CLIENT , deux (0 2) semaines avant le début de chaque recette  : 
+le plan de recette et les cas de recette validés par le CLIENT . 
+ 
+A cet effet, l’Editeur/Intégrateur  est tenu de livrer au CLIENT  les cahiers de recette dans un délai 
+de 3 semaines après  :  
+ 
+ La validation des spécifications détaillées des interfaces  ; 
+ La validation des spécifications détaillées de la reprise des données . 
+ 
+l’Editeur/Intégrateur  est tenu de livrer au CLIENT  les cahiers de recette après la validation des 
+Guides de Personnalisation pour la Version de R éférence selon les délais suivants  :  
+ 
+ 3 semaines pour le 1er cahier de recette d’un sous -Lot de Modules défini conjointement 
+par les Parties  ; 
+ 5 semaines pour le 2ème cahier de recette du sous -Lot des Modules restant s. 
+ 
+Il est entendu que les sous -lots seront établis par les Parties de manière équilibrée en terme 
+de charge pour l’élaboration des cahiers de recette.  
+ Aussi, il y a lieu de préciser que le cahier de recette devra avoir la capacité à être joué plusieurs 
+fois (itérations) pendant toute la période de la recette.  
+ 
+Le CLIENT  pourra demander à allonger la durée de recette sans impact budgétaire. Etant 
+précisé que  cette demande d’extension de la période de recette devra être validée en Comité 
+de Projet.   
+ 
+La recette de chaque version prendra en compte une phase de test de non-régression  par 
+rapport à la version précédente.  
+ 
+Entre la livraison du cahier de recette par 
+l’Editeur/Intégrateur  et sa validation par le CLIENT , les 
+Parties disposeront de ce délai pour affiner, se mettre d’accord et approuver le cahier de 
+recette.  
+ 
+Si les parties n’ont pas pu se mettre d’accord dans les trente( 30) jours suivant la 
+communication par l’Editeur/Intégrateur  des scénarios de recette, la Partie diligente ou non 
+défaillante pourra actionner la procédure d’escalade prévue à l’article 25  du Contrat.  
+ Le Cahier de Recette précise la liste exacte des cas de test conformément aux Guides de 
+Personnalisation, aux Spécification Détaillées des Interfaces et aux Spécification Détaillées de 
+la Reprise des données, décrit l’environnement de tests, les modalités opératoires à mettre en 
+œuvre pour assurer le déroulement des tests, leur durée prévue  ; il présente les scénarios de 
+recette à réaliser sous forme de fiche d’essais (description de l’essai, mode opératoire, résultat 
+attendu).  
+ 
+Les opérations de recette se déroulent comme suit  : 
+• Désignation préalable des responsables de 
+l’Editeur/Intégrateur  et le CLIENT habilités à 
+représenter et engager chacune des Parties lors du déroulement de la recette  ; 
+Il y a lieu de préciser que les personnes en charge de la recette du Progiciel (Module par 
+Module) seront  disponibles pendant toute la durée de la recette pour assister le CLIENT  
+dans cette phase   et présents conformément au pou rcentage de présence défini au 
+Calendrier Définitif , soit, en moyenne, deux ( 2) jours par semaine.  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 23 - sur 47 …………………. …  
+ • La phase de recette se déroule conformément au Calendrier Définitif  du Projet. La 
+confirmation est donnée à l’Editeur/Intégrateur  Dix (10) jours ouvrés avant le démarrage 
+de la phase de recette  ;  
+• Déroulement de tout ou partie des essais par le CLIENT  avec assistance de 
+l’Editeur/Intégrateur  et consignation des résultats d’essais dans le Cahier de Recette  ; 
+• Le CLIENT  notifie à l’Editeur/Intégrateur  au fur et à mesure de l’avancement des essais 
+et avec un maximum de précision, de toutes les non-conformités  qui apparaîtraient dans 
+les résultats obtenus à l’aide des jeux d’essais. La   non-conformité doit consister en un 
+défaut de fonctionnement par rapport aux Spécifications Contractuelles  ; 
+• La correction des non-conformités  sera réalisée dans le respect du planning du projet, 
+à l’issue de l’exécution de tous les cas de tests référencés dans le  cahier de recette. 
+Seules les Anomalies B loquantes feront l’objet d’une correction instantanée et d’une 
+nouvelle livraison.  En tout état de cause, l’Editeur/Intégrateur  procèdera à une mise à 
+jour corrective une fois par semaine chaque vendredi de l’ensemble des anomalies.  
+• Chaque nouvelle livraison sera suivie d’une recette de vérification de la correction des 
+Anomalies déjà soulevées.  
+16-3 : Si des Anomalies rendant inexploitables les développements spécifiq ues ou le Progiciel 
+du fait des paramétrages de l’Editeur/Intégrateur , sont constatées, le CLIENT est en droit de 
+refuser de signer le procès -verbal de recette et une date doit alors être fixée pour une nouvelle 
+mise en recette.  
+ A ce titre, 
+l’Editeur/Intégrateur  effectue à ses frais la correction des Anomalies  constatées 
+conformément au Calendrier Définitif . 
+ 
+En l’absence de réserves formulées par le CLIENT (recette validée), le Procès -Verbal  de Recette 
+sera co- signé par les Parties.  
+ 
+Chaque partie conserve un exemplaire du Procès -Verbal  de  Recette. A défaut celui -ci est 
+envoyé par lettre recommandée avec Accusé de Réception par la Partie la plus diligente à l’autre Partie.  
+ ARTICLE 17 – REPRISE DES DONNEES  
+L’Editeur/Intégrateur  effectuera la reprise des données du CLIENT  selon les modalités suivantes  : 
+ 
+• audit préalable des données numériques antérieures. A cette fin, le CLIENT s’engage à 
+fournir à l’Editeur/Intégrateur  tous les éléments indispensables à la bonne compréhension 
+de la structure de ses données  ; 
+• création d’un tableau de correspondance entre les champs de s fichiers de données 
+source du CLIENT à reprendre et les champs de la base de données cible  de 
+l’Editeur/Intégrateur , avec indication des règles spécifiques de reprise  ; 
+• écriture de la routine de traitement des données permettant de basculer les données 
+des fichiers existants vers la base cible  et basculement des données d es fichier s dans 
+le Progiciel . 
+ Le suivi de la recette des données du CLIENT  est réalisé grâce à un journal d’anomalies qui 
+sera fourni au CLIENT  par 
+l’Editeur/Intégrateur  (Back -Log). 
+ 
+Dans le cadre de cette Prestation, il appartient au CLIENT  : 
+• de ne fournir à l’Editeur/Intégrateur  que des copies de ses Fichiers réalisées à l’aide 
+d’outils, de moyens et de procédures de sécurité, de protection et de sauvegarde adaptés à son réseau en place et conformes à l’état de l’art en la matière  ; 
+• de collaborer activement au travail d’analyse des bases de données, et notamment de 
+contribuer à la qualité des données à reprendre.  
+ 
+La Prestation est effectuée par 
+l’Editeur/Intégrateur  dans les conditions prévues au présent 
+Contrat, dans la  Proposition Commerciale de l’Editeur/Intégrateur . 
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 24 - sur 47 …………………. …  
+ Le Calendrier Prévisionnel d’exécution pourra être réactualisé par les Parties afin de prendre 
+en compte les éventuelles difficultés rencontrées lors de la reprise des données , et ce sans 
+incidence sur le prix convenu de la prestation . 
+ 
+ARTICLE 18 – INTERFACES AVEC LES SYSTEMES EXISTANTS  
+Les interfaces convenues  seront réalisées dans les conditions de l’Annexe 7 du présent Contrat 
+et conformément aux règles et procédures définies dans le PAQ  objet de l’Annexe 6 .  
+ 
+ARTICLE 19 – INSTALLATION ET VALIDATION DE LA VERSION  DEFINITIVE  
+Au terme du délai de recette des versions ajustées, l’Editeur/Intégrateur  procèdera à la livraison 
+pour l’installation sur le serveur d’intégration du CLIENT  de la Version Définitive du Progiciel en 
+lui notifiant que celle -ci est prête au déploiement.  
+ 
+L’installation est réalisée par le CLIENT  avec l’assistance de l’Editeur/Intégrateur  A cette fin, 
+l’Editeur/Intégrateur  remettra au Responsable Technique du CLIENT  la version d éfinitive de la 
+documentation technique (dossier d’installation et d’intégration, et dossier d’exploitation), 
+lesquels décrivent les éléments techniques nécess aires à la mise en place de la V ersion 
+Définitive du Progiciel dans l’environnement du CLIENT  et à son exploitation, ainsi que les 
+guides et documentations utilisateurs personn alisés qui recensent l’ensemble des 
+fonctionnalités du Progiciel pour permettre son utilisation.  
+ 
+Après une période de validation, telle que prévue dans le Calendrier Définitif objet de l’Annexe 
+3  des présentes, la Version Définitive sera installée dans l’environnement de production par le 
+CLIENT  avec l’assistance de l’Editeur/Intégrateur . 
+ Il est précisé que toute non -installation ou non -mise en exploitation du Progiciel dont la cause 
+ne peut être imputable à 
+l’Editeur/Intégrateur  ne saurait entraîner un décalage dans l’exécution 
+de l’échéancier de règlement tel que prévu à l’Annexe 5 « Modalités Financières ».  
+ 
+Les éventuels commentaires relatifs à la Version Définitive se feront dans les délais prévus au 
+Calendrier Définitif  conformément à la Procédure de Recette.  
+ 
+A défaut de se  faire dans ledit délai, et pour des raisons exclusivement imputables à 
+l’Editeur/Intégrateur , le CLIENT  est en droit de réclamer à l’Editeur/Intégrateur  l’application des 
+Pénalités de Retard telles que prévues à l’Article 28  ci-dessous, le tout sans préjudice de son 
+droit de demander la résiliation du Contrat dans les termes et conditions de l’article 
+« RESILIATION  » d’une part et de réclamer des Dommages et intérêts, d’autre part.  
+ ARTICLE 20 – ASSISTANCE A LA MISE EN PRODUCTION  
+l’Editeur/Intégrateur  accompagnera le CLIENT  dans la mise en production de l’application dans 
+les conditions prévues dans le présent C ontrat et ses A nnexes . Toute autre installation sera 
+facturable, frais de déplacement en sus. Cette Prestation s’accompagnera d’un transfert de compétences techniques et de la remise du dossier d’installation technique du Progiciel au profit du Responsable Informatique qui aur a été désigné par le CLIENT . 
+ 
+ARTICLE 21 – FORMATION  
+21.1. Formation de l’équipe projet  
+L’Editeur/Intégrateur  assurera une formation à l’équipe Projet du CLIENT  sur la Version Standard 
+du Progiciel  dans les termes et conditions convenues  dans l’Offre Fonctionnelle . Cette formation 
+a pour but de faciliter la compréhension et la lecture des Guides de Personnalisation par le 
+CLIENT . Toute assistance supplémentaire non prévue dans le présent Contrat et ses A nnexes  
+sera facturée  au tarif convenu . 
+21.2. Formation des utilisateurs  
+L’Editeur/Intégrateur  assurera une formation aux utilisateurs du CLIENT  sur le Progiciel 
+personnalisé dans les conditions prévues dans l’Offre Fonctionnelle jointe au présent Contrat. 
+Toute formation supplémentaire sera facturée  au tarif convenu.  
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 25 - sur 47 …………………. …  
+ La formation des utilisateurs aura lieu après la signature du procès -verbal  d’installation de la 
+Version Définitive.  
+21.3. Formation des administrateurs  
+L’Editeur/Intégrateur  dispensera une formation générale sur l’utilisation fonctionnelle du 
+Progiciel, détail de la logique du Produit , dans les condition précisées dans l’Offre Fonctionnelle 
+jointe au présent Contrat.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+ 
+Le nombre de journées de formations Administrateurs achetées par le CLIENT  est précisé en 
+annexe 3.  
+ Toute formation supplémentaire sera facturée  au tarif convenu.  
+ARTICLE  22  – PRIX -MODALITES FINANCIERES. 
+En contrepartie des Prestation s de mise en œuvre prévue s au présent Contrat , le CLIENT  
+s'engage à régler à l’Editeur/Intégrateur  le prix convenu conformément aux «Modalités 
+Financière s» détaillées à l’Annexe  5 des présentes.  
+ 
+La (les) facture(s) du Fournisseur/Prestataire sera/seront réglée(s) cent vingt (120) jours à 
+compter de la date d’émission de la (des) facture (s) par le Fournisseur/Prestataire, qui ne peut 
+en aucun dépasser le dernier jour du mois de la livraison des ma rchandises, l’exécution des 
+travaux ou de la prestation de services requis.  
+ 
+La (les) facture(s) dûment signée(s) et cachetée(s) sera (seront) scannée(s) et envoyée(s) à l’adresse électronique suivante  : Factures_Frs@attijariwafa.com  
+La (les) facture(s) établie(s) sera/seront honorée(s) sous forme de virement bancaire sur le 
+compte bancaire du Fournisseur/Prestataire sur lequel il souhaite que le règlement soit réalisé , 
+tel que précisé au niveau de l’Annexe 5 susvisée .  
+ 
+En cas de rejet de(s) la facture(s), les délais de cent vingt (120) jours stipulés ci-haut sera à 
+nouveau computé à compter de la date de la nouvelle émission de la ou des nouvelle (s) facture (s) répondant aux exigences de fond et de forme prévues par les présentes, ce à quoi le 
+Fournisseur/Prestataire consent sans réserve aucune.  
+ 
+ARTICLE 23 – GARANTIE S  
+23.1 Garantie contractuelle  :  
+L’Editeur/Intégrateur  garantit sans réserve, pendant une durée de Six (06) mois après la mise 
+en production, chaque Lot livré.  
+ 
+Pendant cette période de garantie, l’Editeur/Intégrateur  s'engage à intervenir  gratuitement dans 
+les délais fixés en annexe à compter de la réception de la demande d’intervention du CLIENT . 
+ 
+Le CLIENT fournira pour toute Anomalie communiquée pour correction à l’Editeur/Intégrateur  au 
+titre de la garantie, une fiche d'Anomalie décrivant :  
+ 
+ le contexte de l’Anomalie,  
+ les données en entrée,  
+ les données en sortie,  
+ la description de l'Anomalie constatée,  
+ le caractère répétitif de l'Anomalie.  
+ Au cours de cette période, 
+l’Editeur/Intégrateur  procède, au titre de la garantie, à la  correction 
+des Anomalies, communiquées par  le CLIENT avant la fin de la période de garantie.   
+ 
+Le délai de six mois couvre la communication des Anomalies par le CLIENT, sachant que les 
+corrections requises  doivent être effectuées dans les mêmes délais que ceux prévus pour la 
+Maintenance.  
+23.2 Garantie de non -régression  :  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 26 - sur 47 …………………. …  
+ L’Editeur/Intégrateur  s’engage à assurer la non -régression par rapport à la version recettée et/ou 
+aux spécifications validées, selon le cas.  
+23.3  Garantie de fin d’exécution des prestations  :  
+A ce titre, l’Editeur/Intégrateur  s’engage à lever toutes les Anomalies résiduelles identifiées et 
+communiquées par le CLIENT avant la fin de la garantie contractuelle.  
+ARTICLE 24 – RESPONSABILITE  
+Pour la réalisation des prestations, l’Editeur/Intégrateur  s’engage à atteindre les résultats 
+suivants, aux conditions de prix forfaitaire indiquées à l’ Annexe 5 « Modalités Financières  » : 
+• fournir des prestations et des livrable s conformes aux  Guides de Personnalisation 
+validés par les Parties  ; 
+• respecter les délais convenus pour la fourniture desdites Prestations et livrables et ce 
+tel que prévu au Planning prévisionnel du Projet.  
+ En tant que professionnel averti,  
+l’Editeur/Intégrateur  s’oblige à exécuter ses Prestations 
+conformément aux règles de l’art et à exercer ses devoirs d’alerte et de conseil sur l’ensemble du Projet, en particulier à l’occasion des réunions des Comités prévus à l’article 15.2.3 du 
+présent Contrat.  
+ 
+En cas de défaillance imputable à  
+l’Editeur/Intégrateur  dans l’exécution de ses engagements, sa 
+responsabilité  sera engagée sauf en cas de faute imputable  au CLIENT  et prouvée en tant que 
+telle par l’Editeur/Intégrateur . 
+ 
+l’Editeur/Intégrateur  ne peut être tenu responsable de tout dommage indirect, matériel ou 
+immatériel, consécutif ou non, tel que préjudice commercial ou financier, perte de C lientèle, 
+perte d'image de marque, perte de bénéfice, perte de commande, trouble commercial 
+quelconque, perte ou destruction totale ou partielle des données ou fichiers du CLIENT , ainsi 
+que de toute action émanant de Tiers , sauf pour le cas de contrefaçon . 
+ 
+Le CLIENT  s'oblige à prendre toutes les mesures qu'il estimera nécessaire et utiles pour éviter 
+qu'un dommage quelconque ne résulte pour lui d'une éventuelle atteinte aux fichiers, mémoires 
+d'ordinateur, document ou tout autre élément que le CLIENT  aura pu communiquer à 
+l’Editeur/Intégrateur  dans le cadre du Contrat. A cet effet, il appartiendra au CLIENT  de se 
+prémunir contre tous ces risques, en établissant préalablement à toute transmission à 
+l’Editeur/Intégrateur  des doubles des fichiers, mémoires d'ordinateur, documents et/ou tous 
+autres éléments communiqués et/ou mis à la disposition de l’Editeur/Intégrateur  
+ 
+En tout état de cause, l’Editeur/Intégrateur  ne saurait être tenu  pour responsable des dommages 
+occasionnés par la perte de données non -sauvegardées.  
+ 
+Dans l’hypothèse où  serait retenue, le montant total des indemnités que l’Editeur/Intégrateur  
+pourrait être amené e à verser au CLIENT  ne pourr a excéder deux fois et demi le montant total 
+des P restations, sans pouvoir être inférie ure à 10 0% du montant total des P restations et ce 
+quels que soient le fondement juridique de la réclamation et la procédure employée pour la faire aboutir , le tout sans préjudice du droit du CLIENT de réclamer des dommages et intérêts . 
+ 
+ARTICLE 25 – PROCEDURE D’ESCALADE  
+Préalablement à toute résiliation conventionnelle ou non ayant pour cause un désaccord ou un 
+blocage persistant, les pa rties s’engagent à appliquer  la procédure d’escalade précisée ci -
+après  :  
+• Etape  1: Si aucune solution n’est trouvée dans les cinq (5) jours ouvrés à compter du 
+constat du différend, les Chefs de Projet des deux Parties se rencontreront pour résoudre le différend.   
+• Etape 2  : Si le différend n’est pas résolu dans les cinq (5) jours ouvrés suivant la fin de 
+l’Etape 1, les Directeurs de projet de s deux  Partie s se rencontreront pour résoudre le 
+différend.  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 27 - sur 47 …………………. …  
+ • Etape 3 : Si le différend ne trouve pas de solution à l’issue de l’Etape 2, les Directeurs de 
+projet des deux Parties  soumettront le différend au Comité de Pilotage.  
+Si le différend persiste, alors chaque Partie pourra demander la résiliation du Contrat , dans le 
+délai maximum de 10 jours  ouvrés suivant la décision du Comité de Pilotage . La résiliation du 
+Contrat se fera dans les conditions de l’article 26 ci-dessous . 
+Etant entendu que le CLIENT  et l’Editeur/Intégrateur  prendront de bonne foi des mesures 
+raisonnables pour résoudre le différend  tout au long de la Procédure d’Escalade.  
+Durant toute la procédure de résolution du différend, l’Editeur/Intégrateur  fournira toutes les 
+Prestations qui ne font pas l’objet du différend. Le CLIENT payera les factures correspondant 
+aux Prestations réalisées et ne faisant pas l’objet du différend conformément au Contrat.  
+ARTICLE 26 – RESILIATION  
+En tout état de cause, l’accès aux codes source du Progiciel s’effectue conformément aux 
+modalités décrites à l’article 7 « Dépôts des Codes Sources ». 
+ 
+Ceci étant précisé, le présent Contrat pourra être résilié par l’une des Parties, moyennant le respect d’un préavis d’un (01) mois après notification par lettre recommandée avec accusé de 
+réception restée sans réponse effective, en cas de procédure de redressement ou de liquidation judiciaire ou de faillite, de suspension provisoire, de poursuites ou de procédures similaires appliquées à l’une des Parties, si le Contrat n’est pas continué par un mandataire judiciaire . 
+ 
+Il est convenu entre les Parties que préalablement à la mise en œuvre de la résiliation de plein 
+droit par l’une des Parties, la procédure d’escalade décrite à l’article 25 du présent Contrat sera appliquée et que les Parties œuvreront en tout premier lieu  à trouver une solution amiable.  
+ En toute hypothèse, la date d’effet de la résiliation ne pourra intervenir qu’à l’issue du déroulement la restitution des données, si celle -ci s’avère nécessaire.  
+ 26-1 Cas de résiliation suite à une cause imputable à 
+l’Editeur/Intégrateur  : 
+En cas d’inexécution ou   de manquement grave par l’Editeur/Intégrateur  à une obligation  lui 
+incombant au titre du présent Contrat, dûment démontrée par le CLIENT , et à défaut d’accord 
+amiable entre les Parties pour la résolution de ce manquement, le C ontrat pourra être résilié 
+trente (30) jours après envoi d’une mise en demeure adressée par lettre recommandée avec accusé de réception restée sans effet à l’issue de ce délai.  
+ 
+Le  CLIENT pourra faire valoir la résiliation du Contrat nonobstant tous dommages et intérêts 
+auxquels il pourrait prétendre.   
+ 
+L’Editeur/Intégrateur  s’engage par ailleurs à remettre au CLIENT tous les moyens, doc uments, 
+livrables relatifs aux P restations réalisées.  
+ 
+L’Editeur/Intégrateur  s’engage, en outre, à restituer l’ensemble des éléments constitutifs de la 
+contribution du CLIENT , qui lui ont été remis ainsi qu’à les détruire et à apporter la preuve 
+satisfaisante de l’avis du CLIENT  de cette destruction, toutes les copies ou reproductions qu’il 
+a pu effectuer sous une forme quelconque. Cette restitution devra obligatoirement, et sauf 
+accord particulier donné par écrit par le CLIENT , intervenir dans un délai de 30 jours à compter 
+de la date de résiliation.  
+ 
+Le non-respect  par l’Editeur/Intégrateur  des engagements de qualité de service est examiné 
+mensuellement en comité de Pilotage, sur la base des indicateurs de qualité fixant le niveau 
+nominal des services détaillés dans le PAQ. De même, lorsque le plafond des pénalités de retard 
+à la charge de l’Editeur /Intégrateur atteint le seuil de 10% du montant global du Contrat.  
+ 
+Le non-respect  des engagements de qualité de service compromettant gravement la  bonne 
+exécution des P restations, et pour une cause exclusivement imputable à l’Editeur/Intégrateur  
+entraîne la faculté pour le CLIENT  de résilier de plein droit le présent Contrat.  
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 28 - sur 47 …………………. … 
+  
+26-2 : Cas de résiliation suite à une cause imputable au CLIENT  : 
+La résiliation peut être prononcée aux torts exclusifs du CLIENT , après mise en demeure restée 
+infructueuse pendant un délai 30 jours à compter de la date de sa réception, en cas de 
+manquement grave à l’une de ses obligations mettant l’Editeur/Intégrateur  dans l’incapacité 
+d’honorer ses engagements, notamment en cas de  non-paiement  persistant et non justifié par 
+aucun fait imputable à l’Editeur/Intégrateur  d’une somme due au titre des P restations exécutées, 
+tel que précisé à l’article 2 2 ci-dessus.  
+ 
+Dans tous les cas, si le Contrat est résilié aux torts du CLIENT, la totalité des P restations 
+réalisées sera due à  l’Editeur/Intégrateur .  
+ARTICLE 27 – RESTITUTION DES DONNEES  
+L’EDITEUR/Intégrateur  s’engage, à ses frais, à restituer au CLIENT , dans le format standard de 
+ses fichiers, l’ensemble des données appartenant au CLIENT , y inclus les données extraites du 
+flux strictement nécessaires à l’intégrité des données du CLIENT et à la justification des 
+opérations enregistrées et conservées, soit directement auprès du CLIENT , soit auprès de tout 
+tiers que lui désignerait le CLIENT  et ce, sans que l’Editeur/Intégrateur  ne puisse se prévaloir du 
+droit de rétention. l’Editeur/Intégrateur  transfèrera égalem ent au CLIENT  les Données et 
+Documents multimédia.  
+ La  restitution des données débutera dès la notification par l’une des Parties de sa décision de 
+mettre fin au Contrat et prendra fin après que le CLIENT ait effectivement repris ou fait 
+reprendre le service d e la Business Unit du CLIENT  utilisat rice du Progiciel et ce, même si le 
+délai nécessaire à cette reprise s’avérait plus long que la durée du préavis.  
+ 
+Jusqu’à l’achèvement de la phase de reprise, 
+l’Editeur/Intégrateur  assurera la totalité des 
+Prestations, de façon à assurer la continuité du service de la Business Unit du CLIENT utilisat rice 
+du Progiciel . 
+ ARTICLE 28- IMPLEMENTATION DU PROJET -PENALITES  
+Implémentation du Projet - Retard de livraison par rapport au planning validé  : 
+ 
+ 
+ 
+Retard imputable exclusivement à 
+l’Editeur/Intégrateur.  
+X% du montant total des prestations 
+associées commandées (hors licences et 
+maintenance) par tranche de 24 heures  
+ 
+ Informations préalables aux délais et pénalités financières  :  
+- Les pénalités s’appliquent uniquement à compter des délais objectifs 
+(de livraison…) et selon les règles définies dans le présent paragraphe.  
+- Le montant total des pénalités ne pourra excéder 1 0% du montant d e 
+la facture correspondant aux P restations concernées, par L ot. 
+- La pénalité pour un manquement donné ne peut être applicable que 
+si l’évènement à l’origine de cette pénalité est exclusivement imputable à 
+l’Editeur/Intégrateur . 
+- Les exclusions de garantie et de maintenance sont applicables à l’exclusion de l’application des pénalités.  
+ 
+Etant précisé qu’il est d’accord parties dores et déjà convenu que si le montant des Pénalités 
+de Retard à la charge de l’Editeur/Intégrateur atteint un plafond de 10% du montant global du Contrat, ce dernier pourra être résilié à la faveur du CLIENT dans les conditions prévues pour 
+se faire.  
+ 
+IV. MAINTENANCE DU PROGICIEL  
+ 
+ARTICLE 29 : OBJET DU CONTRAT  
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 29 - sur 47 …………………. … 
+ L’Editeur/Intégrateur  s'oblige par les présentes, à l'égard du CLIENT  qui accepte, à assurer aux 
+clauses et conditions ci -après stipulées, la maintenance du Progiciel objet de la Licence 
+d'Utilisation de Progiciel susvisée. Par extension le terme Progiciel désignera au singulier le ou 
+les Progiciels objet dudit Contrat.  
+ 
+ARTICLE 30 - PERIMETRE CONTRACTUEL  
+30.1 - Les Prestations de maintenance fournies par l’Editeur/Intégrateur  s'appliquent à 
+l'ensemble du Progiciel dont il a concédé l'utilisation au CLIENT  sur le Matériel et sur le Site 
+d'Utilisation précisés en annexe du présent Contrat. Cet ensemble est détaillé en Annexe s N° 
+1 et 2 . 
+ 
+Toute modification de la configuration initiale du Progiciel, notamment par l'adjonction de 
+licences complémentaires et/ou la concession d'un droit d'utilisation d'autres Progiciels de 
+l’Editeur/Intégrateur  sur le Site d'Utilisation  devra faire l'objet d'un accord entre les Parties 
+formalisé par un Avenant au présent Contrat.  
+30.2 - Sont exclus du champ  du présent service de maintenance : 
+- Les logiciels et/ou progiciels tierce partie non explicitement référencés en Annexe N° 1 ; 
+- Les logiciels et/ou progiciels fournis au CLIENT par des tiers  ;  
+- Les logiciels et/ou progiciels développés par le CLIENT ou par des tiers ;  
+- D'une manière générale, tout logiciel non expressément et explicitement référencé dans 
+l'Annexe N°  1 que l’Editeur/Intégrateur  n’a pas recommandé au CLIENT comme prérequis  
+technique à toute installation et mise en œuvre du Progiciel objet du présent Contrat . 
+ ARTICLE 31 - DATE DE PRISE D'EFFET DES PRESTATIONS  
+La date de prise d'effet de la Maintenance propre à chacun des Progiciels concédés au CLIENT  
+et référencés dans l'Annexe N°1  interviendra dès la fin de la période de Garantie Contractuelle  
+de six (06) mois  après la mise en production  de chaque Lot livré.  
+ 
+ARTICLE 32 - DUREE  
+Les Prestations de Maintenance sont conclues pour une durée initiale de douze (12) mois à 
+compter de la date de prise d'effet ci -dessus. Cette période initiale sera adaptée pour coïncider 
+avec l'année civile, moyennant le paiement de la redevance y afférente au  prorata temporis 
+pour la durée entre la date de prise d'effet du service et le 31 décembre  de l’année d’entrée en 
+vigueur de la Maintenance . 
+  Les périodes seront ensuite renouvelées par tacite reconduction par période de douze (12) 
+mois, sauf dénonciation par l'une ou l'autre des Parties, par lettre recommandée avec accusé 
+de réception envoyée dans les trois (3) mois  qui précédent sa date anniversaire de 
+reconduction.  
+ 
+ARTICLE 33- MODALITES FINANCIERES  
+En contrepartie des P restations de Maintenance, le CLIENT  s'engage à verser à 
+l’Editeur/Intégrateur  une redevance forfaitaire annuelle  dans les termes et conditions  indiqué s à 
+l’Annexe  6 « Modalités Financières  ». 
+ ARTICLE 34 - MODALITES GENERALES PREALABLES A L'EXECUTION DES 
+PRESTATIONS  
+34.1 - Version s 
+Outre les Versions Mineures ( correctives ou évolutives ) couvertes par les présents services de 
+Maintenance de l’Editeur/Intégrateur , le CLIENT  peut procéder ou   faire procéder à l'installation 
+sur son Site d'Utilisation de toute nouvelle Version Majeure du Progiciel dans un délai maximum 
+de vingt-quatre  (24) mois, après sa mise à sa disposition par l’Editeur/Intégrateur . Si le CLIENT  
+n’opte pas pour la nouvelle Version Majeure proposée, l’Editeur/Intégrateur  continuera à assurer 
+la maintenance des Versions en vigueur chez le CLIENT . 
+ 
+De même, le CLIENT  peut  à sa convenance et selon ses propres besoins, demander à 
+l’Editeur/Intégrateur  de faire évoluer tout ou partie des Modules acquis, laquelle évolution fera 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 30 - sur 47 …………………. …  
+ l’objet d’une étude et une évaluation par l’Editeur/Intégrateur  et sera soumise au CLIENT pour 
+approbation, avant sa mise en œuvre.  
+ 34.2 - Sauvegarde des données  
+Pendant l'intervention du service de Maintenance, le CLIENT reste  gardien du  Progiciel et des 
+fichiers qui pourraient être mis en œuvre par l’Editeur/Intégrateur . 
+ 
+Il incombe donc au CLIENT de prendre toutes les mesures de sécurité et de mettre en place 
+toutes les procédures utiles à cet effet, tant avant l'intervention du service de maintenance, 
+que lors de la mise en exploitation du Progiciel en procédant à toutes copies de sécurité 
+nécessaires à cet effet.  
+34.3 – Obligations des Parties  
+34.3.1 L’Editeur/Intégrateur  
+L’Editeur/Intégrateur  s’engage à fournir les Prestations de Maintenance décrites au CLIENT  dans 
+l’Offre Technique, avec toute la diligence et la disponibilité nécessaires et  ce conformément aux 
+règles de l’art en vigueur et ce pendant la durée du C ontrat de Maintenance, et à mettre en 
+œuvre son expertise pour assurer au CLIENT  une utilisation et une exploitation du Progiciel 
+conforme s aux engagements  souscrits.  
+ 
+l’Editeur/Intégrateur  s’engage à conseiller et mettre en garde le CLIENT  en transmettant tout 
+renseignement ou information qu’il jugerait nécessaire à l’exécution des Prestations de 
+Maintenance, à proposer toute amélioration qui lui paraîtrait souhaitable et à faire toutes 
+recommandations au CLIENT  dans l’exercice de ses choix.  
+L’Editeur/Intégrateur  s’engage à fournir au CLIENT des Prestations de Maintenance présentant 
+toutes les conditions et mesures de sécurité conformément aux règles de l’art et ce afin de 
+garantir la confidentialité, la sécurité, l’intégrité et la conservation des données du CLIENT.  
+L’Editeur/Intégrateur  s’engage à ce que les intervenants chargés d’assurer les Prestations de 
+Maintenance possèdent toutes les compétences et l’expérience requises à la bonne exécution 
+de ses obligations.  
+L’Editeur/Intégrateur  s'oblige à disposer en permanence et en nombre suffisant du personnel 
+qualifié pour assurer les Prestations de Maintenance prévus dans le cadre des présentes.  
+ 
+Aucune limite  au nombre de demandes d’information ou d’incidents que le CLIENT  pourra 
+soumettre à l’Editeur/Intégrateur  n’est admise pendant toute la durée du Contrat.   
+Le support de maintenance sera fourni via différents média s tels que le courrier électronique, 
+l’interface WEB , le fax , ou la télémaintenance sous réserve que  les Parties se mettent d’accord 
+sur les conditions techniques de cette dernière.   
+Dans tous les cas , ces médias ne seront pas surtaxés, c’est à dire qu’aucun coût additionnel, 
+autre que les frais de communication d’usage imposés par l’opérateur tiers au CLIENT , s’ils en 
+existent, ne sera mis à la charge du CLIENT.  
+Dans le cadre des présentes et pour le montant forfaitaire indiqué dans l’Annexe  5 relative aux 
+« Modalités  Financières  », l’Editeur/Intégrateur  s’engage à fournir au CLIENT  les « Prestations 
+de Maintenance  » suivantes :  
+ Informations et assistance téléphonique au CLIENT ,  
+ Maintenance Corrective , 
+ Maintenance Evolutive,  
+34.3.2 Le CLIENT  
+Le CLIENT s'engage à respecter les conditions normales d'utilisation du Progiciel, à appliquer 
+les instructions données par l’Editeur/Intégrateur  et à respecter toutes les dispositions du présent 
+Contrat . 
+Le CLIENT  informera l’Editeur/Intégrateur  de toutes les Anomalies du Progiciel suivant les 
+modalités prévues à cet effet.  
+ 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 31 - sur 47 …………………. … 
+ Sauf contraintes de haute sécurité du système d’information du CLIENT, Le CLIENT  donnera   
+libre accès au Site et Matériel abritant le Progiciel pour les techniciens de l’Editeur/Intégrateur.  
+ 
+Le CLIENT  mettra  à la disposition des techniciens de maintenance toutes les fournitures, 
+ressources et moyens humains et matériels nécessaires et utiles à l'appréhension et la 
+résolution du problème constaté.  
+ 
+Le CLIENT  veillera à n'entreprendre aucune opération qui  pourrait  directement ou 
+indirectement bloquer ou ralentir les opérations du service de maintenance sauf nécessité inhérente à la bonne marche du matériel, des équipements et en général du système d’information du CLIENT . 
+ 
+ARTICLE 35 - MODALITES TECHNIQUES GENERALES  
+L’Editeur/Intégrateur  garantit au CLIENT  que les opérations de maintenance qui seront effectuées 
+pour son compte dans le cadre du présent Contrat seront accomplies suivant les règles de l'art 
+et selon les technologies de l'informatique les plus avancées en usage au moment de chaque 
+intervention.  
+ 
+L’Editeur /Intégrateur  désigne une personne responsable du bon déroulement de la maintenance.  
+ Le CLIENT désigne un interlocuteur compétent qui le représentera auprès de 
+l’Editeur/Intégrateur  
+(ci-après dénommé le "Représentant Habilité du CLIENT ").  
+ 
+Dans l'intérêt commun des Parties, le CLIENT  s'oblige à rendre compte à l’Editeur/Intégrateur  
+des défauts et Anomalies  du Progiciel et plus généralement de tout problème constaté, 
+notamment au moyen de fiche(s)  ou de rapport d'Anomalie(s) consignés au besoin dans un 
+Registre d'Anomalies. Un modèle de fiche d'Anomalie est reproduit en Annexe 8.  A ce titre, Le 
+CLIENT   fournir a au personnel de l’Editeur/Intégrateur  chargé de la réalisation des travaux de 
+maintenance  et dans la mesure du possible , tous les documents, renseignements et éléments 
+existants, nécessaires à la bonne compréhension et à la reproduction du problème posé.  
+ 
+Si, en cours de prestation, l'une des Parties rencontre une difficulté, elle devra conformément 
+à son engagement de collaboration, alerter l'autre Partie le plus vite possible afin que les deux 
+Parties se concertent pour mettre en place la solution la mieux adaptée dans les meilleurs 
+délais.  
+ Article 36 - DEMANDES D’INFORMATION  
+Lorsque le service de maintenance est ouvert, le personnel formé du CLIENT peut par téléphon e 
+par fax ou par email, adresser à l’Editeur/Intégrateur  des demandes d’information relatives à 
+l’utilisation du Progiciel.  
+ 
+Sans limite au nombre de demandes d’information que le CLIENT pourra soumettre pour la 
+durée du contrat à l’Editeur/Intégrateur , ce derni er devra lui fournir les réponses via différents 
+média s tels que courrier électronique, interface WEB ou par fax. 
+ 
+ARTICLE 37 - SERVICE DE MAINTENANCE CORRECTIVE  
+La maintenance corrective s’entend du maintien de la conformité du Progiciel conformément à sa Documentation, à savoir la correction définitive de toutes les Anomalies, tant en leurs causes 
+qu’en leurs conséquences, qui affecteraient le Progiciel, par le biais  de mesures définitives, et 
+le cas échéant, par des mesures de contournement temporaires, jusqu’à résolution définitive 
+desdites Anomalies.  
+ 
+L’Editeur/Intégrateur  assurera la maintenance corrective du Progiciel selon les modalités ci-
+après.  
+-  par une assistance téléphonique en composant le : …………………..  (0,………………  cts / 
+min)  ; 
+- par l'envoi de mise à jour du Progiciel ; 
+- par l'intervention sur le Site d'Utilisation par ses  techniciens.  
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 32 - sur 47 …………………. … 
+  
+Dans tous les cas   le type d’intervention le plus approprié à l’accomplissement du service  est 
+choisi en commun accord.  
+ 
+L’intervention de l’Editeur/Intégrateur  devra se faire selon la procédure décrite ci -dessous  : 
+37.1 Ouverture d’un incident  : 
+l’Editeur/Intégrateur  s’engage à prendre en compte l’appel du CLIENT en lui répondant 
+immédiatement ou en le rappelant dans un délai qui ne saurait excéder quatre (4) Heures 
+Ouvrées  à compter de la réception de l’appel , pour les anomalies bloquantes ou sévères.  
+ 
+A l’issue de la prise en compte, l’Editeur/Intégrateur  communique au CLIENT  un numéro 
+d’incident (ticket d’ouverture d’un incident comportant notamment la date  et l’heure de l’appel 
+du CLIENT ). 
+ Un appel peut se faire par tout support approprié  : téléphon e, télécopie, ou courrier 
+électronique adressé à la hotline.  
+37.2 Qualification d’une Anomalie  : 
+L’Editeur/Intégrateur  procédera  au préalable et  en accord avec le CLIENT  à la qualification et au 
+classement du degré  de sévérité des Anomalies signalées par le CLIENT , du niveau de priorité 
+et de la nature de l’intervention envisagée pour chaque  Anomalie . 
+37.3 Traitement  
+L’Editeur/Intégrateur  s’engage à fournir au CLIENT dans les délais indiqués ci- dessous une 
+correction et/ou une solution de contournement permettant de résoudre ou de contourner 
+l’Anomalie signalée de manière temporaire jusqu’à résolution définitive de l’Anomalie.  
+ 
+Les Anomalies Bloquantes et Sévères seront traitées par un ingénieur du support technique de 
+L’Editeur/Intégrateur  en vue de la résolution définitive de l’Anomalie, tant en ses causes qu’en 
+ses conséquences.  
+ Si la résolution immédiate de l’Anomalie ne peut être réalisée, et jusqu’à survenance de cet 
+événement, l’ingénieur du support proposera une solution de contournement temporaire 
+permettant au CLIENT  d’exploiter pleinement et sans incidents les fonctionnalités du Progiciel 
+conformément à sa Documentation .  
+ 
+37.4 Délais de correction  : 
+Le délai de correction est définit comme la durée entre le moment où l’Anomalie est soumise à 
+L’Editeur/Intégrateur  (Ticket  d’ouverture d’un incident), et le moment où l’ingénieur du support 
+technique de L’Editeur/Intégrateur  livre au CLIENT une solution de correction définitive de 
+l’Anomalie signalée.  
+ Ce délai n’est clos qu’après la validation par le CLIENT  de la solution proposée par 
+L’Editeur/Intégrateur . 
+ 
+L’Editeur/Intégrateur  s’engage à corriger les Anomalies en fonction de leur nature, dans les délais 
+mentionnés ci -dessous pour chacun des Progiciels, afin de ne pas perturber durablement 
+l’activité du CLIENT  : 
+ 
+Délai  Type d’Anomalie  Offre ……………..  
+« PREMIUM  » 
+ Bloquante  ….Heures  
+Prise en Charge  Sévère  ……. Heures  
+ Ni Bloquante Ni Sévère  ………..  Jours  
+Solution de 
+Contournement  Bloquante  ……….. Jours  
+Sévère  ………….. Jours  
+Ni Bloquante Ni Sévère  ………….  
+ Bloquante  ………….  Jours  
+Correction  Sévère  ………… Jours  
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 33 - sur 47 …………………. … 
+  Ni Bloquante Ni Sévère  …………  Jours  
+ 
+37.5 - Assistance Téléphonique  
+37.5-1 : Contenu des P restations  
+L’Editeur/Intégrateur  assure au CLIENT  une assistance téléphonique en cas d'Anomalie ou de 
+dysfonctionnement portant sur le Progiciel  ou le Matériel ou le Site d’utilisation lorsque ces 
+deux derniers s’en trouvent impactés . 
+37-5-2 : Déroulement du service  
+L'assistance téléphonique se fera au moyen de renseignements, conseils et instructions fournis par un technicien de 
+L’Editeur/Intégrateur  en vue de permettre un fonctionnement du Progiciel 
+conforme à ses spécifications.  
+ L'assistance téléphonique est assurée sur appel du CLIENT  tous les jours ouvrés du Lundi au 
+Vendredi pendant les heures ouvrées de 
+L’Editeur/Intégrateur  rappelées en Annexe 8. 
+ 
+L’Editeur/Intégrateur  s’assurera  de corriger l'Anomalie ou d'y apporter une solution de 
+contournement temporaire  par téléphone  dans les meilleurs délais, jusqu’à résolution  définitive  
+de ladite Anomalie. Si l'Anomalie persiste, L’Editeur/Intégrateur  effectuera un nouveau diagnostic 
+sur la base de documents caractérisant l'incident, qui lui auront été préalablement communiqués par le CLIENT . 
+ La correction pourra être poursuivie par l'envoi d'une Version corrigée du Progiciel ou par une 
+intervention sur le Site d'Utilisation du CLIENT  si  
+L’Editeur/Intégrateur  l'estime nécessaire.  
+ Les Version Mineures  de mise à jour du Progiciel seront fournies au CLIENT  par 
+L’Editeur/Intégrateur  en fonction de la périodicité dont ce derni er reste seul juge. A compter de 
+la livraison par L’Editeur/Intégrateur  d’une Version Mineure Corrective du Progiciel, le CLIENT  est 
+tenu de procéder ou de faire procéder à l’installation de celle -ci sur son site d’Utilisation, sauf 
+à encourir de son propre fait, pour son application, des risques d’instabilité ou la persistance 
+d’anomalies désormais corrigées.  
+37.6 Procédure d’escalade  : 
+Si, à l'issue des délais indiqués à compter de la prise en compte de l’appel du CLIENT, 
+L’Editeur/Intégrateur  ne peut résoudre la totalité des Anomalies Bloquantes ou des Anomalies 
+Sévères, ou s'il n'y a apporté que des correctifs temporaires, L’Editeur/Intégrateur  s’engage  à 
+ses frais  : 
+• à mettre à disposition du CLIENT  toutes les ressources humaines et techniques 
+nécessaires et adaptées afin de corriger l’Anomalie concernée, ces ressources 
+demeureront affectées jusqu’à résolution de l’/des Anomalie (s)  concernée (s).  
+• à intervenir sur le Site, en accord avec le CLIENT , dans un délai de 48 heures  à 
+compter de la décision conjointe prise par les Parties.  
+ Le tout sans préjudice de tous Dommages et intérêts auxquels le CLIENT  a droit, d’une part, 
+et la possibilité pour lu i de suspendre le paiement des P restations objet des présentes pendant 
+une durée d’une année .  
+37.7 - Intervention sur Site : 
+37.7-1 : Contenu des P restations  
+Cette intervention concernera les situations d'urgence et/ou d'Anomalie Bloquante  ou Sévère. 
+Elle consiste dans le déplacement sur le Site d'Utilisation d'un technicien qualifié  ou plus  de 
+l’Editeur/Intégrateur selon le besoin formulé par le CLIENT , pour la prise en compte, l'analyse 
+et la correction de l’ Anomalie  relevée,  reproductible  ou non  dans l’environnement du CLIENT . 
+ L’Anomalie constaté e doit être  documentée au préalable par le CLIENT  et reportée par écrit 
+dans le Registre d'Anomalies , le cas échéant.  
+37-7-2 : Déroulement du service 
+L'intervention du ou des technicien(s)  de 
+L’Editeur/Intégrateur  sur le Site d'Utilisation dans ces 
+cas sera assurée tous les jours ouvrés du Lundi au Vendredi pendant les heures ouvrées de 
+l’Editeur/Intégrateur rappelées en Annexe 8 et s'effectuera dans les heures ouvrées du CLIENT . 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 34 - sur 47 …………………. … 
+ Le personnel de L’Editeur/Intégrateur  sera tenu au respect du règlement intérieur que lui aura 
+notifié le CLIENT. 
+ Le CLIENT  ne pourra demander à 
+L’Editeur/Intégrateur  sans motif raisonnable le remplacement 
+du ou des technicien (s) de  L’Editeur/Intégrateur  mobilisés sur Site , ce dernier devant toutefois 
+procéder systématiquement au remplacement dudit ou desdits techniciens si le CLIENT en fait 
+la demande justifiée , tous frais de déplacement et d’hébergement étant à l a charge  de 
+L’Editeur/Intégrateur . 
+37-7-3 : Modalités préalables à l'exécution du service  
+Le CLIENT  rencontrant une Anomalie Bloquante ou Sévère  prévient L’Editeur/Intégrateur  par 
+l'intermédiaire de son Représentant Habilité, par téléphone, télécopie, courrier postal ou électronique.  
+ Le CLIENT  peut également télécopier à 
+L’Editeur/Intégrateur  la Fiche d'Anomalie selon les 
+indications portées en Annexe 8, l’accusé d’envoi de la télécopie faisant foi .  
+ 
+Tout document signalant l'incident transmis à L’Editeur/Intégrateur  devra comporter toute 
+information caractérisant l'incident pouvant lui faciliter la compréhension et la reproduction du 
+problème rencontré, précisant notamment les conditions d'utilisation du Progiciel lors  de 
+l'apparition de l'Anomalie  décide alors, s'il y a lieu , des corrections à apporter y compris au 
+moyen de solutions de contournement.  
+37.8 Clôture d’un incident  : 
+Un incident sera clos lorsque L’Editeur/Intégrateur  sera en mesure de démontrer : 
+• qu’il a corrigé de manière définitive les Anomalies affectant le Progiciel, ou  
+• que la cause de/des Anomalies n’est pas directement liée à l’utilisation ou au 
+fonctionnement du Progiciel.  
+ 
+Toute procédure de clôture d’incident devra être acceptée et validée par le CLIENT  pour lui être 
+définitivement opposable, tout refus de clôture devant être motivé par le CLIENT. 
+ Au cas où le désaccord persiste, les parties doivent faire application de la procédure d’escalade 
+avant toute demande de résiliation du contrat.  
+  
+Article 38- MAINTENANCE - PENALITES   
+ Non respect des 
+délais de prise en 
+charge  Non respect  des 
+délais de mise en 
+place d’une 
+solution de 
+contournement  Non respect des 
+délais de 
+correction 
+définitive  
+Anomalie 
+Bloquante  …….% du montant 
+annuel de la 
+redevance de 
+maintenance par 
+tranche de 24 heures  ………% du montant 
+annuel de la 
+redevance de 
+maintenance par 
+tranche de 24 heures  ………. % du montant 
+annuel de la 
+redevance de 
+maintenance par 
+tranche de 24 heures  
+Anomalie Sévère  ………… % du montant 
+annuel de la 
+redevance de 
+maintenance par 
+tranche de 24 heures  ……….. % du montant 
+annuel de la 
+redevance de 
+maintenance par 
+tranche de 24 heures  ………. % du montant 
+annuel de la 
+redevance de 
+maintenance par 
+tranche de 24 heures  
+ Informations préalables aux délais et pénalités financières  :  
+ 
+- Les pénalités s’appliquent uniquement à compter du dépassement des délais objectifs (de mise en place d’une solution de contournement, et de correction définitive)  ; 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 35 - sur 47 …………………. …  
+ - Le montant total des pénalités ne peut pas excéder 10% du montant de la 
+redevance annuelle de maintenance  ; 
+- Les pénalités sont applicables dans la mesure où le CLIENT  a réglé la redevance 
+annuelle de l’exercice concerné selon le délai indiqué dans le présent Contrat et 
+l’échéancier validé, sauf cas de force  majeure . 
+- La pénalité pour un manquement donné ne peut être applicable que si 
+l’évènement à l’origine de cette pénalité est exclusivement imputable à 
+L’Editeur/Intégrateur ; 
+- Les exclusions de garantie et de service de maintenance sont applicables à 
+l’exclusion de l’appl ication des pénalités.  
+ 
+Etant précisé qu’il est d’accord parties dores et déjà convenu que si le montant des Pénalités 
+de Retard à la charge de l’Editeur/Intégrateur atteint un plafond de 10% du montant global du 
+Contrat, ce dernier pourra être résilié à la faveur du CLIENT dans les conditions prévues pour 
+se faire.  
+ 
+Article 39 - SERVICE DE MAINTENANCE EVOLUTIVE  
+La maintenance évolutive s’entend de la mise à disposition du CLIENT  des Versions Mineures 
+et/ou Majeures et leur Documentation  associée . 
+39-1 : Les Versions Mineures : 
+Une Version Mineure est destinée, suivant les cas, à apporter des corrections d’anomalies et/ou 
+des améliorations de performances du Progiciel  et/ou la mise à jour du Progiciel en cas 
+d’évolution de l’environnement et/ou du système d’exploitation du CLIENT  tel que décrit dans 
+la Documentation.  
+ 
+Dans tous les cas, les Versions Mineures doivent  : 
+ Reprendre  l’intégralité des fonctionnalités présentes dans la version du 
+Progiciel utilisée par le CLIENT , sauf accord contraire du CLIENT , 
+ Être compatibles avec l’Environnement, sauf (i) accord contraire du CLIENT  
+ou (ii) évolution de l’Environnement acceptée par les Parties.  
+39-2 : Les Nouvelles Versions Majeures  : 
+Une Nouvelle Version Majeure est destinée, suivant les cas, à apporter de nouvelles 
+fonctionnalités et/ou d’étendre des fonctionnalités existantes et/ou de permettre l’utilisation du 
+Progiciel sous un nouveau système d’exploitation , ou généralement, toute mise à jour 
+substantielle du Progiciel résultant d’un investissement conséquent en Recherche et Développement de la part de 
+L’Editeur/Intégrateur  et apportant des fonctionnalités  ou 
+caractéristiques nouvelles au Progiciel ou l’améliorant de manière signif icative  par rapport à la 
+Version en vigueur chez le CLIENT.  
+ 
+Dans le cadre du service de maintenance évolutive, L’Editeur/Intégrateur  s’engage à fournir 
+gratuitement au CLIENT, à sa demande, toute Nouvelle Version Majeure du Progiciel hors 
+personnalisation demandées par le CLIENT , qui serait commercialisée pendant la durée du 
+présent Contrat, laquelle doit obligatoirement :  
+ 
+ Reprendre l’intégralité des fonctionnalités déjà présentes dans la version 
+du Progiciel utilisée par le CLIENT , sauf accord contraire de ce dernier,  
+ Être compatible avec l’Environnement, sauf (i) accord contraire du CLIENT  
+ou (ii) évolution de l’Environnement acceptée par les Parties.  
+ 
+L’Editeur/Intégrateur  fournit au CLIENT , en même temps que la Nouvelle Version Majeure, la  
+documentation associée ainsi qu’un rapport techniqu e expliquant l’impact de cette N ouvelle  
+Version.  
+ 
+L’Editeur/Intégrateur  n’est pas tenu de mettre de Nouvelle Version Majeure à la disposition du 
+CLIENT  plus d’une fois par période de vingt-quatre  (24) mois.  
+ 
+Dans l’hypothèse où le CLIENT  ne souhaite pas installer de Nouvelle Version Majeure , alors 
+qu’elle ne requière aucun investissement en hardware ou software, l ’Editeur/Intégrateur  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 36 - sur 47 …………………. …  
+ s’engage à assurer les Prestations de maintenance, quelle qu’en soit la nature, sur la version 
+du Progiciel utilisée par le CLIENT , pendant une durée de vingt-quatre  (24) mois à compter de 
+la mise à disposition du CLIENT  de la dernière Version Majeure.  
+ 
+En cas de défaut de fourniture d’une Nouvelle Version Majeure dans un délai de vingt-quatre  
+(24) mois à compter de la fourniture de la Nouvelle Version Majeure antérieure, le CLIENT 
+pourra résilier le C ontrat de maintenance, aux torts d e L’Editeur/Intégrateur  immédiatement et 
+de plein droit, sans autre formalité que l’envoi d’une lettre recommandée avec accusé de 
+réception notifiant la résiliation pour ce motif.  
+ 
+Les Nouvelles Versions ne comprennent pas les options ou produits futurs que 
+L’Editeur/Intégrateur  fournit au titre de licences distinctes.  
+39-3 : Modifications ou Paramétrages complémentaires sur le P rogiciel à la demande 
+du CLIENT :  
+L’Editeur/Intégrateur  pourra développer pour le compte du CLIENT  des modifications du Progiciel, 
+qui pourront être traitées de deux façons distinctes  :  
+ 
+ S'il s'agit de mettre en place des fonctionnalités nouvelles demandées par le CLIENT , le 
+service se déroulera comme suit :  
+- Elaboration du cahier des charges par le CLIENT ; 
+- Elaboration par L’Editeur/Intégrateur  d'une proposition commerciale et technique, 
+qui tiendra compte des contraintes du Progiciel  existant et éventuellement les 
+contraintes d'exploitation et d'intégration des nouveautés envisagées ;  
+- Approbation par le CLIENT  de cette proposition commerciale matérialisée par un 
+Avenant dédié à cet effet, qui constituera la référence contractuelle unique lors des opérations ultérieures de recette, de garantie et de maintenance ;  
+- Réalisation proprement dite par 
+L’Editeur/Intégrateur  qui consistera en la 
+modification de programmes existants et/ou l'écriture de nouveaux programmes;  
+- Intégration de ces nouvelles fonctionnalités au Progiciel, validation de la 
+conformité à la proposition technique et mise en exploitation donnant lieu à un 
+procès -verbal  soumis à la signature du CLIENT . 
+La recette sera prononcée selon un délai convenu d’un commun accord lors de 
+l’établissement du devis correspondant.                                                                                                    
+ 
+ S'il s'agit de mettre en place des améliorations mineures, L’Editeur/Intégrateur  les 
+effectuera sans qu'il soit nécessaire d'instaurer la procédure formalisée décrite ci -
+dessus.                                                                           
+ Le prix facturable au CLIENT  pour les P restations évolutives sera précisé dans la 
+proposition commerciale de L’Editeur/Intégrateur  selon le tarif convenu entre les Parties . 
+ 
+ARTICLE 40 – LIMITES ET EXCLUSIONS DU SERVICE DE MAINTENANCE  
+L’Editeur/Intégrateur  ne sera tenu  à aucune prestation de maintenance telle que définie au 
+présent  Contrat dans les cas suivants:  
+- Implantation sur le Site d'Utilisation de tous logiciels, progiciels ou système d'exploitation non 
+compatibles avec le Progiciel faisant l'objet du présent service de maintenance, étant entendu qu’à la demande du CLIENT , 
+L’Editeur/Intégrateur  précisera les logiciels et matériels (base de 
+données, système d’exploitation, serveur…), et les versions, compatibles avec chaque version majeure du Progiciel , 
+L’Editeur/Intégrateur  s’engage à ce qu’une version du Progiciel maintenue par lui soit compatible 
+avec au moins une version Base de données, Système d’exploitation maintenue par l’éditeur de ces logiciels,  
+- Modification ou altération apportée au Progiciel par le CLIENT  ou par un tiers sans l'accord 
+écrit préalable de 
+L’Editeur/Intégrateur  Il en va de même en cas de simples tentatives de 
+modification,  
+- Utilisation par le CLIENT d'une Version antérieure à la dernière Version corrective ou évolutive 
+du Progiciel qui lui a été communiquée par L’Editeur/Intégrateur , 
+- Défaillances ayant pour origine l'utilisation d'un logiciel  non expressément couvert par le 
+présent Contrat,  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 37 - sur 47 …………………. …  
+ - Anomalies dites "fugitives", c'est -à-dire des Anomalies non reproductibles par le CLIENT  en 
+présence de L’Editeur/Intégrateur  
+- Interventions résultant d'accidents, de causes autres qu'une utilisation normale telle que 
+prévue au Contrat de licence d'utilisation du Progiciel,  
+- Interventions rendues nécessaires par le mauvais fonctionnement d'adjonctions ou dispositifs 
+non-agréés par L’Editeur/Intégrateur ,  
+- Défaillances ou variations du courant électrique ou du réseau des télécommunications,  
+ 
+Pour toute intervention ayant conduit à la découverte de l'un de ces cas, L’Editeur/Intégrateur  
+facturera au CLIENT le temps passé pour son intervention au tarif en vigueur à la date de 
+l'intervention, ainsi que les éventuels frais de déplacement et de séjour occasionnés par la mise 
+en œuvre de l'article 38 du présent Contrat.  
+ Le cas échéant, 
+L’Editeur/Intégrateur  pourra néanmoins procéder à la correction nécessaire dans 
+les conditions financières de l’Annexe 5 du présent Contrat.   
+ 
+ARTICLE 41 - RESPONSABILITE  
+L’Editeur/Intégrateur  s’engage à exécu ter les P restations de maintenance avec toute la diligence 
+requise et le soin en usage dans sa profession.  
+ 
+Sauf en cas de négligence ou d’incompétence avérée de la part du personnel de 
+L’Editeur/Intégrateur , Le CLIENT  ne peut rechercher la responsabilité de cette dernière  en cas de 
+dommages survenus aux fichiers, mémoires d'ordinateur ou autres matériels ou documents 
+confiés à L’Editeur/Intégrateur  ou sur lesquels celle -ci serait appel é à travailler à l'occasion de 
+Prestations de maintenance.  
+ 
+Le CLIENT  s'oblige à se prémunir contre les risques visés au paragraphe ci -dessus, en 
+constituant et en conservant à ses propres risques un double desdits documents et supports, 
+et en prévoyant la procédure à appliquer lors de la mise en exploitation.  
+ 
+Le CLIENT  convient que la responsabilité de L’Editeur/Intégrateur  ne peut être engagée à raison 
+tous dommages indirects (tels que pertes de bénéfices, pertes de commandes, trouble 
+commercial quelconque, perte d’image de marque) ou de toute action dirigée contre le CLIENT  
+par un tiers .   
+Dans l’hypothèse où la responsabilité de L’Editeur/Intégrateur  serait retenue, le montant total 
+des indemnités que  L’Editeur/Intégrateur  pourrait être amenée à verser au CLIENT  ne pourra 
+excéder le montant total de la redevance annuelle de maintenance.  
+  
+ARTICLE 42 – RESILIATION  
+Les Parties pourront demander la résiliation amiable de la maintenance dans le cas où surviendraien t, au cours de l'exécution des P restations de maintenance, des difficultés 
+imprévisibles par 
+L’Editeur/Intégrateur  dont la Solution nécessiterait la mise en œuvre de moyens 
+hors de proportion avec le montant de la maintenance.   
+ 
+Le CLIENT  peut de plein droit, par notification à L’Editeur/Intégrateur  mentionnant la liste 
+exhaustive des Progiciels concernés mettre fin à la présente maintenance pour les Progiciels 
+ainsi mentionnés. La résiliation prendra effet  à la date de réception de la notification si un mois 
+est écoulé depuis la réception par L’Editeur/Intégrateur  d’une mise en demeure restée 
+infructueuse et dans laquelle il était constaté l'inobservation caractérisée par 
+L’Editeur/Intégrateur  d'une des clauses de la maintenance remettant en cause significativement 
+les services devant être rendus par L’Editeur/Intégrateur.  
+ 
+Dans tous les autres cas, les Parties, peuvent mettre fin à la Maintenance  : 
+ 
+ à la fin de l’année civile suivant la date de réception de la notification de 
+résiliation, si la notification d’arrêt a été reçue par L’Editeur /Intégrateur  avec un 
+préavis d’au moins Trois (3) mois avant la fin de l’année calendaire en cours.  
+ à la fin de l’année civile prochaine, si la notification de résiliation a été reçue par 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 38 - sur 47 …………………. …  
+ L’Editeur /Intégrateur  avec un préavis de moins de Trois (3) mois avant la fin de 
+l’année calendaire en cours.  
+Les redevances dues à L’Editeur /Intégrateur  par le CLIENT  pour les périodes précédentes, en 
+cours sont intégralement dues. Les redevances déjà payées et dues par le CLIENT  ne sont pas 
+remboursables.  
+ 
+Si le CLIENT  souhaite anticiper la prise d’effet de la résiliation, il lui suffit d’en notifier son 
+souhait à L’Editeur/Intégrateur  et d’acquitter toutes les redevances qui sont dues à 
+L’Editeur/Intégrateur  jusqu’à la prise d’effet prévue conformément aux termes de la présente 
+maintenance.  
+ 
+L’Editeur/Intégrateur  peut de plein droit, par notification au CLIENT , mettre fin à la présente 
+maintenance si  quinze (15) jours  se sont écoulés depuis la réception par le CLIENT  d’une mise 
+en demeure restée infructueuse et dans laquelle il était constaté l'inobservation caractérisée par le CLIENT  d'une des clauses du présent Contrat. Dans ce cas de figure  : 
+• La résiliation prendra effet  quinze (15) jours  après la date de réception par le CLIENT  
+de la notification restée infructueuse.  
+• Les redevances dues à 
+L’Editeur/Intégrateur  par le CLIENT  pour les périodes précédentes, 
+en cours sont intégralement dues. Les redevances déjà payées et dues par le CLIENT  
+ne sont pas remboursables.  
+ 
+ 
+V. STIPULATIONS COMMUNES  
+  
+ARTICLE 43 – GENERALITES  
+D’accord Parties, il est convenu que les présentes Stipulations Communes s’appliquent à 
+l’intégralité du  Contrat «  Licence, Mise en Œuvre et Maintenance » 
+ 
+ARTICLE 44 - CONFIDENTIALITE  
+Chacune des Parties s'engage à mettre en œuvre les moyens appropriés pour garder le secret 
+le plus absolu sur les informations et documents confidentiels auxquels elle aura accès à 
+l'occasion du présent Contrat.  
+ 
+Chacune des Parties s'engage à faire respecter cette obligation par ses collaborateurs, société 
+mère, filiales de même que par d'éventuels tiers partenaires tels que sous traitants, conseils extérieurs.  
+ L'obligation de confidentialité continuera tant que l'information n’est pas tombée dans le 
+domaine public en dehors de toute intervention de la Partie qui aura reçu l'information.  
+ 
+Par Information, il est entendu toute information quelle que soit sa nature et/ou la forme 
+relative à ce Contrat ou à l’une des Parties (que cette information ait été acquise directement 
+ou indirectement au cours de discussions ou d’investigations entre les Pa rties). Cela inclut, 
+sans que cette liste ne soit limitative, toute information technique, financière ou commerciale ainsi que les noms des Clients ou partenaires (existants ou potentiels), transactions anticipées, 
+stratégies d’affaires, rapports, plan s, projections budgétaires ou de marché de même que tous 
+secrets commerciaux, techniques, données, spécifications, logiciels et programmes, 
+documentation ou tout autre renseignement concernant ou se rapportant au Projet, de même 
+que les analyses, sommaires , rapports, compilations, études comparatives, travaux ou autres 
+documents préparés par une Partie ou ses représentants qui contiennent, reflètent ou ont servi 
+à produire une telle information.  
+ Cependant, les renseignements qui suivent ne constituent pas une Information au sens des 
+présentes  : 
+- l’information qui est ou devient généralement connue ou partie du domaine public 
+autrement qu’en raison d’une divulgation, directe ou indirecte, par l’une des Parties –  
+ou ses Préposés – en contravention des présentes  ; 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 39 - sur 47 …………………. …  
+ - l’information divulguée sur une base non confidentielle par un tiers la détenant 
+légitimement et disposant du droit de la divulguer  ; 
+- l’information que l’une des Parties peut raisonnablement démontrer avoir été 
+développée de façon indépendante, sans lien avec l’information divulguée dans le cadre 
+de ce Contrat;  
+- l’information devant être divulguée par décision d’une juridiction à la condition d’en 
+informer au préalable l’autre Partie  ; 
+- l’information qu’une Partie est dans l’obligation de communiquer aux instances 
+gouvernementales, administratives ou sociales à charge pour elle d’en informer au préalable l’autre Partie  ; 
+- l’information dont une Partie a autorisé à l’autre expressément par écrit la divulgation.  
+44.1 Obligations des Parties  : 
+44.1.1 Usage et non -divulgation de l’Information.  
+Chacune des Parties s’engage, sauf consentement préalable et écrit de l’autre, à  : 
+- Ne pas utiliser l’Information d’une manière qui soit préjudiciable à l’autre Partie ou de manière à ce que l’une des parties ait un avantage commercial sur l’autre  ; 
+- N’utiliser l’Information qu’aux fins exclusives d’analyse, d’étude de faisabilité ou de 
+réalisation de l’objet de ce Contrat;  
+- Ne pas divulguer, ne pas permettre la divulgation par quelle que personne que ce soit 
+ou autrement communiquer l’Information, en tout ou en partie, à tout tiers.  
+Toutefois, une Partie peut divulguer l’Information à ses Préposés strictement dans la mesure 
+où une telle divulgation est requise aux fins de la bonne exécution de ce Contrat et sous réserve des dispositions de l’article 44.1.2 des présentes, lequel implique que chaque Partie prenne les 
+dispositions utiles auprès de ses Préposés susvisés afin que ceux -ci soient informés et se 
+conforment aux obligations issues du présent Contrat.  
+44.1.2 Mesures et diligence.  
+Chaque Partie s’engage à  : 
+- prendre toutes les mesures nécessaires aux fins de préserver la confidentialité absolue de l’Information et, au minimum, à appliquer le même soin et déployer les mêmes 
+efforts qu’elle appliquerait et déploierait aux fins de protéger la confidentialité de sa 
+propre information correspondante ;  
+- faire respecter cette obligation par ses collaborateurs, société mère, filiales de même 
+que par d'éventuels tiers partenaires tels que sous traitants, conseils extérieurs  ; 
+- dans tous les cas, agir avec une diligence raisonnable, adaptée aux circonstances.  
+44.2 Remise ou destruction de l’Information.  
+A première demande de l’une des Parties, l’autre Partie s’engage à promptement remettre 
+toute l’Information qui lui a été communiquée sous quelque forme que ce soit, et à en détruire 
+toute copie ou autre reproduction. L’Information, sous toute forme qu’ell e soit, dont une Partie 
+n’aura pas exigé le retour ou qui n’aura pas été ainsi remise, devra être conservée par l’autre 
+Partie en conformité avec les dispositions du présent Contrat ou détruite.  
+44.3 Propriété de l’Information.  
+Chaque Partie reconnaît que rien dans le présent Contrat ne doit être interprété comme constituant une cession d’un droit de propriété intellectuelle ou licence se rapportant à ou 
+découlant de l’Information. En particulier, les Parties reconnaissent qu’auc une licence n’est 
+accordée en vertu des présentes, ni directement ni indirectement, aux termes d’un brevet, d’un 
+secret de commerce, d’une marque de commerce ou d’un droit d’auteur. L’Information est la 
+propriété de la Partie qui la divulgue.  
+44.4 Les obligations de confidentialité décrites au présent Article survivront cinq (05) ans au 
+présent Contrat quelle qu’en soit l’issue.  
+ 
+ARTICLE 45 - Assurance s 
+L’Editeur/Intégrateur  atteste avoir souscrit une assurance responsabilité civile et professionnelle 
+couvrant suffisamment les risques d’exploitation et les risques résultant des dommages 
+corporels, matériels ou immatériels qui pourraient être causés par L’Editeur/Intégrateur  ou son 
+personnel à l’occasion de l’exécution des Prestations . 
+ 
+L’Editeur /Intégrateur  s’engage à en produire à tout moment une attestation  en cours de validité 
+à la demande du CLIENT . 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 40 - sur 47 …………………. …  
+  
+L’Editeur /Intégrateur  s’engage par ailleurs, à informer immédiatement le CLIENT  en cas de 
+résiliation de la police d’assurance ou de modification du montant garanti.  
+ 
+ARTICLE 46 - FORCE MAJEURE  
+La responsabilité de l'une ou l'autre Partie ne pourra être recherchée si l'exécution du présent Contrat est retardée ou empêchée en raison d'un cas de force majeure .   
+ 
+La force majeure s'entend de tout événement extérieur à la Partie empêchée, présentant un caractère à la fois imprévisible et insurmontable, qui empêche cette Partie d'exécuter tout ou 
+partie des obligations mises à sa charge par les présentes.  
+ 
+Toute Partie entendant invoquer un cas de force majeure devra, sous peine de ne pouvoir s'en 
+prévaloir, informer l'autre Partie dans les cinq (5) jours ouvrés suivant la survenance de 
+l'événement, en justifiant son caractère imprévisible et insurmontable, la mettant selon elle dans l'impossibilité de respecter ses obligations, en indiquant les dispositions prises, qu'elle 
+compte prendre ou qu'elle estimerait nécessaire de prendre alors qu'elle est dans l'impossibilité 
+de le faire par elle -même, ainsi que la  durée prévisible du cas de force majeure.  
+ 
+Dans tous les cas, la partie empêchée devra faire tout ce qui est en son pouvoir pour limiter la 
+durée et les effets de la force majeure en question.  
+ 
+En cas de prolongation d’un tel événement au- delà d'une période de trente (30) jours ouvrés 
+consécutifs, le présent contrat pourra être résilié par l’autre Partie par lettre recommandée 
+avec accusé de réception, sauf accord contraire entre les Parties.  
+ARTICLE 4 7 – RESPONSABILITE SOCIETALE ET E NVIRONNEMENTALE «  RSE » 
+Conformément à ses principes d’achats responsables, le Groupe Attijariwafa bank compte sur l’adhésion de ses fournisseurs/prestataires en vue de partager et de respecter les engagements qui sont les siens en faveur du développement durable.  
+Aussi, l ’Editeur/Intégrateur s’engage à  : 
+i. respecter les dispositions législatives et réglementaires relatives à son domaine d’activité  ; 
+ii. déclarer l’ensemble de ses préposés auprès des organismes de prévoyance sociale et leur assurer des conditions de travail respectant la réglementation en matière de santé, sécurité et 
+hygiène sur les lieux de travail  ; 
+iii. conduire ses activités conformément aux principes de loyauté, d’honnêteté et d’équité, ainsi qu’aux lois et règlements applicables en matière de concurrence  ; 
+iv. n’être impliqué de quelque manière que ce soit dans une situation de conflit d’intérêt et 
+dans aucun acte de corruption, d’extorsion ou de détournement de fonds  ; 
+v. respecter l’environnement lors de la conception, la fabrication, l’usage et la destruction ou 
+le recyclage de produits et réduire l’impact négatif qu’il pourrait avoir sur l’environnement 
+conformément à toute législation environnementale et de santé pub lique applicable en la 
+matière  ; 
+vi. prévenir les discriminations et protéger les droits humains fondamentaux tels que stipulés dans la déclaration universelle des droits de l’homme et les conventions fondamentales de 
+l’OIT, notamment l’élimination de toute forme de travail forcé et obligatoire ou travail clandestin 
+ainsi que l’interdiction du travail des mineurs de moins de 16 ans ;  
+Ces obligations s’appliquent tant à l’Editeur/Intégrateur  qu’à l’ensemble de ses sous -traitants, 
+lorsqu’ils sont autorisés par le C LIENT.  
+ 
+ARTICLE 4 8 – ANTI -CORRUPTION  
+48-1 : Définition  
+Par « Corruption », on entend le fait de promettre, donner ou recevoir quelque chose qui 
+représente une valeur pour celui qui la reçoit en échange d’un avantage indu. C’est le fait 
+intentionnel, avant, pendant ou après un contrat, pour toute personne (physique ou morale), 
+d’offrir, de promettre ou d’octroyer, un avantage indu pécunier ou autre, directement ou par 
+des intermédiaires,  à un agent public (national ou étranger) ou une personne privée, à son 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 41 - sur 47 …………………. …  
+ profit ou au profit d’un tiers, pour que cet agent public ou cette personne agisse ou s’abstienne 
+d’agir dans l’exécution de ses fonctions officielles, à des fins d’obtenir un avantage indu.  
+48-2 : Déclaration d e l’Editeur/Intégrateur  
+l’Editeur/Intégrateur s’engage tant pour lui -même que pour l’ensemble des personnes sous sa 
+responsabilité ou agissant en son nom et pour son compte, pendant toute la durée d’exécution du Contrat et de ses éventuels Avenants, à se conformer et respecter l’ensemble des lois, 
+réglementations et normes internationales et locales en vigueur afférentes à la lutte contre la 
+Corruption.  
+l’Editeur/Intégrateur garantit que ni lui ni aucune personne sous sa responsabilité ou agissant 
+en son nom ou pour son compte, n’a accordé ni n’accordera d’offre, de rémunération ou de 
+paiement ou avantage d'aucune sorte, constituant ou pouvant constituer un acte ou une tentati ve de Corruption, directement ou indirectement, en vue ou en contrepartie de 
+l'attribution/l'exécution du Contrat et de ses éventuels Avenants (ci -après les « Actes de 
+Corruption »), et que tout montant versé par le C LIENT a l’Editeur /Intégrateur  dans le cadre 
+du présent Contrat constitue la rémunération exclusive des services rendus par 
+l’Editeur/Intégrateur conformément aux termes du présent Contrat.  
+l’Editeur/Intégrateur s’assurera qu’une enquête sera menée avec diligence en cas de preuve 
+ou de soupçon relatif à la commission d’un Acte de Corruption et le signalera au C LIENT.  
+Le CLIENT se réserve le droit de demander a l’Editeur/Intégrateur la communication des 
+éléments qu’il estimerait utile pour établir que ce dernier s’est conformé pendant toute la durée 
+d’exécution du Contrat aux législations afférentes à la lutte contre la Corruption, et ce pendant toute la durée du Contrat et une pério de subséquente de cinq ( 5) ans après la résiliation ou le 
+terme du Contrat.  
+48-3 : l’Editeur/Intégrateur s’engage à :  
+ Informer le C LIENT , sans délai, de tout élément qui serait porté à sa connaissance et 
+susceptible d’entrainer sa responsabilité au titre du présent article ;  
+ Respecter la politique Anti -Corruption d ’Attijariwafa bank inscrite dans la «Charte des 
+achats responsables», dont il reconnait avoir pris connaissance et en accepter les termes  ; 
+ Fournir toute assistance nécessaire au C LIENT pour répondre à une demande d’une 
+autorité dûment habilitée relative à la lutte contre la Corruption.  
+ Tout manquement de la part d e l’Editeur/Intégrateur  aux stipulations du présent article devra 
+être considéré comme une faute grave autorisant le C LIENT, si bon lui semble, à résilier le 
+Contrat sans préavis ni indemnité, sans préjudice de tous dommages et intérêts auxquels le 
+CLIENT pourrait prétendre du fait d’un tel manquement.  
+48-4 : Audit 
+À tout moment pendant la durée d’exécution du Contrat, le C LIENT pourra procéder ou faire 
+procéder à des contrôles du respect des obligations à la charge d e l’Editeur/Intégrateur  au titre 
+du présent article.  
+48-5 : Sanction  
+Les Parties conviennent expressément que le non -respect par l’Editeur/Intégrateur  et chacun 
+de ses administrateurs, dirigeants, agents, employés, sous -traitants, sous -licenciés, des 
+termes de la présente clause, notamment suite à un audit (alinéa précédent), constituera une 
+violation grave du présent Contrat entrainant le droit pour le CLIENT  de le résilier sans préavis 
+et sans indemnité quelconque pour l’Editeur/Intégrateur  et sans préjudice de tous recours, 
+action et demande de dommages et intérêts que le  CLIENT pourrait introduire en vue d’obtenir 
+la réparation des préjudices qu’il aurait subis.  
+Le CLIENT pourra également, résilier ou suspendre le présent Contrat avec effet immédiat, si 
+l’Editeur/Intégrateur n’a pas pris les mesures correctives nécessaires dans un délai de trente 
+(30) jours à compter de la date de réception d’une notification écrite qui lui est adressée par 
+le CLIENT à cet effet.  
+ 
+ARTICLE 4 9 – AUDIT  
+Le Client (Attijariwafa bank) peut faire réaliser à une fréquence à convenir entre les Parties et 
+au moins une fois par an, soit par ses propres salariés ou par tout tiers qualifié, et sur accord 
+de l’Editeur/Intégrateur  qui ne pourra être refusé de manière injustifiée, des tests 
+d’intrusion(Définir l’objet des tests).  
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 42 - sur 47 …………………. … 
+ Le résultat de ces tests peut être communiqué a l’Editeur/Intégrateur sur simple demande. Ils 
+sont confidentiels et devront être traités suivant les conditions prévues dans ce sens par les 
+stipulations de l’Article 48 « Confidentialité  » du Contrat.  
+De même, le Client après en avoir avisé le Prestataire par écrit avec un préavis minimum de 
+(Délai à prévoir, au moins 15 jours ), pourra faire procéder à un audit des conditions 
+d'exploitation du Service, et plus généralement du respect par l’Editeur/Intégrateur  de ses 
+obligations contractuelles et des conditions de leur exécution.  
+A ce titre, le Client désignera soit un ou plusieurs de ses salariés ou un auditeur indépendant 
+non concurrent d e l’Editeur/Intégrateur  qui devra être agréé par ce dernier et signer le 
+protocole d’audit proposé par l’Editeur/Intégrateur . 
+l’Editeur/Intégrateur s'engage à collaborer de bonne foi avec le représentant du Client (Salariés 
+ou Tiers) et à lui faciliter sa mission en lui procurant    toutes les informations nécessaires et en 
+répondant à l'ensemble de ses demandes afférentes à cet audit.  
+L’audit ne pourra perturber le bon fonctionnement du Service.  
+Un exemplaire du rapport d'audit rédigé par l'auditeur sera remis a l’Editeur/Intégrateur , qui 
+devra l’analyser et apporter ses observations dans un délai n’excédant par quinze (15) ouvrables à compter de la date de sa réception.  
+A cet effet, et d’accord parties, il est d’ores et déjà convenu que si les conclusions dudit audit : 
+font ressortir des manquements à la charge d e l’Editeur/Intégrateur, ce dernier prendra en 
+charge tous les frais et honoraires relatifs à l’audit ainsi que ceux relatifs aux mesures de remédiation  ; 
+ne font ressortir aucun grief à la charge d e l’Editeur/Intégrateur , les frais de l’audit seront 
+supportés en intégralité par le Client.  
+Par ailleurs, l’Editeur/Intégrateur  prend acte et consent à ce que Bank Al Maghrib puisse 
+également diligenter un audit dans les mêmes conditions que décrites ci -dessus.  
+ 
+ARTICLE 50 – NON SOLLICITATION DE PERSONNEL  
+Chacune des Parties renonce, sauf accord écrit et préalable de l'autre, à faire, directement ou 
+indirectement, des offres d'engagement à un collaborateur de l'autre Partie, ou à le prendre à 
+son service, sous quelque statut que ce soit.  
+ Cette renonciation est valable pendant la durée du Contrat augmentée d'une période de douze 
+(12) mois à compter de son expiration.  
+ 
+Dans le cas où l'une des Parties ne respecterait pas cet engagement, elle s'engage à 
+dédommager l'autre Partie en lui versant une indemnité égale à la rémunération brute totale 
+versée à ce collaborateur au cours des douze (12) mois précédant son départ.  
+ ARTICLE 51 – S UPERVISION DU PERSONNEL DE L’EDITEUR/INTEGRATEUR  
+51.1 Encadrement  
+Le personnel d e l’Editeur/Intégrateur  affecté à l’exécution du Contrat reste sous le contrôle 
+administratif et la seule autorité hiérarchique et disciplinaire de l’Editeur/Intégrateur  pendant 
+toute la durée du Contrat. l’Editeur/Intégrateur assure l’encadrement et le contrôle de ses 
+salariés, y compris lorsque les Prestations sont effectuées dans les locaux du C LIENT . 
+l’Editeur/Intégrateur  s’engage à informer son personnel sur son rôle, ses tâches et ses 
+responsabilités. Cette obligation s’applique également à ses sous -traitants  , lorsqu’ils sont 
+autorisés par le CLIENT . 
+51.2 Hygiène et sécurité 
+l’Editeur/Intégrateur s’engage à faire le nécessaire pour que son personnel lorsqu’il se trouvera 
+dans les locaux du C LIENT se conforme au règlement intérieur du C LIENT , aux dispositions 
+applicables aux entreprises extérieures présentes dans lesdits locaux et notamment celles relatives à l’hygiène et la sécurité.  
+ 
+Le C LIENT de son côté s’engage à porter ces dispositions à la connaissance d e 
+l’Editeur/Intégrateur. 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 43 - sur 47 …………………. … 
+ 51.3 Accès aux locaux  
+L’accès aux locaux du C LIENT par le personnel d e l’Editeur/Intégrateur sera soumis aux règles 
+de sécurité du C LIENT  et aux dispositions applicables aux entreprises extérieures présentes 
+dans lesdits locaux. Il incombe au C LIENT de fournir au personnel de l’Editeur/Intégrateur les 
+supports d’accès à ses locaux (par exemple, badge d’identification).  
+ 
+Lorsque les Prestations nécessitent que l’Editeur/Intégrateur  travaille directement dans les 
+locaux du C LIENT  ou utilise les logiciels et/ou matériel informatique et téléphonique du C LIENT , 
+ce dernier  sera tenu de vérifier que les conditions d’accès et de sécurité sont satisfaisantes, 
+dont notamment les licences et autorisations. Aucun coût ne sera supporté par l’Editeur/Intégrateur à ce titre, étant toutefois précisé que l’Editeur/Intégrateur  se porte fort 
+du respect par son personnel des règles applicables en matière d’hygiène, de santé et de 
+sécurité. De même, le C LIENT s’engage (et se porte fort pour le tiers concerné le cas échéant), 
+préalablement à l’arrivée de son personnel, à ce que les mesures exigées par les dispositions légales et règlementaires en vigueur en matière d’hygiène, de santé et de sécurité, soient en place afin de permettre la réalisation des  Prestations dans ses locaux (et/ou dans ceux du tiers 
+concerné).  
+Dans l’éventualité où les dispositifs en place chez le C LIENT (et/ou le tiers concerné) ne 
+permettraient pas a l’Editeur/Intégrateur de garantir le respect des dispositions légales en 
+vigueur et de ses règles internes en matière d’hygiène, de santé et de sécurité auprès de son 
+personnel, les Parties collaboreront de bonne foi afin d’apporter les correctifs nécessaires au 
+dispositif du CLIENT (et/ou du tiers concerné). En l’absence de correction, l’Editeur/Intégrateur  
+se réserve le droit de réaliser les Pres tations en dehors des locaux du C LIENT  (et ou du tiers 
+concerné), dans la mesure du possible, ou de suspendre la réalisation des Prestations.  
+ ARTICLE 52 - CORRESPONDANCES ANTERIEURES  
+Toutes les correspondances, accords écrits ou verbaux antérieurs au présent  CONTRAT  sont 
+nuls, à l’exception de la Lettre ……………. signée en date du …………………..   
+ 
+Les documents contractuels annulent toutes propositions ou accords antérieurs, tant écrits qu'oraux, ainsi que toute autre communication, quelle que soit sa forme, entre les parties se 
+rapportant à l'objet du présent contrat, à l’exception de la ………………..  signée en date 
+…………………  
+ ARTICLE 53 - GLOBALITE DU CONTRAT  
+Les Parties reconnaissent que le présent Contrat constitue l'intégralité de l'accord conclu entre 
+elles et se substitue à toute offre, disposition ou accord antérieurs, écrits ou verbaux , à 
+l’exception de la Lettre d’Intention et de son annexe, dûment signées par elles , en date 
+………………….  Les documents contractuels formant le Contrat sont précisés ci -après, à l’exclusion de tout 
+autre, par ordre décroissant de priorité :   
+ Le présent Contrat avec toutes ses composantes, à savoir (Concession du droit d’utilisation des Licences, leur Mise en oeuvre et leur Maintenance)  et ses éventuels 
+Avenants ; 
+ Les Guides de P ersonnalisation validés par les Parties  ; 
+ Offre commerciale, et réponses aux questionnaires  ; 
+ Appel d'offre  ; 
+ Annexes.  du présent Contrat: 
+- Annexe 1: Liste des Progiciels concédés par l’Editeur/Intégrateur; 
+- Annexe 2 : Site d’Utilisation du Progiciel ; 
+- Annexe 3 : Calendrier Prévisionnel de réalisation des Prestations ;  
+- Annexe 4: Formulaire d’adhésion FILIALES . 
+- Annexe 5 : Modalités Financières  ; 
+- Annexe 6: Le PAQ  ; 
+- Annexe 7  : Liste des livrables  ; 
+- Annexe 8 : Délais d’intervention et heures ouvrées du Service de maintenance  ;  
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 44 - sur 47 …………………. …  
+ - Annexe 9  : Modèle de fiche d’anomalie  ; 
+- Annexe 10 : Protection des Données à Caractère Personnel (Loi 09 -08) ; 
+- Annexe 11 : Protection des Données à Caractère Personnel (RGPD)  ; 
+ 
+En cas de contradiction ou d’ambigüité entre les documents contractuels, il sera fait application 
+pour leur interprétation de l’ordre décroissant de priorité précisé ci -dessus.  
+ 
+Si la contradiction porte sur plusieurs versions d'un même document, les dispositions de la 
+dernière en date prévaudront.  
+ 
+ARTICLE 54 - NOTIFICATIONS  
+Toute notification faite en vertu des points visés par le présent Contrat ou concernant ceux -ci 
+prendra effet uniquement si elle est faite par écrit et (i) remise en mains propres, (ii) envoyée par coursier contre  accusé de réception, ou (iii) par télécopie confirmée par un envoi par 
+coursier international le même jour contre  accusé de réception.  
+Les notifications en vertu du présent Contrat seront envoyées aux adresses suivantes  : 
+Pour le C LIENT  : 
+Attijariwafa bank  
+02 Boulevard Moulay Youssef   
+A l’attention d e (A Définir)  
+ 
+Pour L ’Editeur/Intégrateur 
+xxxxxxxxxxxxxx,  
+XXXXXXXX  
+A l’attention du (A définir)  
+ 
+Toute notification sera réputée avoir été signifiée de la manière suivante  : 
+(i) En cas de remise en mains propres, au moment de la remise à l’adresse de la Partie 
+concernée, l’accusé de réception faisant foi  ; 
+(ii) En cas de remise par coursier, au moment de la remise à l’adresse de la Partie 
+concernée, l’accusé de réception faisant foi  ; 
+(iii) En cas de transmission par télécopie confirmée par une lettre envoyée le même jour 
+par coursier international c ontre  accusé de réception, le Jour Ouvrable de cette 
+transmission par télécopie comme l’atteste un rapport de transmission par télécopie 
+concluant.  
+ 
+Les Parties conviennent qu’elles favoriseront les échanges en français par courrier électronique 
+aux adresses suivantes : 
+Pour le C LIENT:  
+ 
+ 
+Pour L’Editeur/Intégrateur:  
+ 
+Ou 
+Par le biais du système Internet de gestion des relations avec la clientèle développé par L’Editeur/Intégrateur et accessible à l’adresse suivante  : https://..................  
+ 
+En ce qui concerne les points suivants  : 
+- notification(s) de Défaut(s) ; 
+- notifications d’éléments manquants ou défectueux pendant la livraison de tout ou  
+partie des Produits Livrables.  
+La réception d’une telle notification adressée par Le C LIENT  [par courrier électronique / par le 
+biais du système Internet de gestion des relations avec la clientèle développé par 
+L’Editeur/Intégrateur fera l’objet d’un accusé de réception de la part d e ce dernier  par courrier 
+électronique.  
+ ARTICLE  55: CONVENTION DE PREUVE  
+Les documents sous forme électronique échangés entre les parties feront preuve, sous réserve 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 45 - sur 47 …………………. …  
+ que puisse être dûment identifiée la personne dont ils émanent et qu’ils soient établis et 
+conservés dans des conditions raisonnables permettant d’en garantir l’intégrité.  
+ 
+Les modalités techniques d’identification, d’authentification et de conservation sont définies au 
+« PAQ » Plan d’Assurance Qualité.  
+ ARTICLE 56 - MODIFICATION DU CONTRAT  
+Aucun document postérieur, aucune modification du Contrat quelle qu'en soit la forme ne 
+produira d'effet entre les Parties sans prendre la forme d'un Avenant dûment daté et signé par 
+elles. 
+ 
+ARTICLE 57 - INTUITU PERSONNAE  
+Le CONTRAT  est conclu intuitu personae en tenant  compte de la qualité des Parties et de leurs 
+dirigeants. L’intuitu personae constitue une des conditions essentielles de la conclusion du 
+Contrat  par le CLIENT . 
+ 
+Aucune partie du Contrat ne pourra être, de quelque manière que ce soit transférée, concédée, 
+cédée ou sous -traitée par L’Editeur/Intégrateur  directement ou indirectement à aucune personne 
+physique ou morale sans le consentement  exprès, préalable et écrit du CLIENT . 
+ 
+ARTICLE 58 - TITRES  
+En cas de difficulté d'interprétation entre l'une quelconque des présentes clauses et son titre, 
+le contenu de la clause prévaudra sur son intitulé.  
+ 
+ARTICLE 59- NULLITE  
+Si l'une quelconque des stipulations du présent Contrat s'avérait nulle au regard d'une règle de 
+droit en vigueur ou d'une décision judiciaire devenue définitive, elle serait alors réputée non 
+écrite, sans pour autant entraîner la nullité du Contrat ni alt érer la validité de ses autres 
+stipula tions.  
+ 
+ARTICLE 60 - RENONCIATION  
+Le fait que l'une ou l'autre des Parties ne revendique pas l'application d'une clause quelconque 
+du Contrat ou acquiesce à son inexécution, que ce soit de manière permanente ou temporaire, 
+ne pourra être interprété comme une renonciation par cette Partie aux droits qui découle nt 
+pour elle de ladite clause.  
+ ARTICLE 61 - REFERENCE  
+Dans le cadre du présent Contrat, le CLIENT  autorise L’Editeur/Intégrateur  à utiliser son nom en 
+qualité de référence.  
+ 60.1 Cette citation est limitée  à : 
+- La citation dans des propositions ou des réponses à des appels d’offres  ; 
+- Une réponse sur une demande de référence  ; 
+- Une présentation dans le rapport annuel de 
+L’Editeur/Intégrateur . 
+ 60.2 Cette citation s’effectuera  : 
+- Sans désignation de P restations directes ou indirectes  ; 
+- Avec précaution, afin de ne pas porter atteinte à l’image de marque du CLIENT . 
+ Nonobstant toute sous -traitance passée par 
+L’Editeur/Intégrateur  avec le consentement du 
+CLIENT  et nonobstant le  consentement général ou restrictif du  CLIENT , L’Editeur/Intégrateur  
+sera et restera l e seul responsable de la qualité et de la bonne et prompte exécution des 
+Prestations et de l’observation de toutes les conditions et obligations du Contrat  à tous égards 
+comme si aucune sous- traitance, ni aucun sous -contrat n’a lieu.  
+ 
+L’Editeur/Intégrateur  ne pourra faire état par l’intermédiaire d’un moyen de communication 
+s’adressant au grand public (sans limitation  : publicité, communiqué de presse, site Internet, 
+Référence N° CPS-xxxx-202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 46 - sur 47 …………………. … 
+ plaquettes commerciales imprimées en grande quantité …) de ses relations avec le CLIENT  que 
+sous réserve de l’autorisation préalable et écrite de celui -ci. 
+ 
+ARTICLE 62 - INDEPENDANCE  
+Il est exclu que le présent Contrat , fondé sur une confiance réciproque, puisse donner lieu à 
+une quelconque association ou société de fait ou de droit entre les Parties contractantes.  
+ Chaque Partie agissant à titre indépendant et sans rapport autre que les stricts droits et 
+obligations les liant en vertu du présent Contrat . 
+ 
+L’indépendance des Parties constitue une des conditions essentielles à la conclusion de ce Contrat . 
+ ARTICLE 63 : DROIT APPLICABLE   
+Le présent contrat est soumis au droit Marocain  
+ 
+ARTICLE 64 : ATTRIBUTION DE COMPÉTENCE  
+En cas de litige qui viendrait à naître entre les Parties à propos de l'exécution, de l'interprétation du Contrat, les Parties s'engagent à coopérer avec diligence et bonne foi en vue de trouver une 
+solution amiable.  
+ 
+Si, toutefois, aucun accord n'est trouvé, pour toute contestation, litige, qui pourrait s'élever dans l'interprétation ou l'exécution du Contrat, compétence expresse est attribuée au Tribunal 
+de Commerce de Casablanca . 
+ 
+Les deux parties  acceptent les termes du présent contrat, après en avoir pris connaissanc e 
+ 
+Le contrat intégral comprend les 64 articles ci- dessus et ONZE  (11) Annexes jointes . 
+ Fait en 2 exemplaires Originaux, le premier pour l’Editeur/Intégrateur, le second 
+pour le CLIENT ,  
+A Casablanca , Le xx /xx/20 xx. 
+  
+ 
+  
+ 
+   
+ 
+  
+ 
+   
+ 
+   
+ 
+  
+ 
+ 
+ 
+Référence N° CPS-xxxx- 202x 
+ 
+……………………. -AWB Reproduction interdite  Page - 47 - sur 47 …………………. …  
+  
+ 
+   
+ANNEXES  
+ 
+- Annexe 1: Liste des Progiciels concédés par l’Editeur/Intégrateur;  
+- Annexe 2  : Site d’Utilisation du Progiciel ; 
+- Annexe 3  : Calendrier Prévisionnel de réalisation des Prestations ;  
+- Annexe 4: Formulaire d’adhésion FILIALES.  
+- Annexe 5  : Modalités Financières  ; 
+- Annexe 6: Le PAQ  ; 
+- Annexe 7  : Liste des livrables  ; 
+- Annexe 8  : Délais d’intervention et heures ouvrées du Service de maintenance  ;  
+- Annexe 9  : Modèle de fiche d’anomalie  ; 
+- Annexe 10  : Protection des Données à Caractère Personnel (Loi 09 -08) ; 
+- Annexe 11  : Protection des Données à Caractère Personnel (RGPD)  ; 
+ 
+ 
+   
+ 
