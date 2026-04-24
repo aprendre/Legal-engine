@@ -43,7 +43,7 @@
                     "{{TYPE_SOLUTION}}",
                     "{{TITRE_CONTRAT}}"
                 ],
-                "contenu": "PREAMBULE\n\n{{ROLE_PRESTATAIRE}} est un professionnel reconnu dans le domaine du {{TITRE_CONTRAT}}.\n\n{{NOM_CLIENT}}, ayant lancé une consultation pour l’acquisition et la mise en œuvre d’une {{TYPE_SOLUTION}} pour ses propres activités. La solution précentée par {{ROLE_PRESTATAIRE}} semble adaptés aux besoins exprimés par {{NOM_CLIENT}}.\n\n{{NOM_CLIENT}} a retenu {{ROLE_PRESTATAIRE}} au titre de la réalisation du Projet susvisé et ce, dans la mesure où ce dernier a expressément exposé, soutenu et démontré qu'il dispose de l'expertise, du savoir-faire, de la méthodologie, des moyens et des compétences adéquates pour assurer la maîtrise d'œuvre du Projet et garantir non seulement la réalisation conforme et performante du projet suivant les besoins formulés par    {{NOM_CLIENT}} mais aussi et surtout la maintenance de la solution dans une perspective évolutive conformément à l’intention des Parties.\n\n{{NOM_CLIENT}} assure avoir remis à {{ROLE_PRESTATAIRE}} l’ensemble des éléments nécessaires à la bonne compréhension par ce dernier du Projet d’{{NOM_CLIENT}} et reconnaît qu’un défaut de sa part serait susceptible d’affecter les Prestations à réaliser par {{ROLE_PRESTATAIRE}}.\n\nLes Parties s’engagent à collaborer et à échanger les informations nécessaires à une bonne exécution des Prestations. Elles conviennent de procéder à un échange permanent d’informations en vue de contribuer à la réussite du projet et permettre d’éviter la génération de difficultés préjudiciables aux intérêts des Parties.\n\n{{ROLE_PRESTATAIRE}} s'est déclaré, prêt à mener le Projet dans un véritable esprit de collaboration et s’est déclaré apte à répondre aux exigences d’{{NOM_CLIENT}} en termes de sécurité, de confidentialité, de niveau de performance, de qualité des Prestations demandées par {{NOM_CLIENT}} et le respect des délais impartis dans le calendrier précisé en Annexe des présentes.\n\nC’est sur la base de l’ensemble de ces prérequis, qu’{{NOM_CLIENT}} a retenu {{ROLE_PRESTATAIRE}} tant pour la concession du droit d’utilisation du progiciel que pour sa mise en œuvre et sa maintenance.\n\nPour la formalisation de leur relation contractuelle autour de ce projet, les Parties ont convenu de mettre en place le présent Contrat intégrant les étapes de la relation contractuelle et ce pour garantir la cohérence des engagements et éviter les redondances qui peuvent être source de divergences d’interprétation.\n\nAinsi, le plan du  Contrat se décline comme suit :\n\nI. DEFINITION ;\n\nII. STIPULATIONS COMMUNES ;\n\nIII. AUTRES STIPULATIONS SPECIFIQUES ;\n\nIV. ANNEXES.\n\nCECI ETANT EXPOSE, LES PARTIES ONT CONVENU ET ARRETE CE QUI SUIT :"
+                "contenu": "§DYNAMIC_PREAMBULE§"
             },
             {
                 "id": "ART_003",
@@ -844,7 +844,7 @@
                 "id": "ART_13",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 13 - MODALITES TECHNIQUES GENERALES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{NOM_LOGICIEL}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -868,28 +868,28 @@
                     {
                         "id": "ART_13_S03",
                         "titre": "Sécurité",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
-                        "contenu": "La protection de l’accès aux données du Progiciel via l’intranet nécessite la mise en œuvre par le service informatique du CLIENT d’outils, de moyens et de procédures de sécurité, de protection et de sauvegarde adaptés à son réseau en place et conformes à l’état de l’art en la matière.\n\nBien entendu, {{ROLE_PRESTATAIRE}} dédiera au CLIENT tout conseil ou recommandation nécessaires à la sécurité des données du Progiciel en cas de besoin."
+                        "contenu": "La protection de l’accès aux données de la Solution via l’intranet nécessite la mise en œuvre par le service informatique du CLIENT d’outils, de moyens et de procédures de sécurité, de protection et de sauvegarde adaptés à son réseau en place et conformes à l’état de l’art en la matière.\n\nBien entendu, {{ROLE_PRESTATAIRE}} dédiera au CLIENT tout conseil ou recommandation nécessaires à la sécurité des données de la Solution en cas de besoin."
                     },
                     {
                         "id": "ART_13_S04",
                         "titre": "Gestion des risques",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": ""
                     },
                     {
                         "id": "ART_13_S05",
                         "titre": "Principes",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "Les risques et les facteurs de risque doivent être identifiés par {{ROLE_PRESTATAIRE}} dès le démarrage du Projet et en tout état de cause lors de  de cadrage et d’étude d’impact consécutives au lancement du Projet.\n\nLes facteurs de risque et d’impact sur la mise en œuvre du Projet seront listés avec leur probabilité et leur criticité. Les variations de ces caractéristiques devront être mises en évidence à chacun des Comités Projet et des Comités de Pilotage de l’avancement des Prestations. Le support qui permettra de les suivre constitue un Livrable du Projet à la charge de {{ROLE_PRESTATAIRE}}.\n\nLa liste des risques identifiés sera tenue à jour par {{ROLE_PRESTATAIRE}} et étudiée à chaque Comité de Projet habilité à statuer sur les risques techniques et opérationnels inhérents à la réalisation des prestations."
                     },
                     {
                         "id": "ART_13_S06",
                         "titre": "Analyse et gestion des risques de performance",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "Chaque risque fera l’objet d’un suivi par {{ROLE_PRESTATAIRE}}. Ce dernier s’engage, dans le cadre de l’exercice de son devoir de conseil, à alerter le CLIENT en cas de détection de risque critique ayant un impact de propagation, ne pouvant trouver d’action préventive ou corrective, sans engendrer des dégradations de performance.\n\nCette alerte devra être notifiée au CLIENT par écrit quel qu’en soit le support et devra figurer dans les PV du Comité Projet et  du Comité de Pilotage le cas échéant."
                     }
@@ -900,7 +900,7 @@
                 "id": "ART_14",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 14 - OBLIGATIONS DES PARTIES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{NOM_LOGICIEL}}",
@@ -911,30 +911,30 @@
                     {
                         "id": "ART_14_S01",
                         "titre": "Déclarations et Obligations de Role Prestataire",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": ""
                     },
                     {
                         "id": "ART_14_S02",
                         "titre": "Déclarations de Role Prestataire",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "{{ROLE_PRESTATAIRE}} déclare et garantit au CLIENT que :\n\na)\til est une société régulièrement constituée, jouissant de la personnalité morale et possédant la pleine capacité juridique de conclure le Contrat et d'en exécuter et respecter les termes et conditions ;\n\nb)\tla signature et l'exécution du Contrat ont été régulièrement autorisées par ses organes sociaux et ne requièrent aucune autorisation d'aucune autorité compétente qui n'ait été obtenue ;\n\nc)\tla signature du Contrat et l'exécution des obligations qui en découlent pour lui ne contreviennent, ni à ses statuts ni à un quelconque engagement auquel il pourrait être tenu, ni ne violent en aucune façon les lois ou règlements qui lui sont applicables ;\n\nd)\taucune procédure judiciaire, administrative ou arbitrale n'est en cours, ou à sa connaissance, n'est sur le point d'être engagée à son encontre pour empêcher ou interdire la signature ou l'exécution du Contrat ou qui pourrait avoir un effet défavorable important sur son activité, ses actifs ou sa situation financière ;\n\ne)\taucun événement susceptible d'avoir un effet défavorable important sur son activité, son patrimoine ou sa situation économique et financière n'est survenu depuis la clôture de son dernier exercice social et il n'existe aucun fait constituant ou manifestement susceptible de constituer un cas de résiliation des présentes ;\n\nf)\tses derniers bilans et comptes de résultats sociaux, ont été établis selon les principes comptables généralement admis, sont réguliers et sincères et donnent une image fidèle de son patrimoine, de sa situation financière et de ses résultats ;\n\ng)\til est titulaire de polices d'assurance pour des montants et des couvertures de risques de dommage et de responsabilité adaptés à la nature de ses activités ;"
                     },
                     {
                         "id": "ART_14_S03",
                         "titre": "Obligations de Role Prestataire",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "{{ROLE_PRESTATAIRE}} s'engage à exécuter le Contrat et à exercer son devoir de conseil envers le CLIENT avec tout le soin et toute la diligence requise par sa profession.\n\n{{ROLE_PRESTATAIRE}} sera seul responsable vis-à-vis du CLIENT de la parfaite exécution des Prestations qui lui incombent dans les conditions prévues dans les présentes, et s’oblige notamment à :\n\nAssurer le pilotage du Projet conformément aux conditions contractuelles ;\n\nExécuter ses obligations aux termes du Contrat conformément aux normes professionnelles admises en pareille matière ;\n\nFournir les livrables et/ou rapports intermédiaires relatifs aux Prestations tels que définis dans l’Annexe 7 et/ou dans le PAQ définitif qui sera  joint aux présentes pour en faire partie intégrante.\n\nParticiper régulièrement et activement aux réunions de direction du Projet en émettant les avis et les recommandations requises pour mener à bien le Projet et permettre sa réalisation dans les délais ;\n\nNommer par écrit un responsable qualifié au sein de son équipe, dûment habilité à signer conjointement avec le représentant du CLIENT les comptes rendus d’intervention au titre des Prestations objet des présentes ;\n\nAssurer la disponibilité des équipes affectées au Projet afin de concrétiser une mise en œuvre optimale du projet ;\n\nAffecter à la réalisation du Projet une équipe pluridisciplinaire, constituée selon les exigences et la particularité du Projet en fonction des compétences et qualifications de ses membres et la maintenir jusqu’à l’aboutissement du Projet ;\n\nGarantir la disponibilité des ressources affectées à  sauf cause indépendante de sa volonté telle qu’un cas de force majeure et dans la limite de la durée du Projet ;\n\nMaintenir le responsable du Projet désigné pour diriger  pendant toute la durée de  ;\n\nNe procéder à aucun changement de ses consultants et veiller, en cas de départ d’un consultant, à le remplacer par un consultant présentant un niveau de compétences et expérience au moins équivalent et ce, pendant la durée du Projet ;\n\nInformer préalablement le CLIENT et en requérir son accord en cas de changement de l’organisation et de la composition de l’équipe mise en place pendant la durée du Projet ;\n\nRetirer et/ou remplacer l’un des membres de son équipe sur demande du CLIENT pour des raisons objectives et dûment justifiées ;\n\nPourvoir immédiatement au remplacement d’un des membres de l’équipe de {{ROLE_PRESTATAIRE}} en cas de maladie ou d’accident l’empêchant de poursuivre ses prestations pour une durée supérieure à 1 (une) semaine. L’agrément et la mise en place du nouveau consultant seront soumis à l’information préalable du CLIENT.  Les frais de remplacement sont à la charge de {{ROLE_PRESTATAIRE}} et comprendront le cas échéant, les dépenses qui résulteraient de l’éventuelle nécessité de la présence simultanée sur place du consultant à remplacer et de son remplaçant ;\n\nPrévenir immédiatement le CLIENT, en lui fournissant toutes les pièces justificatives nécessaires, de toutes les transformations statutaires ou projets de transformation affectant, notamment son capital social, sa nature juridique, son objet ou sa capacité juridique."
                     },
                     {
                         "id": "ART_14_S04",
                         "titre": "Obligations du CLIENT",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
-                        "contenu": "Le CLIENT s’engage à collaborer activement et régulièrement avec {{ROLE_PRESTATAIRE}} dans le cadre de  de Personnalisation du Progiciel. Il devra communiquer à {{ROLE_PRESTATAIRE}} les informations que ce dernier jugera utiles pour remplir ses obligations.\n\nLe CLIENT déclare avoir évalué ses besoins de façon précise, dans le cadre des échanges précédant l’Offre Fonctionnelle de {{ROLE_PRESTATAIRE}} et a apprécié leur couverture fonctionnelle et technique par la solution proposée par {{ROLE_PRESTATAIRE}}.\n\nLe CLIENT reconnaît avoir reçu de {{ROLE_PRESTATAIRE}} lors de son expression de besoins, les informations nécessaires, ce qui lui a permis d'apprécier leur couverture fonctionnelle par le Progiciel proposé par {{ROLE_PRESTATAIRE}}.\n\n{{ROLE_PRESTATAIRE}} s'engage à répondre aux questions complémentaires du CLIENT et ce dans le cadre d’une réévaluation éventuelle des besoins du CLIENT et une redéfinition du Calendrier Prévisionnel d’exécution des Prestations objet des présentes.\n\n{{ROLE_PRESTATAIRE}} précise qu’il mène une mission de personnalisation du Progiciel et non d'organisation métiers. Néanmoins, {{ROLE_PRESTATAIRE}} est tenu dans ce cadre à un devoir de conseil et se doit d’alerter le CLIENT sur ses choix d’organisation dont il assume seul la responsabilité et leurs effets induits sur le Progiciel.\n\nLe CLIENT doit s'assurer qu'il dispose de la compétence requise pour l'Utilisation du Progiciel."
+                        "contenu": "Le CLIENT s’engage à collaborer activement et régulièrement avec {{ROLE_PRESTATAIRE}} dans le cadre de  de Personnalisation de la Solution. Il devra communiquer à {{ROLE_PRESTATAIRE}} les informations que ce dernier jugera utiles pour remplir ses obligations.\n\nLe CLIENT déclare avoir évalué ses besoins de façon précise, dans le cadre des échanges précédant l’Offre Fonctionnelle de {{ROLE_PRESTATAIRE}} et a apprécié leur couverture fonctionnelle et technique par la solution proposée par {{ROLE_PRESTATAIRE}}.\n\nLe CLIENT reconnaît avoir reçu de {{ROLE_PRESTATAIRE}} lors de son expression de besoins, les informations nécessaires, ce qui lui a permis d'apprécier leur couverture fonctionnelle par la Solution proposé par {{ROLE_PRESTATAIRE}}.\n\n{{ROLE_PRESTATAIRE}} s'engage à répondre aux questions complémentaires du CLIENT et ce dans le cadre d’une réévaluation éventuelle des besoins du CLIENT et une redéfinition du Calendrier Prévisionnel d’exécution des Prestations objet des présentes.\n\n{{ROLE_PRESTATAIRE}} précise qu’il mène une mission de personnalisation de la Solution et non d'organisation métiers. Néanmoins, {{ROLE_PRESTATAIRE}} est tenu dans ce cadre à un devoir de conseil et se doit d’alerter le CLIENT sur ses choix d’organisation dont il assume seul la responsabilité et leurs effets induits sur la Solution.\n\nLe CLIENT doit s'assurer qu'il dispose de la compétence requise pour l'Utilisation de la Solution."
                     }
                 ],
                 "ordre_affichage": 303
@@ -943,7 +943,7 @@
                 "id": "ART_15",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 15 - CONDUITE DE PROJET",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{NOM_LOGICIEL}}",
@@ -961,42 +961,42 @@
                     {
                         "id": "ART_15_S02",
                         "titre": "Instances de suivi et de contrôle de réalisation des Prestations",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": ""
                     },
                     {
                         "id": "ART_15_S03",
                         "titre": "Intervenants CLIENT",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "Directeur de Projet ayant pour mission :\n\nOrientation du Projet ;\n\nArbitrage des choix significatifs ;\n\nPilotage de la relation contractuelle avec les prestataires ;\n\nAssister aux comités de pilotage ;\n\nresponsabilité de la coordination de l’équipe Projet CLIENT et est l’interlocuteur privilégié de {{ROLE_PRESTATAIRE}}.\n\nChef de Projet Utilisateur (CP) ayant pour mission :\n\nConnaissance des outils en place ;\n\nMaîtrise des évolutions souhaitées dans l'application ;\n\nCentralisation les demandes des intervenants Projets ;\n\nAnimation de l'équipe ;\n\nPilotage la relation avec les équipes utilisateurs.\n\nUtilisateur Clé (UC) ayant pour mission :\n\nParticipation à la phase d'expression de besoins ;\n\nConception de l'application ;\n\nMaîtrise des évolutions souhaitées dans l'application ;\n\nCentralisation les demandes des intervenants Projets.\n\nChef de Projet Informatique (CPI) ayant pour mission :\n\nPilotage du Projet technique ;\n\nValidation de l’architecture technique ;\n\nMise en place des environnements de validation (Serveur de pré production, serveur de recette)\n\nParticipation aux recettes techniques et fonctionnelles ;\n\nParticipation à la communication et au déploiement de la solution."
                     },
                     {
                         "id": "ART_15_S04",
                         "titre": "Intervenants Role Prestataire",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "Directeur de Projet\n\nAssiste aux comités de pilotage ;\n\nEst responsable des intervenants de {{ROLE_PRESTATAIRE}}\n\nChef de Projet\n\nAssure le pilotage du Projet ;\n\nAnalyse l'expression de besoins ;\n\nEst l’interlocuteur privilégié de l'équipe Projet ;\n\nCoordonne toutes les phases et les intervenants du Projet ;\n\nRédige les livrables de pilotage du projet et les soumet au Directeur Projet CLIENT pour validation:\n\nPlanning détaillé du projet actualisé au fil de l'eau,\n\nSupport et CR des comités projet,\n\nSupport et CR des comités de pilotage,\n\nTableau de suivi des risques et alertes ,\n\nTableau de suivi des actions,\n\nTableau de suivi des livrables\n\nResponsable Qualité\n\nEst Responsable de l’assurance Qualité du Projet ;\n\nTeste les Versions ;\n\nVérifie l’adéquation fonctionnelle des livraisons / SFD ;\n\nExpert Technique\n\nMet en place  l'Architecture Technique ;\n\nParticipe à l’installation des Versions ;\n\nMet en place les interfaces.\n\nIngénieur Développement\n\nRéalise la personnalisation et le paramétrage de la solution ;\n\nRéalise les interfaces.\n\nFormateur Equipe Métier\n\nForme l'équipe Projet ;\n\nAnalyse les besoins de personnalisation et de formation supplémentaire, le cas échéant."
                     },
                     {
                         "id": "ART_15_S05",
                         "titre": "Instances",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "Le Comité de Pilotage\n\nParticipants : Le Directeur de Projet du CLIENT, Le Directeur de Projet de {{ROLE_PRESTATAIRE}}. (en option), Le Chef de Projet de {{ROLE_PRESTATAIRE}}, le(s) responsable(s) au sein du Comité de Pilotage de chaque domaine, le responsable de la MOA et la DSI,\n\nSa mission consiste à suivre l’avancement global du projet, à fixer les priorités au Comité de Projet, se prononcer sur les éventuels arbitrages.\n\nFréquence des réunions : Toutes les ………………semaines environ.\n\nLe Comité de Projet\n\nParticipants : L’équipe Projet (CLIENT et {{ROLE_PRESTATAIRE}}).\n\nSa mission consiste à suivre l’avancement détaillé du projet, synthétiser les ateliers, reporter au Comité de Pilotage.\n\nFréquence des réunions : Toutes les semaines."
                     },
                     {
                         "id": "ART_15_S06",
                         "titre": "Calendrier",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
-                        "contenu": "La date de début des Prestations est fixée d’un commun accord entre les Parties.\n\nLe Calendrier Prévisionnel d’exécution qui sera réajusté au démarrage du Projet, débutera à la date arrêtée par les Parties après signature du Contrat et versement de l’acompte contractuel, conformément aux stipulations contractuelles détaillées en annexe 2.\n\nCette date constituera le T zéro sur lequel sera aligné le Calendrier Prévisionnel d’exécution des différentes phases de la mise en œuvre du Progiciel prévu à l’Annexe 3 des présentes."
+                        "contenu": "La date de début des Prestations est fixée d’un commun accord entre les Parties.\n\nLe Calendrier Prévisionnel d’exécution qui sera réajusté au démarrage du Projet, débutera à la date arrêtée par les Parties après signature du Contrat et versement de l’acompte contractuel, conformément aux stipulations contractuelles détaillées en annexe 2.\n\nCette date constituera le T zéro sur lequel sera aligné le Calendrier Prévisionnel d’exécution des différentes phases de la mise en œuvre de la Solution prévu à l’Annexe 3 des présentes."
                     },
                     {
                         "id": "ART_15_S07",
                         "titre": "Phase d’initialisation des Prestations et Réunion de lancement",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "La réunion de lancement a pour objet de présenter les équipes, d’établir le planning de la conduite du projet et de remettre les Guides de Personnalisation au CLIENT.\n\nComme indiqué à l’article 14-1-2. (v) des présentes, {{ROLE_PRESTATAIRE}} désignera parmi son personnel un chef de projet et un directeur de projet dont il communiquera les identités au CLIENT. Lesdits chef de projet et directeur de projet seront responsables du bon déroulement et de l’achèvement des Prestations et représenteront valablement {{ROLE_PRESTATAIRE}} auprès du CLIENT.\n\nLE CLIENT désignera à {{ROLE_PRESTATAIRE}} dans les mêmes conditions et modalités, son représentant qualifié, ci-après dénommé « le Représentant du CLIENT » ou « le Directeur de projet », qui sera le correspondant attitré de {{ROLE_PRESTATAIRE}}. Ce Représentant devra avoir tous pouvoirs pour engager techniquement le CLIENT aux fins de la réalisation des Prestations sauf lorsque la décision à prendre nécessite l’intervention d’instances supérieures. Il appartient au CLIENT de lui accorder toutes les habilitations ou mandats nécessaires à cet effet.\n\nLa désignation d’un nouveau représentant par l’une ou l’autre des Parties n’emportera aucune modification aux Prestations signées ou en cours de réalisation.\n\nSi au cours de la réalisation des Prestations une difficulté apparaît, les Parties s’engagent à s'en informer le plus vite possible et à se concerter pour mettre en place la meilleure solution possible dans les meilleurs délais."
                     },
@@ -1021,7 +1021,7 @@
                 "id": "ART_16",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 16 - MISE A DISPOSITION- INSTALLATION ET RECETTE DES DIVERSES VERSIONS DE REFERENCE (Version de Référence personnalisée, puis avec les Interfaces, puis avec la reprise de données existantes)",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{NOM_LOGICIEL}}",
@@ -1057,7 +1057,7 @@
                 "id": "ART_17",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 17 - REPRISE DES DONNEES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{MONTANT_REDEVANCE}}",
                     "{{NOM_LOGICIEL}}",
@@ -1070,7 +1070,7 @@
                 "id": "ART_18",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 18 - INTERFACES AVEC LES SYSTEMES EXISTANTS",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [],
                 "contenu": "Les interfaces convenues seront réalisées dans les conditions de l’Annexe 7 du présent Contrat et conformément aux règles et procédures définies dans le PAQ objet de l’Annexe 6.",
                 "ordre_affichage": 307
@@ -1079,7 +1079,7 @@
                 "id": "ART_19",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 19 - INSTALLATION ET VALIDATION DE   DEFINITIVE",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{NOM_LOGICIEL}}",
@@ -1093,7 +1093,7 @@
                 "id": "ART_20",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 20 - ASSISTANCE A  PRODUCTION",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{NOM_LOGICIEL}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1105,7 +1105,7 @@
                 "id": "ART_21",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 21 - FORMATION",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{NOM_LOGICIEL}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1117,7 +1117,7 @@
                 "id": "ART_22",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 22 - PRIX -MODALITES FINANCIERES.",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{MONTANT_REDEVANCE}}",
@@ -1130,7 +1130,7 @@
                 "id": "ART_23",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 23 - GARANTIES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1140,21 +1140,21 @@
                     {
                         "id": "ART_23_S01",
                         "titre": "Garantie contractuelle",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "{{ROLE_PRESTATAIRE}} garantit sans réserve, pendant une durée de Six (06) mois après la mise en production, chaque Lot livré.\n\nPendant cette période de garantie, {{ROLE_PRESTATAIRE}} s'engage à intervenir gratuitement dans les délais fixés en annexe à compter de la réception de la demande d’intervention du CLIENT.\n\nLe CLIENT fournira pour toute Anomalie communiquée pour correction à {{ROLE_PRESTATAIRE}} au titre de la garantie, une fiche d'Anomalie décrivant :\n\nle contexte de l’Anomalie,\n\nles données en entrée,\n\nles données en sortie,\n\nla description de l'Anomalie constatée,\n\nle caractère répétitif de l'Anomalie.\n\nAu cours de cette période, {{ROLE_PRESTATAIRE}} procède, au titre de la garantie, à la correction des Anomalies, communiquées par le CLIENT avant la fin de la période de garantie.\n\nLe délai de six mois couvre la communication des Anomalies par le CLIENT, sachant que les corrections requises  doivent être effectuées dans les mêmes délais que ceux prévus pour"
                     },
                     {
                         "id": "ART_23_S02",
                         "titre": "Garantie de non-régression",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "{{ROLE_PRESTATAIRE}} s’engage à assurer la non-régression par rapport à la version recettée et/ou aux spécifications validées, selon le cas."
                     },
                     {
                         "id": "ART_23_S03",
                         "titre": "Garantie de fin d’exécution des prestations",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel,Mise en oeuvre')",
                         "variables": [],
                         "contenu": "A ce titre, {{ROLE_PRESTATAIRE}} s’engage à lever toutes les Anomalies résiduelles identifiées et communiquées par le CLIENT avant la fin de la garantie contractuelle."
                     }
@@ -1268,16 +1268,16 @@
                     {
                         "id": "ART_30_S01",
                         "titre": "Les Prestations de maintenance fournies par Role Prestataire s'appliquent à l'ensemble du Progiciel dont il a concédé l'utilisation au CLIENT sur le Matériel et sur le Site d'Utilisation précisés en annexe du présent Contrat. Cet ensemble est détaillé en Annexes N° 1 et 2.",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Toute modification de la configuration initiale du Progiciel, notamment par l'adjonction de licences complémentaires et/ou la concession d'un droit d'utilisation d'autres Progiciels de {{ROLE_PRESTATAIRE}} sur le Site d'Utilisation devra faire l'objet d'un accord entre les Parties formalisé par un Avenant au présent Contrat."
+                        "contenu": "Toute modification de la configuration initiale de la Solution, notamment par l'adjonction de licences complémentaires et/ou la concession d'un droit d'utilisation d'autres la Solutions de {{ROLE_PRESTATAIRE}} sur le Site d'Utilisation devra faire l'objet d'un accord entre les Parties formalisé par un Avenant au présent Contrat."
                     },
                     {
                         "id": "ART_30_S02",
                         "titre": "Sont exclus du champ du présent service de maintenance",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "- Les logiciels et/ou progiciels tierce partie non explicitement référencés en Annexe N° 1 ;\n\n- Les logiciels et/ou progiciels fournis au CLIENT par des tiers ;\n\n- Les logiciels et/ou progiciels développés par le CLIENT ou par des tiers ;\n\n- D'une manière générale, tout logiciel non expressément et explicitement référencé dans l'Annexe N° 1 que {{ROLE_PRESTATAIRE}} n’a pas recommandé au CLIENT comme prérequis technique à toute installation et mise en œuvre du Progiciel objet du présent Contrat."
+                        "contenu": "- Les logiciels et/ou solutions tierce partie non explicitement référencés en Annexe N° 1 ;\n\n- Les logiciels et/ou solutions fournis au CLIENT par des tiers ;\n\n- Les logiciels et/ou solutions développés par le CLIENT ou par des tiers ;\n\n- D'une manière générale, tout logiciel non expressément et explicitement référencé dans l'Annexe N° 1 que {{ROLE_PRESTATAIRE}} n’a pas recommandé au CLIENT comme prérequis technique à toute installation et mise en œuvre de la Solution objet du présent Contrat."
                     }
                 ],
                 "ordre_affichage": 401
@@ -1332,37 +1332,37 @@
                     {
                         "id": "ART_34_S01",
                         "titre": "Versions",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Outre les Versions Mineures (correctives ou évolutives) couvertes par les présents services de Maintenance de {{ROLE_PRESTATAIRE}}, le CLIENT peut procéder ou  faire procéder à l'installation sur son Site d'Utilisation de toute nouvelle Version Majeure du Progiciel dans un délai maximum de vingt-quatre (24) mois, après sa mise à sa disposition par {{ROLE_PRESTATAIRE}}. Si le CLIENT n’opte pas pour la nouvelle Version Majeure proposée, {{ROLE_PRESTATAIRE}} continuera à assurer la maintenance des Versions en vigueur chez le CLIENT.\n\nDe même, le CLIENT peut  à sa convenance et selon ses propres besoins, demander à {{ROLE_PRESTATAIRE}} de faire évoluer tout ou partie des Modules acquis, laquelle évolution fera l’objet d’une étude et une évaluation par {{ROLE_PRESTATAIRE}} et sera soumise au CLIENT pour approbation, avant sa mise en œuvre."
+                        "contenu": "Outre les Versions Mineures (correctives ou évolutives) couvertes par les présents services de Maintenance de {{ROLE_PRESTATAIRE}}, le CLIENT peut procéder ou  faire procéder à l'installation sur son Site d'Utilisation de toute nouvelle Version Majeure de la Solution dans un délai maximum de vingt-quatre (24) mois, après sa mise à sa disposition par {{ROLE_PRESTATAIRE}}. Si le CLIENT n’opte pas pour la nouvelle Version Majeure proposée, {{ROLE_PRESTATAIRE}} continuera à assurer la maintenance des Versions en vigueur chez le CLIENT.\n\nDe même, le CLIENT peut  à sa convenance et selon ses propres besoins, demander à {{ROLE_PRESTATAIRE}} de faire évoluer tout ou partie des Modules acquis, laquelle évolution fera l’objet d’une étude et une évaluation par {{ROLE_PRESTATAIRE}} et sera soumise au CLIENT pour approbation, avant sa mise en œuvre."
                     },
                     {
                         "id": "ART_34_S02",
                         "titre": "Sauvegarde des données",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Pendant l'intervention du service de Maintenance, le CLIENT reste  gardien du  Progiciel et des fichiers qui pourraient être mis en œuvre par {{ROLE_PRESTATAIRE}}.\n\nIl incombe donc au CLIENT de prendre toutes les mesures de sécurité et de mettre en place toutes les procédures utiles à cet effet, tant avant l'intervention du service de maintenance, que lors de la mise en exploitation du Progiciel en procédant à toutes copies de sécurité nécessaires à cet effet."
+                        "contenu": "Pendant l'intervention du service de Maintenance, le CLIENT reste  gardien du  la Solution et des fichiers qui pourraient être mis en œuvre par {{ROLE_PRESTATAIRE}}.\n\nIl incombe donc au CLIENT de prendre toutes les mesures de sécurité et de mettre en place toutes les procédures utiles à cet effet, tant avant l'intervention du service de maintenance, que lors de la mise en exploitation de la Solution en procédant à toutes copies de sécurité nécessaires à cet effet."
                     },
                     {
                         "id": "ART_34_S03",
                         "titre": "Obligations des Parties",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": ""
                     },
                     {
                         "id": "ART_34_S04",
                         "titre": "Role Prestataire",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "{{ROLE_PRESTATAIRE}} s’engage à fournir les Prestations de Maintenance décrites au CLIENT dans l’Offre Technique, avec toute la diligence et la disponibilité nécessaires et ce conformément aux règles de l’art en vigueur et ce pendant la durée du Contrat de Maintenance, et à mettre en œuvre son expertise pour assurer au CLIENT une utilisation et une exploitation du Progiciel conformes aux engagements souscrits.\n\n{{ROLE_PRESTATAIRE}} s’engage à conseiller et mettre en garde le CLIENT en transmettant tout renseignement ou information qu’il jugerait nécessaire à l’exécution des Prestations de Maintenance, à proposer toute amélioration qui lui paraîtrait souhaitable et à faire toutes recommandations au CLIENT dans l’exercice de ses choix.\n\n{{ROLE_PRESTATAIRE}} s’engage à fournir au CLIENT des Prestations de Maintenance présentant toutes les conditions et mesures de sécurité conformément aux règles de l’art et ce afin de garantir la confidentialité, la sécurité, l’intégrité et la conservation des données du CLIENT.\n\n{{ROLE_PRESTATAIRE}} s’engage à ce que les intervenants chargés d’assurer les Prestations de Maintenance possèdent toutes les compétences et l’expérience requises à la bonne exécution de ses obligations.\n\n{{ROLE_PRESTATAIRE}} s'oblige à disposer en permanence et en nombre suffisant du personnel qualifié pour assurer les Prestations de Maintenance prévus dans le cadre des présentes.\n\nAucune limite au nombre de demandes d’information ou d’incidents que le CLIENT pourra soumettre à {{ROLE_PRESTATAIRE}} n’est admise pendant toute la durée du Contrat.\n\nLe support de maintenance sera fourni via différents médias tels que le courrier électronique, l’interface WEB, le fax, ou la télémaintenance sous réserve que  les Parties se mettent d’accord sur les conditions techniques de cette dernière.\n\nDans tous les cas, ces médias ne seront pas surtaxés, c’est à dire qu’aucun coût additionnel, autre que les frais de communication d’usage imposés par l’opérateur tiers au CLIENT, s’ils en existent, ne sera mis à la charge du CLIENT.\n\nDans le cadre des présentes et pour le montant forfaitaire indiqué dans l’annexe 2 relative aux « Modalités Financières », {{ROLE_PRESTATAIRE}} s’engage à fournir au CLIENT les « Prestations de Maintenance » suivantes :\n\nInformations et assistance téléphonique au CLIENT,\n\nMaintenance Corrective,\n\nMaintenance Evolutive,"
+                        "contenu": "{{ROLE_PRESTATAIRE}} s’engage à fournir les Prestations de Maintenance décrites au CLIENT dans l’Offre Technique, avec toute la diligence et la disponibilité nécessaires et ce conformément aux règles de l’art en vigueur et ce pendant la durée du Contrat de Maintenance, et à mettre en œuvre son expertise pour assurer au CLIENT une utilisation et une exploitation de la Solution conformes aux engagements souscrits.\n\n{{ROLE_PRESTATAIRE}} s’engage à conseiller et mettre en garde le CLIENT en transmettant tout renseignement ou information qu’il jugerait nécessaire à l’exécution des Prestations de Maintenance, à proposer toute amélioration qui lui paraîtrait souhaitable et à faire toutes recommandations au CLIENT dans l’exercice de ses choix.\n\n{{ROLE_PRESTATAIRE}} s’engage à fournir au CLIENT des Prestations de Maintenance présentant toutes les conditions et mesures de sécurité conformément aux règles de l’art et ce afin de garantir la confidentialité, la sécurité, l’intégrité et la conservation des données du CLIENT.\n\n{{ROLE_PRESTATAIRE}} s’engage à ce que les intervenants chargés d’assurer les Prestations de Maintenance possèdent toutes les compétences et l’expérience requises à la bonne exécution de ses obligations.\n\n{{ROLE_PRESTATAIRE}} s'oblige à disposer en permanence et en nombre suffisant du personnel qualifié pour assurer les Prestations de Maintenance prévus dans le cadre des présentes.\n\nAucune limite au nombre de demandes d’information ou d’incidents que le CLIENT pourra soumettre à {{ROLE_PRESTATAIRE}} n’est admise pendant toute la durée du Contrat.\n\nLe support de maintenance sera fourni via différents médias tels que le courrier électronique, l’interface WEB, le fax, ou la télémaintenance sous réserve que  les Parties se mettent d’accord sur les conditions techniques de cette dernière.\n\nDans tous les cas, ces médias ne seront pas surtaxés, c’est à dire qu’aucun coût additionnel, autre que les frais de communication d’usage imposés par l’opérateur tiers au CLIENT, s’ils en existent, ne sera mis à la charge du CLIENT.\n\nDans le cadre des présentes et pour le montant forfaitaire indiqué dans l’annexe 2 relative aux « Modalités Financières », {{ROLE_PRESTATAIRE}} s’engage à fournir au CLIENT les « Prestations de Maintenance » suivantes :\n\nInformations et assistance téléphonique au CLIENT,\n\nMaintenance Corrective,\n\nMaintenance Evolutive,"
                     },
                     {
                         "id": "ART_34_S05",
                         "titre": "Le CLIENT",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Le CLIENT s'engage à respecter les conditions normales d'utilisation du Progiciel, à appliquer les instructions données par {{ROLE_PRESTATAIRE}} et à respecter toutes les dispositions du présent Contrat.\n\nLe CLIENT informera {{ROLE_PRESTATAIRE}} de toutes les Anomalies du Progiciel suivant les modalités prévues à cet effet.\n\nSauf contraintes de haute sécurité du système d’information du CLIENT, Le CLIENT donnera  libre accès au Site et Matériel abritant le Progiciel pour les techniciens de {{ROLE_PRESTATAIRE}}.\n\nLe CLIENT mettra à la disposition des techniciens de maintenance toutes les fournitures, ressources et moyens humains et matériels nécessaires et utiles à l'appréhension et la résolution du problème constaté.\n\nLe CLIENT veillera à n'entreprendre aucune opération qui pourrait directement ou indirectement bloquer ou ralentir les opérations du service de maintenance sauf nécessité inhérente à la bonne marche du matériel, des équipements et en général du système d’information du CLIENT."
+                        "contenu": "Le CLIENT s'engage à respecter les conditions normales d'utilisation de la Solution, à appliquer les instructions données par {{ROLE_PRESTATAIRE}} et à respecter toutes les dispositions du présent Contrat.\n\nLe CLIENT informera {{ROLE_PRESTATAIRE}} de toutes les Anomalies de la Solution suivant les modalités prévues à cet effet.\n\nSauf contraintes de haute sécurité du système d’information du CLIENT, Le CLIENT donnera  libre accès au Site et Matériel abritant la Solution pour les techniciens de {{ROLE_PRESTATAIRE}}.\n\nLe CLIENT mettra à la disposition des techniciens de maintenance toutes les fournitures, ressources et moyens humains et matériels nécessaires et utiles à l'appréhension et la résolution du problème constaté.\n\nLe CLIENT veillera à n'entreprendre aucune opération qui pourrait directement ou indirectement bloquer ou ralentir les opérations du service de maintenance sauf nécessité inhérente à la bonne marche du matériel, des équipements et en général du système d’information du CLIENT."
                     }
                 ],
                 "ordre_affichage": 405
@@ -1408,93 +1408,93 @@
                     {
                         "id": "ART_37_S01",
                         "titre": "Ouverture d’un incident",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": "{{ROLE_PRESTATAIRE}} s’engage à prendre en compte l’appel du CLIENT en lui répondant immédiatement ou en le rappelant dans un délai qui ne saurait excéder quatre (4) Heures Ouvrées à compter de la réception de l’appel, pour les anomalies bloquantes ou sévères.\n\nA l’issue de la prise en compte, {{ROLE_PRESTATAIRE}} communique au CLIENT un numéro d’incident (ticket d’ouverture d’un incident comportant notamment la date et l’heure de l’appel du CLIENT).\n\nUn appel peut se faire par tout support approprié : téléphone, télécopie, ou courrier électronique adressé à la hotline."
                     },
                     {
                         "id": "ART_37_S02",
                         "titre": "Qualification d’une Anomalie",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": "{{ROLE_PRESTATAIRE}} procédera au préalable et en accord avec le CLIENT à la qualification et au classement du degré de sévérité des Anomalies signalées par le CLIENT, du niveau de priorité et de la nature de l’intervention envisagée pour chaque  Anomalie."
                     },
                     {
                         "id": "ART_37_S03",
                         "titre": "Traitement",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "{{ROLE_PRESTATAIRE}} s’engage à fournir au CLIENT dans les délais indiqués ci-dessous une correction et/ou une solution de contournement permettant de résoudre ou de contourner l’Anomalie signalée de manière temporaire jusqu’à résolution définitive de l’Anomalie.\n\nLes Anomalies Bloquantes et Sévères seront traitées par un ingénieur du support technique de {{ROLE_PRESTATAIRE}} en vue de la résolution définitive de l’Anomalie, tant en ses causes qu’en ses conséquences.\n\nSi la résolution immédiate de l’Anomalie ne peut être réalisée, et jusqu’à survenance de cet événement, l’ingénieur du support proposera une solution de contournement temporaire permettant au CLIENT d’exploiter pleinement et sans incidents les fonctionnalités du Progiciel conformément à sa Documentation."
+                        "contenu": "{{ROLE_PRESTATAIRE}} s’engage à fournir au CLIENT dans les délais indiqués ci-dessous une correction et/ou une solution de contournement permettant de résoudre ou de contourner l’Anomalie signalée de manière temporaire jusqu’à résolution définitive de l’Anomalie.\n\nLes Anomalies Bloquantes et Sévères seront traitées par un ingénieur du support technique de {{ROLE_PRESTATAIRE}} en vue de la résolution définitive de l’Anomalie, tant en ses causes qu’en ses conséquences.\n\nSi la résolution immédiate de l’Anomalie ne peut être réalisée, et jusqu’à survenance de cet événement, l’ingénieur du support proposera une solution de contournement temporaire permettant au CLIENT d’exploiter pleinement et sans incidents les fonctionnalités de la Solution conformément à sa Documentation."
                     },
                     {
                         "id": "ART_37_S04",
                         "titre": "Délais de correction",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Le délai de correction est définit comme la durée entre le moment où l’Anomalie est soumise à {{ROLE_PRESTATAIRE}} (Ticket d’ouverture d’un incident), et le moment où l’ingénieur du support technique de {{ROLE_PRESTATAIRE}} livre au CLIENT une solution de correction définitive de l’Anomalie signalée.\n\nCe délai n’est clos qu’après la validation par le CLIENT de la solution proposée par {{ROLE_PRESTATAIRE}}.\n\n{{ROLE_PRESTATAIRE}} s’engage à corriger les Anomalies en fonction de leur nature, dans les délais mentionnés ci-dessous pour chacun des Progiciels, afin de ne pas perturber durablement l’activité du CLIENT :"
+                        "contenu": "Le délai de correction est définit comme la durée entre le moment où l’Anomalie est soumise à {{ROLE_PRESTATAIRE}} (Ticket d’ouverture d’un incident), et le moment où l’ingénieur du support technique de {{ROLE_PRESTATAIRE}} livre au CLIENT une solution de correction définitive de l’Anomalie signalée.\n\nCe délai n’est clos qu’après la validation par le CLIENT de la solution proposée par {{ROLE_PRESTATAIRE}}.\n\n{{ROLE_PRESTATAIRE}} s’engage à corriger les Anomalies en fonction de leur nature, dans les délais mentionnés ci-dessous pour chacun des la Solutions, afin de ne pas perturber durablement l’activité du CLIENT :"
                     },
                     {
                         "id": "ART_37_S05",
                         "titre": "Assistance Téléphonique",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": ""
                     },
                     {
                         "id": "ART_37_S06",
                         "titre": "Contenu des Prestations",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "{{ROLE_PRESTATAIRE}} assure au CLIENT une assistance téléphonique en cas d'Anomalie ou de dysfonctionnement portant sur le Progiciel ou le Matériel ou le Site d’utilisation lorsque ces deux derniers s’en trouvent impactés."
+                        "contenu": "{{ROLE_PRESTATAIRE}} assure au CLIENT une assistance téléphonique en cas d'Anomalie ou de dysfonctionnement portant sur la Solution ou le Matériel ou le Site d’utilisation lorsque ces deux derniers s’en trouvent impactés."
                     },
                     {
                         "id": "ART_37_S07",
                         "titre": "Déroulement du service",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "L'assistance téléphonique se fera au moyen de renseignements, conseils et instructions fournis par un technicien de {{ROLE_PRESTATAIRE}} en vue de permettre un fonctionnement du Progiciel conforme à ses spécifications.\n\nL'assistance téléphonique est assurée sur appel du CLIENT tous les jours ouvrés du Lundi au Vendredi pendant les heures ouvrées de {{ROLE_PRESTATAIRE}} rappelées en Annexe 8.\n\n{{ROLE_PRESTATAIRE}} s’assurera de corriger l'Anomalie ou d'y apporter une solution de contournement temporaire par téléphone dans les meilleurs délais, jusqu’à résolution définitive de ladite Anomalie. Si l'Anomalie persiste, {{ROLE_PRESTATAIRE}} effectuera un nouveau diagnostic sur la base de documents caractérisant l'incident, qui lui auront été préalablement communiqués par le CLIENT.\n\nLa correction pourra être poursuivie par l'envoi d'une Version corrigée du Progiciel ou par une intervention sur le Site d'Utilisation du CLIENT si  {{ROLE_PRESTATAIRE}} l'estime nécessaire.\n\nLes Version Mineures  de mise à jour du Progiciel seront fournies au CLIENT par {{ROLE_PRESTATAIRE}} en fonction de la périodicité dont ce dernier reste seul juge. A compter de la livraison par {{ROLE_PRESTATAIRE}} d’une Version Mineure Corrective du Progiciel, le CLIENT est tenu de procéder ou de faire procéder à l’installation de celle-ci sur son site d’Utilisation, sauf à encourir de son propre fait, pour son application, des risques d’instabilité ou la persistance d’anomalies désormais corrigées."
+                        "contenu": "L'assistance téléphonique se fera au moyen de renseignements, conseils et instructions fournis par un technicien de {{ROLE_PRESTATAIRE}} en vue de permettre un fonctionnement de la Solution conforme à ses spécifications.\n\nL'assistance téléphonique est assurée sur appel du CLIENT tous les jours ouvrés du Lundi au Vendredi pendant les heures ouvrées de {{ROLE_PRESTATAIRE}} rappelées en Annexe 8.\n\n{{ROLE_PRESTATAIRE}} s’assurera de corriger l'Anomalie ou d'y apporter une solution de contournement temporaire par téléphone dans les meilleurs délais, jusqu’à résolution définitive de ladite Anomalie. Si l'Anomalie persiste, {{ROLE_PRESTATAIRE}} effectuera un nouveau diagnostic sur la base de documents caractérisant l'incident, qui lui auront été préalablement communiqués par le CLIENT.\n\nLa correction pourra être poursuivie par l'envoi d'une Version corrigée de la Solution ou par une intervention sur le Site d'Utilisation du CLIENT si  {{ROLE_PRESTATAIRE}} l'estime nécessaire.\n\nLes Version Mineures  de mise à jour de la Solution seront fournies au CLIENT par {{ROLE_PRESTATAIRE}} en fonction de la périodicité dont ce dernier reste seul juge. A compter de la livraison par {{ROLE_PRESTATAIRE}} d’une Version Mineure Corrective de la Solution, le CLIENT est tenu de procéder ou de faire procéder à l’installation de celle-ci sur son site d’Utilisation, sauf à encourir de son propre fait, pour son application, des risques d’instabilité ou la persistance d’anomalies désormais corrigées."
                     },
                     {
                         "id": "ART_37_S08",
                         "titre": "Procédure d’escalade",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": "Si, à l'issue des délais indiqués à compter de la prise en compte de l’appel du CLIENT, {{ROLE_PRESTATAIRE}} ne peut résoudre la totalité des Anomalies Bloquantes ou des Anomalies Sévères, ou s'il n'y a apporté que des correctifs temporaires, {{ROLE_PRESTATAIRE}} s’engage à ses frais :\n\nà mettre à disposition du CLIENT toutes les ressources humaines et techniques nécessaires et adaptées afin de corriger l’Anomalie concernée, ces ressources demeureront affectées jusqu’à résolution de l’/des Anomalie (s)  concernée (s).\n\nà intervenir sur le Site, en accord avec le CLIENT, dans un délai de 48 heures à compter de la décision conjointe prise par les Parties.\n\nLe tout sans préjudice de tous Dommages et intérêts auxquels le CLIENT a droit, d’une part, et la possibilité pour lui de suspendre le paiement des Prestations objet des présentes pendant une durée d’une année."
                     },
                     {
                         "id": "ART_37_S09",
                         "titre": "Intervention sur Site",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": ""
                     },
                     {
                         "id": "ART_37_S10",
                         "titre": "Contenu des Prestations",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": "Cette intervention concernera les situations d'urgence et/ou d'Anomalie Bloquante ou Sévère. Elle consiste dans le déplacement sur le Site d'Utilisation d'un technicien qualifié ou plus de {{ROLE_PRESTATAIRE}} selon le besoin formulé par le CLIENT, pour la prise en compte, l'analyse et la correction de l’Anomalie relevée, reproductible ou non dans l’environnement du CLIENT.\n\nL’Anomalie constatée doit être documentée au préalable par le CLIENT et reportée par écrit dans le Registre d'Anomalies, le cas échéant."
                     },
                     {
                         "id": "ART_37_S11",
                         "titre": "Déroulement du service",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
                         "contenu": "L'intervention du ou des technicien(s) de {{ROLE_PRESTATAIRE}} sur le Site d'Utilisation dans ces cas sera assurée tous les jours ouvrés du Lundi au Vendredi pendant les heures ouvrées de {{ROLE_PRESTATAIRE}} rappelées en Annexe 8 et s'effectuera dans les heures ouvrées du CLIENT. Le personnel de {{ROLE_PRESTATAIRE}} sera tenu au respect du règlement intérieur que lui aura notifié le CLIENT.\n\nLe CLIENT ne pourra demander à {{ROLE_PRESTATAIRE}} sans motif raisonnable le remplacement du ou des technicien(s) de {{ROLE_PRESTATAIRE}} mobilisés sur Site, ce dernier devant toutefois procéder systématiquement au remplacement dudit ou desdits techniciens si le CLIENT en fait la demande justifiée, tous frais de déplacement et d’hébergement étant à la charge de {{ROLE_PRESTATAIRE}}."
                     },
                     {
                         "id": "ART_37_S12",
                         "titre": "Modalités préalables à l'exécution du service",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Le CLIENT rencontrant une Anomalie Bloquante ou Sévère prévient {{ROLE_PRESTATAIRE}} par l'intermédiaire de son Représentant Habilité, par téléphone, télécopie, courrier postal ou électronique.\n\nLe CLIENT peut également télécopier à {{ROLE_PRESTATAIRE}} la Fiche d'Anomalie selon les indications portées en Annexe 8, l’accusé d’envoi de la télécopie faisant foi.\n\nTout document signalant l'incident transmis à {{ROLE_PRESTATAIRE}} devra comporter toute information caractérisant l'incident pouvant lui faciliter la compréhension et la reproduction du problème rencontré, précisant notamment les conditions d'utilisation du Progiciel lors de l'apparition de l'Anomalie décide alors, s'il y a lieu, des corrections à apporter y compris au moyen de solutions de contournement."
+                        "contenu": "Le CLIENT rencontrant une Anomalie Bloquante ou Sévère prévient {{ROLE_PRESTATAIRE}} par l'intermédiaire de son Représentant Habilité, par téléphone, télécopie, courrier postal ou électronique.\n\nLe CLIENT peut également télécopier à {{ROLE_PRESTATAIRE}} la Fiche d'Anomalie selon les indications portées en Annexe 8, l’accusé d’envoi de la télécopie faisant foi.\n\nTout document signalant l'incident transmis à {{ROLE_PRESTATAIRE}} devra comporter toute information caractérisant l'incident pouvant lui faciliter la compréhension et la reproduction du problème rencontré, précisant notamment les conditions d'utilisation de la Solution lors de l'apparition de l'Anomalie décide alors, s'il y a lieu, des corrections à apporter y compris au moyen de solutions de contournement."
                     },
                     {
                         "id": "ART_37_S13",
                         "titre": "Clôture d’un incident",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Un incident sera clos lorsque {{ROLE_PRESTATAIRE}} sera en mesure de démontrer :\n\nqu’il a corrigé de manière définitive les Anomalies affectant le Progiciel, ou\n\nque la cause de/des Anomalies n’est pas directement liée à l’utilisation ou au fonctionnement du Progiciel.\n\nToute procédure de clôture d’incident devra être acceptée et validée par le CLIENT pour lui être définitivement opposable, tout refus de clôture devant être motivé par le CLIENT.\n\nAu cas où le désaccord persiste, les parties doivent faire application de la procédure d’escalade avant toute demande de résiliation du contrat."
+                        "contenu": "Un incident sera clos lorsque {{ROLE_PRESTATAIRE}} sera en mesure de démontrer :\n\nqu’il a corrigé de manière définitive les Anomalies affectant la Solution, ou\n\nque la cause de/des Anomalies n’est pas directement liée à l’utilisation ou au fonctionnement de la Solution.\n\nToute procédure de clôture d’incident devra être acceptée et validée par le CLIENT pour lui être définitivement opposable, tout refus de clôture devant être motivé par le CLIENT.\n\nAu cas où le désaccord persiste, les parties doivent faire application de la procédure d’escalade avant toute demande de résiliation du contrat."
                     }
                 ],
                 "ordre_affichage": 408
@@ -1529,23 +1529,23 @@
                     {
                         "id": "ART_39_S01",
                         "titre": "Les Versions Mineures",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Une Version Mineure est destinée, suivant les cas, à apporter des corrections d’anomalies et/ou des améliorations de performances du Progiciel  et/ou la mise à jour du Progiciel en cas d’évolution de l’environnement et/ou du système d’exploitation du CLIENT tel que décrit dans\n\nDans tous les cas, les Versions Mineures doivent :\n\nReprendre l’intégralité des fonctionnalités présentes dans la version du Progiciel utilisée par le CLIENT, sauf accord contraire du CLIENT,\n\nÊtre compatibles avec l’Environnement, sauf (i) accord contraire du CLIENT ou (ii) évolution de l’Environnement acceptée par les Parties."
+                        "contenu": "Une Version Mineure est destinée, suivant les cas, à apporter des corrections d’anomalies et/ou des améliorations de performances de la Solution  et/ou la mise à jour de la Solution en cas d’évolution de l’environnement et/ou du système d’exploitation du CLIENT tel que décrit dans\n\nDans tous les cas, les Versions Mineures doivent :\n\nReprendre l’intégralité des fonctionnalités présentes dans la version de la Solution utilisée par le CLIENT, sauf accord contraire du CLIENT,\n\nÊtre compatibles avec l’Environnement, sauf (i) accord contraire du CLIENT ou (ii) évolution de l’Environnement acceptée par les Parties."
                     },
                     {
                         "id": "ART_39_S02",
                         "titre": "Les Nouvelles Versions Majeures",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "Une Nouvelle Version Majeure est destinée, suivant les cas, à apporter de nouvelles fonctionnalités et/ou d’étendre des fonctionnalités existantes et/ou de permettre l’utilisation du Progiciel sous un nouveau système d’exploitation, ou généralement, toute mise à jour substantielle du Progiciel résultant d’un investissement conséquent en Recherche et Développement de la part de {{ROLE_PRESTATAIRE}} et apportant des fonctionnalités  ou caractéristiques nouvelles au Progiciel ou l’améliorant de manière significative par rapport à la Version en vigueur chez le CLIENT.\n\nDans le cadre du service de maintenance évolutive, {{ROLE_PRESTATAIRE}} s’engage à fournir gratuitement au CLIENT, à sa demande, toute Nouvelle Version Majeure du Progiciel hors personnalisation demandées par le CLIENT, qui serait commercialisée pendant la durée du présent Contrat, laquelle doit obligatoirement :\n\nReprendre l’intégralité des fonctionnalités déjà présentes dans la version du Progiciel utilisée par le CLIENT, sauf accord contraire de ce dernier,\n\nÊtre compatible avec l’Environnement, sauf (i) accord contraire du CLIENT ou (ii) évolution de l’Environnement acceptée par les Parties.\n\n{{ROLE_PRESTATAIRE}} fournit au CLIENT, en même temps que  Majeure, la documentation associée ainsi qu’un rapport technique expliquant l’impact de cette Nouvelle Version.\n\n{{ROLE_PRESTATAIRE}} n’est pas tenu de mettre de Nouvelle Version Majeure à la disposition du CLIENT plus d’une fois par période de vingt-quatre (24) mois.\n\nDans l’hypothèse où le CLIENT ne souhaite pas installer de Nouvelle Version Majeure, alors qu’elle ne requière aucun investissement en hardware ou software, {{ROLE_PRESTATAIRE}} s’engage à assurer les Prestations de maintenance, quelle qu’en soit la nature, sur la version du Progiciel utilisée par le CLIENT, pendant une durée de vingt-quatre (24) mois à compter de la mise à disposition du CLIENT de la dernière Version Majeure.\n\nEn cas de défaut de fourniture d’une Nouvelle Version Majeure dans un délai de vingt-quatre (24) mois à compter de la fourniture de la Nouvelle Version Majeure antérieure, le CLIENT pourra résilier le Contrat de maintenance, aux torts de {{ROLE_PRESTATAIRE}} immédiatement et de plein droit, sans autre formalité que l’envoi d’une lettre recommandée avec accusé de réception notifiant la résiliation pour ce motif.\n\nLes Nouvelles Versions ne comprennent pas les options ou produits futurs que {{ROLE_PRESTATAIRE}} fournit au titre de licences distinctes."
+                        "contenu": "Une Nouvelle Version Majeure est destinée, suivant les cas, à apporter de nouvelles fonctionnalités et/ou d’étendre des fonctionnalités existantes et/ou de permettre l’utilisation de la Solution sous un nouveau système d’exploitation, ou généralement, toute mise à jour substantielle de la Solution résultant d’un investissement conséquent en Recherche et Développement de la part de {{ROLE_PRESTATAIRE}} et apportant des fonctionnalités  ou caractéristiques nouvelles à la Solution ou l’améliorant de manière significative par rapport à la Version en vigueur chez le CLIENT.\n\nDans le cadre du service de maintenance évolutive, {{ROLE_PRESTATAIRE}} s’engage à fournir gratuitement au CLIENT, à sa demande, toute Nouvelle Version Majeure de la Solution hors personnalisation demandées par le CLIENT, qui serait commercialisée pendant la durée du présent Contrat, laquelle doit obligatoirement :\n\nReprendre l’intégralité des fonctionnalités déjà présentes dans la version de la Solution utilisée par le CLIENT, sauf accord contraire de ce dernier,\n\nÊtre compatible avec l’Environnement, sauf (i) accord contraire du CLIENT ou (ii) évolution de l’Environnement acceptée par les Parties.\n\n{{ROLE_PRESTATAIRE}} fournit au CLIENT, en même temps que  Majeure, la documentation associée ainsi qu’un rapport technique expliquant l’impact de cette Nouvelle Version.\n\n{{ROLE_PRESTATAIRE}} n’est pas tenu de mettre de Nouvelle Version Majeure à la disposition du CLIENT plus d’une fois par période de vingt-quatre (24) mois.\n\nDans l’hypothèse où le CLIENT ne souhaite pas installer de Nouvelle Version Majeure, alors qu’elle ne requière aucun investissement en hardware ou software, {{ROLE_PRESTATAIRE}} s’engage à assurer les Prestations de maintenance, quelle qu’en soit la nature, sur la version de la Solution utilisée par le CLIENT, pendant une durée de vingt-quatre (24) mois à compter de la mise à disposition du CLIENT de la dernière Version Majeure.\n\nEn cas de défaut de fourniture d’une Nouvelle Version Majeure dans un délai de vingt-quatre (24) mois à compter de la fourniture de la Nouvelle Version Majeure antérieure, le CLIENT pourra résilier le Contrat de maintenance, aux torts de {{ROLE_PRESTATAIRE}} immédiatement et de plein droit, sans autre formalité que l’envoi d’une lettre recommandée avec accusé de réception notifiant la résiliation pour ce motif.\n\nLes Nouvelles Versions ne comprennent pas les options ou produits futurs que {{ROLE_PRESTATAIRE}} fournit au titre de licences distinctes."
                     },
                     {
                         "id": "ART_39_S03",
                         "titre": "Modifications ou Paramétrages complémentaires sur le Progiciel à la demande du CLIENT",
-                        "condition_generation": "TYPES_PROJET_INCLUDES('Logiciel')",
+                        "condition_generation": "TYPES_PROJET_INCLUDES('Maintenance')",
                         "variables": [],
-                        "contenu": "{{ROLE_PRESTATAIRE}} pourra développer pour le compte du CLIENT des modifications du Progiciel, qui pourront être traitées de deux façons distinctes :\n\nS'il s'agit de mettre en place des fonctionnalités nouvelles demandées par le CLIENT, le service se déroulera comme suit:\n\n- Elaboration du cahier des charges par le CLIENT ;\n\n- Elaboration par {{ROLE_PRESTATAIRE}} d'une proposition commerciale et technique, qui tiendra compte des contraintes du Progiciel  existant et éventuellement les contraintes d'exploitation et d'intégration des nouveautés envisagées ;\n\n- Approbation par le CLIENT de cette proposition commerciale matérialisée par un Avenant dédié à cet effet, qui constituera la référence contractuelle unique lors des opérations ultérieures de recette, de garantie et de maintenance ;\n\n- Réalisation proprement dite par {{ROLE_PRESTATAIRE}} qui consistera en la modification de programmes existants et/ou l'écriture de nouveaux programmes;\n\n- Intégration de ces nouvelles fonctionnalités au Progiciel, validation de la conformité à la proposition technique et mise en exploitation donnant lieu à un procès-verbal soumis à la signature du CLIENT.\n\nLa recette sera prononcée selon un délai convenu d’un commun accord lors de l’établissement du devis correspondant.\n\nS'il s'agit de mettre en place des améliorations mineures, {{ROLE_PRESTATAIRE}} les effectuera sans qu'il soit nécessaire d'instaurer la procédure formalisée décrite ci-dessus.\n\nLe prix facturable au CLIENT pour les Prestations évolutives sera précisé dans la proposition commerciale de {{ROLE_PRESTATAIRE}} selon le tarif convenu entre les Parties."
+                        "contenu": "{{ROLE_PRESTATAIRE}} pourra développer pour le compte du CLIENT des modifications de la Solution, qui pourront être traitées de deux façons distinctes :\n\nS'il s'agit de mettre en place des fonctionnalités nouvelles demandées par le CLIENT, le service se déroulera comme suit:\n\n- Elaboration du cahier des charges par le CLIENT ;\n\n- Elaboration par {{ROLE_PRESTATAIRE}} d'une proposition commerciale et technique, qui tiendra compte des contraintes de la Solution  existant et éventuellement les contraintes d'exploitation et d'intégration des nouveautés envisagées ;\n\n- Approbation par le CLIENT de cette proposition commerciale matérialisée par un Avenant dédié à cet effet, qui constituera la référence contractuelle unique lors des opérations ultérieures de recette, de garantie et de maintenance ;\n\n- Réalisation proprement dite par {{ROLE_PRESTATAIRE}} qui consistera en la modification de programmes existants et/ou l'écriture de nouveaux programmes;\n\n- Intégration de ces nouvelles fonctionnalités à la Solution, validation de la conformité à la proposition technique et mise en exploitation donnant lieu à un procès-verbal soumis à la signature du CLIENT.\n\nLa recette sera prononcée selon un délai convenu d’un commun accord lors de l’établissement du devis correspondant.\n\nS'il s'agit de mettre en place des améliorations mineures, {{ROLE_PRESTATAIRE}} les effectuera sans qu'il soit nécessaire d'instaurer la procédure formalisée décrite ci-dessus.\n\nLe prix facturable au CLIENT pour les Prestations évolutives sera précisé dans la proposition commerciale de {{ROLE_PRESTATAIRE}} selon le tarif convenu entre les Parties."
                     }
                 ],
                 "ordre_affichage": 410
@@ -1667,7 +1667,7 @@
                 "id": "ART_112",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 13 - MODALITES TECHNIQUES GENERALES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{ROLE_PRESTATAIRE}}"
                 ],
@@ -1722,7 +1722,7 @@
                 "id": "ART_113",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 14 - OBLIGATIONS DES PARTIES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1764,7 +1764,7 @@
                 "id": "ART_114",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 15 - CONDUITE DE PROJET",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1841,7 +1841,7 @@
                 "id": "ART_115",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 16 - MISE A DISPOSITION- INSTALLATION ET RECETTE DES DIVERSES VERSIONS DE REFERENCE (Version de Référence personnalisée, puis avec les Interfaces, puis avec la reprise de données existantes)",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1876,7 +1876,7 @@
                 "id": "ART_116",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 17 - REPRISE DES DONNEES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{MONTANT_REDEVANCE}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1888,7 +1888,7 @@
                 "id": "ART_117",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 18 - INTERFACES AVEC LES SYSTEMES EXISTANTS",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [],
                 "contenu": "Les interfaces convenues seront réalisées dans les conditions de l’Annexe 7 du présent Contrat et conformément aux règles et procédures définies dans le PAQ objet de l’Annexe 6.",
                 "ordre_affichage": 557
@@ -1897,7 +1897,7 @@
                 "id": "ART_118",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 19 - INSTALLATION ET VALIDATION DE   DEFINITIVE",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}",
@@ -1910,7 +1910,7 @@
                 "id": "ART_119",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 20 - ASSISTANCE A  PRODUCTION",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{ROLE_PRESTATAIRE}}"
                 ],
@@ -1921,7 +1921,7 @@
                 "id": "ART_120",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 21 - FORMATION",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{ROLE_PRESTATAIRE}}"
                 ],
@@ -1932,7 +1932,7 @@
                 "id": "ART_121",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 22 - PRIX -MODALITES FINANCIERES.",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{MONTANT_REDEVANCE}}",
@@ -1945,7 +1945,7 @@
                 "id": "ART_122",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 23 - GARANTIES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -1980,7 +1980,7 @@
                 "id": "ART_123",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 24 - RESPONSABILITE",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{MONTANT_REDEVANCE}}",
@@ -1993,7 +1993,7 @@
                 "id": "ART_124",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 25 - PROCEDURE D’ESCALADE",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -2005,7 +2005,7 @@
                 "id": "ART_125",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 26 - RESILIATION",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}",
@@ -2034,7 +2034,7 @@
                 "id": "ART_126",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 27 - RESTITUTION DES DONNEES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}"
@@ -2046,7 +2046,7 @@
                 "id": "ART_127",
                 "categorie": "II. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS",
                 "titre": "ARTICLE 28 - IMPLEMENTATION DU PROJET-PENALITES",
-                "condition_generation": "TYPES_PROJET_INCLUDES('Services')",
+                "condition_generation": "TYPES_PROJET_INCLUDES('Mise en oeuvre sans logiciel')",
                 "variables": [
                     "{{DUREE_MOIS}}",
                     "{{ROLE_PRESTATAIRE}}",

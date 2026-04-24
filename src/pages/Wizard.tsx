@@ -359,6 +359,7 @@ export default function Wizard() {
         if (r === 'logiciel') return hasLogiciel;
         if (r === 'matériel' || r === 'materiel') return hasMateriel;
         if (r === 'mise en œuvre' || r === 'mise en oeuvre') return hasMiseEnOeuvre;
+        if (r === 'mise en oeuvre sans logiciel') return hasMiseEnOeuvre && !hasLogiciel && !hasSaaS;
         if (r === 'maintenance') return hasMaintenance;
         if (r === 'hébergement' || r === 'hebergement') return hasSaaS;
         if (r === 'services') return hasServices;
@@ -612,6 +613,60 @@ export default function Wizard() {
             : '';
           rawContent = `Le présent Contrat a pour objet ${objet}, conclu entre ${qualC} et ${roleP}.${violetsList}`;
         }
+        // ART_002 : préambule dynamique adapté à la typologie du projet
+        if (art.id === 'ART_002' && rawContent.includes('§DYNAMIC_PREAMBULE§')) {
+          const actual = Array.isArray(variables.ProjectType) ? variables.ProjectType : [variables.ProjectType];
+          const inc2 = (id: string) => actual.includes(id);
+          const hasLog2     = inc2('Log_OnPrem') || inc2('Licence_OnPrem') || inc2('Log_SaaS') || inc2('SaaS') || inc2('Log_Dev');
+          const hasMat2     = inc2('Mat_Achat') || inc2('Mat_Location') || inc2('Mat_Install') || inc2('Mat_Maintenance') || inc2('Materiel');
+          const hasMoe2     = inc2('Prest_MOE') || inc2('Mat_Install') || inc2('Log_Dev') || inc2('Mise_en_Oeuvre');
+          const hasRegie2   = inc2('Prest_Regie') || inc2('Régie');
+          const hasForfait2 = inc2('Prest_Forfait') || inc2('Forfait');
+          const hasConseil3 = inc2('Prest_Conseil');
+          const roleP2  = variables.ROLE_PRESTATAIRE?.trim() || '{{ROLE_PRESTATAIRE}}';
+          const nomC2   = variables.NOM_CLIENT?.trim() || '{{NOM_CLIENT}}';
+          const objet2  = variables.NOM_OBJET_CONTRAT?.trim() || '{{NOM_OBJET_CONTRAT}}';
+
+          let activite = '';
+          if (hasConseil3)        activite = `la réalisation de missions de conseil et d'expertise`;
+          else if (hasMoe2)       activite = `la mise en œuvre et l'intégration de solutions informatiques`;
+          else if (hasLog2)       activite = `l'édition et la distribution de logiciels`;
+          else if (hasMat2)       activite = `la fourniture et la maintenance de matériel informatique`;
+          else if (hasRegie2 || hasForfait2) activite = `la réalisation de prestations de services informatiques`;
+          else                    activite = `les technologies de l'information`;
+
+          let contexte = '';
+          if (hasConseil3) {
+            contexte = `${nomC2} souhaite bénéficier d'un accompagnement expert dans le cadre de ${objet2}. La mission proposée par ${roleP2} répond aux orientations stratégiques de ${nomC2} et s'inscrit dans un cadre d'obligation de moyens renforcée.`;
+          } else if (hasMoe2 && hasLog2) {
+            const sol = variables.NOM_LOGICIEL?.trim() || objet2;
+            contexte = `${nomC2} a lancé une consultation pour l'acquisition et la mise en œuvre de la solution ${sol}. L'offre présentée par ${roleP2} a été retenue comme étant la plus adaptée aux besoins exprimés par ${nomC2}.`;
+          } else if (hasMoe2) {
+            contexte = `${nomC2} a lancé une consultation pour la réalisation de prestations de mise en œuvre et d'intégration. L'offre présentée par ${roleP2} a été retenue comme étant la plus adaptée aux besoins exprimés par ${nomC2}.`;
+          } else if (hasLog2) {
+            const sol = variables.NOM_LOGICIEL?.trim() || objet2;
+            contexte = `${nomC2} a sélectionné la solution ${sol} proposée par ${roleP2} pour couvrir ses besoins en matière de ${objet2}.`;
+          } else if (hasMat2) {
+            contexte = `${nomC2} a lancé une consultation pour l'acquisition et/ou la maintenance de matériel informatique. L'offre présentée par ${roleP2} a été retenue comme étant la plus adaptée aux besoins exprimés par ${nomC2}.`;
+          } else if (hasRegie2 || hasForfait2) {
+            contexte = `${nomC2} a sélectionné ${roleP2} pour la réalisation de prestations intellectuelles dans le cadre de ${objet2}.`;
+          } else {
+            contexte = `${nomC2} a retenu ${roleP2} pour la réalisation des prestations décrites au présent Contrat.`;
+          }
+
+          let expertise = '';
+          if (hasConseil3) {
+            expertise = `${roleP2} déclare disposer des compétences, de la méthodologie et de l'expérience nécessaires pour mener à bien la mission de conseil objet des présentes et produire des recommandations pertinentes et actionnables.`;
+          } else if (hasMoe2 || hasLog2) {
+            expertise = `${roleP2} a expressément exposé, soutenu et démontré qu'il dispose de l'expertise, du savoir-faire, de la méthodologie, des moyens et des compétences adéquates pour assurer la réalisation conforme et performante des Prestations suivant les besoins formulés par ${nomC2}.`;
+          } else if (hasMat2) {
+            expertise = `${roleP2} a démontré disposer des compétences techniques, des ressources et des certifications nécessaires pour assurer la fourniture et/ou la maintenance du matériel dans les conditions définies aux présentes.`;
+          } else {
+            expertise = `${roleP2} a démontré disposer des compétences et de l'expérience requises pour l'exécution des Prestations définies au présent Contrat.`;
+          }
+
+          rawContent = `PREAMBULE\n\n${roleP2} est un professionnel reconnu dans le domaine de ${activite}.\n\n${contexte}\n\n${nomC2} a retenu ${roleP2} au titre de la réalisation du Projet susvisé. ${expertise}\n\n${nomC2} assure avoir remis à ${roleP2} l'ensemble des éléments nécessaires à la bonne compréhension du Projet et reconnaît qu'un défaut de sa part serait susceptible d'affecter les Prestations à réaliser par ${roleP2}.\n\nLes Parties s'engagent à collaborer et à échanger les informations nécessaires à une bonne exécution des Prestations. Elles conviennent de procéder à un échange permanent d'informations en vue de contribuer à la réussite du Projet et d'éviter la génération de difficultés préjudiciables aux intérêts des Parties.\n\n${roleP2} s'est déclaré prêt à mener le Projet dans un véritable esprit de collaboration et s'est déclaré apte à répondre aux exigences de ${nomC2} en termes de sécurité, de confidentialité, de niveau de performance, de qualité des Prestations demandées et de respect des délais impartis dans le Calendrier précisé en Annexe des présentes.\n\nPour la formalisation de leur relation contractuelle autour de ce Projet, les Parties ont convenu de mettre en place le présent Contrat intégrant l'ensemble des étapes de leur relation contractuelle et ce pour garantir la cohérence des engagements et éviter les redondances qui peuvent être source de divergences d'interprétation.\n\nAinsi, le plan du Contrat se décline comme suit :\n\nI. DÉFINITIONS ;\n\nII. STIPULATIONS COMMUNES ;\n\nIII. STIPULATIONS SPÉCIFIQUES AUX PRESTATIONS ;\n\nIV. ANNEXES.\n\nCECI ÉTANT EXPOSÉ, LES PARTIES ONT CONVENU ET ARRÊTÉ CE QUI SUIT :`;
+        }
         // ART_DUREE : durée unique + clause tacite reconduction conditionnelle
         if (art.id === 'ART_DUREE') {
           const duree  = variables.DUREE_CONTRAT?.trim() || '{{DUREE_CONTRAT}}';
@@ -664,6 +719,40 @@ export default function Wizard() {
   };
 
   const compiledResult = useMemo(() => compileContractText(), [includedArticles, variables, sections, additionalAnnexes]);
+
+  // Re-injecte les valeurs de variables dans le HTML édité (data-var spans)
+  // pour que les changements de champs se reflètent même après une édition manuelle.
+  const liveEditedHtml = useMemo(() => {
+    if (!editedHtml) return null;
+    const tmp = document.createElement('div');
+    tmp.innerHTML = editedHtml;
+    tmp.querySelectorAll<HTMLElement>('[data-var]').forEach((el) => {
+      const varName = el.getAttribute('data-var') ?? '';
+      if (varName === 'NOM_OBJET_CONTRAT') {
+        // TITRE_CONTRAT utilise NOM_OBJET_CONTRAT comme data-var
+        const title = variables.NOM_OBJET_CONTRAT?.trim() || '';
+        if (title) { el.textContent = title; el.style.color = '#0055cc'; el.style.background = '#e8f0fe'; }
+        return;
+      }
+      const val = variables[varName]
+        ?? (varName === 'NOM_PRESTATAIRE' ? variables.PRESTATAIRE_NOM : undefined)
+        ?? (varName === 'PRESTATAIRE_NOM' ? variables.NOM_PRESTATAIRE : undefined);
+      if (val && String(val).trim() !== '') {
+        el.textContent = String(val);
+        el.style.color = '#0055cc';
+        el.style.background = '#e8f0fe';
+        el.style.fontFamily = '';
+        el.style.fontSize = '';
+      } else {
+        el.textContent = `{{${varName}}}`;
+        el.style.color = '#b7500a';
+        el.style.background = '#fff3e0';
+        el.style.fontFamily = 'monospace';
+        el.style.fontSize = '0.85em';
+      }
+    });
+    return tmp.innerHTML;
+  }, [editedHtml, variables]);
 
   const handleExport = () => {
     const stripMarkup = (html: string) =>
@@ -1542,11 +1631,11 @@ export default function Wizard() {
                   className="space-y-2 outline-none"
                   dangerouslySetInnerHTML={{ __html: editedHtml ?? '' }}
                 />
-              ) : editedHtml ? (
+              ) : liveEditedHtml ? (
                 <div
                   ref={previewBodyRef}
                   className="space-y-2"
-                  dangerouslySetInnerHTML={{ __html: editedHtml }}
+                  dangerouslySetInnerHTML={{ __html: liveEditedHtml }}
                 />
               ) : (
               <div ref={previewBodyRef} className="space-y-2">
